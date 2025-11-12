@@ -1,7 +1,10 @@
 ---
-title: "Publications"
+title: ""
 permalink: publications.html
 layout: single
+---
+
+# Publications
 ---
 
 ## Preprints
