@@ -6,14 +6,11 @@
 name: Deploy Jekyll site to Pages
 
 on:
-  # Runs on pushes targeting the master branch
   push:
-    branches: ["master"]
+    branches: ["master"] 
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -30,22 +27,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      # CRITICAL STEP 1: Setup Ruby environment without using the broken cache
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          # Set bundler-cache to false so we can manually manage the installation
           bundler-cache: false 
           
-      # CRITICAL STEP 2: Force Clean Installation of Dependencies
-      # This explicitly installs the minimal-mistakes-jekyll theme gem
       - name: Install Dependencies & Clear Old Cache
         run: |
-          echo "Installing all gems via Gemfile (including minimal-mistakes-jekyll)..."
-          # Delete any lingering cache directories from previous failed runs
+          echo "Installing all gems via Gemfile..."
           rm -rf vendor/bundle
-          # Install gems to the vendor/bundle path for the action to find them
           bundle install --path vendor/bundle
           
       - name: Setup Pages
@@ -53,12 +44,10 @@ jobs:
         uses: actions/configure-pages@v5
         
       - name: Build with Jekyll
-        # We rely ONLY on the baseurl setting in _config.yml
+        # Relying 100% on the baseurl in _config.yml
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-          # Pass the repository name to GitHub Metadata plugin
-          PAGES_REPO_NWO: ${{ github.repository }} 
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
