@@ -4,11 +4,25 @@ permalink: people.html
 layout: single
 ---
 
-# Lab Members
+# Lab Head
 ---
 
-## Faculty
+### Pandarasamy Arjunan (Samy)
+*Assistant Professor*
 
-## Postdoctoral Research Fellow
+* **Email:** samy@iisc.ac.in
+* **GitHub:** [samy101](https://github.com/samy101)
+* **Google Scholar:** [Profile](https://scholar.google.com/citations?user=6zG4VnQAAAAJ)
 
-## PhD Students
+---
+
+# PhD Students
+
+---
+
+# M.Tech Students
+
+---
+
+# Project Staff
+
