@@ -1,32 +1,17 @@
 ---
-title: ""
+title: "Research Themes"
 permalink: themes.html
 layout: single
 ---
 
-# What We're Working On!
----
+Our current research interests lie in the intersection of **Cyber-Physical Systems** and **Data Science** and their applications pertaining to smart built environments and energy sustainability. 
 
-Hey there! Our lab is all about digging into the **big ideas** behind machine intelligence and seeing how we can use them to tackle real-world problems. It's pretty exciting stuff!
+Specifically, We focus on developing systems and techniques for:
 
-Here are the cool things we're focused on right now:
+* Energy monitoring
+* Benchmarking
+* Prediction
+* Anomaly detection
+* Fault detection and diagnosis
 
-* **The Basics of Machine Learning:** We're exploring the core theory and finding new ways to use ML.
-
-* **Generative AI & LLMs:** We dive deep into foundational models and massive language models—like figuring out how the next generation of AI actually works and what it can do!
-
-* **AI Decisions & Teams:** We look at how AI makes choices, especially when you have one AI or a whole *team* of AIs working together (multi-agent scenarios).
-
-* **Keeping AI Safe:** This is super important! We focus on making sure AI systems are safe, reliable, and trustworthy.
-
-* **Cybersecurity & AI:** We're working on how AI interacts with security, whether it's helping or hindering.
-
-* **AI and Society:** We think about the big picture—how AI impacts people and the world we live in.
-
-* **Talking to AI:** How do humans and AI systems communicate? We're trying to make those interactions smooth and smart.
-
-* **Tiny Brains, Big Jobs:** We look at using machine learning for smaller devices and connected things like phones, smart cities, and IoT stuff (cyber-physical systems).
-
-* **Networked AI:** We figure out how to make machine learning work smoothly across lots of different computers and systems—making it distributed and connected!
-
-* We last updated this on February 15, 2025. Come back soon!
+We do this by leveraging smart meter time series and other opportunistic data sources. WE have recently started investigating how to leverage **Infrared Thermography (IRT)** for city-scale building diagnostics and energy auditing.
