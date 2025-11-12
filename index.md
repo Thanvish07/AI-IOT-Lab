@@ -3,8 +3,7 @@ layout: splash
 permalink: /
 header:
   overlay_image: /assets/images/header_splash_ai.jpg 
-  overlay_filter: "0.5" 
-  caption: ""
+  overlay_filter: "0.5"
 ---
 
 # Machine Intelligence Lab
