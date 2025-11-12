@@ -75,3 +75,6 @@ defaults:
     values:
       layout: "single"
       author_profile: true
+
+# CRITICAL FIX: Add this line to ensure all pages are generated relative to the root
+destination: ./_site
