@@ -7,7 +7,7 @@ layout: single
 # Lab Head
 ---
 
-### Pandarasamy Arjunan (Samy)
+### Pandarasamy Arjunan
 *Assistant Professor*
 
 * **Email:** samy@iisc.ac.in
