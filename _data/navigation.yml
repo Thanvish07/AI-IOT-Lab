@@ -5,7 +5,9 @@ main:
   - title: "People"
     url: /people.html
   - title: "Research Themes"
-    url: "themes.html"
+    url: /themes.html
+  - title: "Projects"
+    url: /projects.html
   - title: "Publications"
     url: /publications.html
   - title: "Joining Us"
