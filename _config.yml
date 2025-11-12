@@ -6,7 +6,7 @@ title: "AI-IOT Lab"
 name: "AI-IOT Lab"
 masthead_title: "AI-IOT Lab"
 
-# CRITICAL FIX: Base URL MUST be set to the repository name for Project Pages
+# CRITICAL FIX: Base URL MUST be set to the repository name
 url: "https://Thanvish07.github.io"
 baseurl: "/AI-IOT-Lab" 
 
@@ -75,6 +75,3 @@ defaults:
     values:
       layout: "single"
       author_profile: true
-
-# CRITICAL FIX: Add this line to ensure all pages are generated relative to the root
-destination: ./_site
