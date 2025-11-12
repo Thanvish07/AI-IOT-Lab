@@ -1,16 +1,32 @@
 ---
 title: ""
-permalink: joining-us.html
+permalink: contact.html
 layout: single
 ---
 
-# Joining Us
+# Contact
 ---
 
-We are actively looking for highly motivated candidates for various positions, including:
+For all inquiries, please get in touch via email.
 
-* Project Assistant
-* M.Tech/PhD Research
-* Postdoc
+**Email:** samy@iisc.ac.in
 
-If you are interested, please get in touch with us through email.
+---
+
+### Address
+
+**Pandarasamy Arjunan (Samy)**
+Assistant Professor
+Robert Bosch Centre for Cyber-Physical Systems (RBCCPS)
+Indian Institute of Science (IISC)
+Bangalore, India
+
+---
+
+### Other links
+
+* [GitHub](https://github.com/samy101)
+* [Google Scholar](https://scholar.google.com/citations?user=6zG4VnQAAAAJ)
+* [LinkedIn](https://www.linkedin.com/in/pandarasamy-arjunan-5580a215)
+* [ORCID](https://orcid.org/0000-0002-7697-3576)
+* [ResearchGate](https://www.researchgate.net/profile/Pandarasamy_Arjunan/)
