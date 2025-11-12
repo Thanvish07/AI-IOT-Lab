@@ -1,17 +1,16 @@
 ---
 title: ""
-permalink: contact.html
+permalink: joining-us.html
 layout: single
 ---
 
-# Contact
+# Joining Us
 ---
 
-For inquiries about potential opportunities or collaborations in the lab, please reach out to Mirco Musolesi via one of the following channels:
+We are actively looking for highly motivated candidates for various positions, including:
 
-**Email:** m.musolesi [AT] ucl.ac.uk
+* Project Assistant
+* M.Tech/PhD Research
+* Postdoc
 
-**Mail Address:** Department of Computer Science, University College London
-[66-72 Gower Street WC1E 6BT London, United Kingdom](link-to-map)
-
-Last updated: 28 December 2024.
+If you are interested, please get in touch with us through email.
