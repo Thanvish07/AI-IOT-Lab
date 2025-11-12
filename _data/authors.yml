@@ -1,6 +1,6 @@
 # _data/authors.yml
 
-# Define the primary author (the key must match any 'author:' defined in your posts/pages)
+# Define the primary author for the lab
 pandarasamy_arjunan:
   name: "Prof. Pandarasamy Arjunan"
   avatar: "/assets/images/pandarasamy.jpg" 
@@ -10,4 +10,4 @@ pandarasamy_arjunan:
   github: "your-github-user"
   scholar: "link-to-google-scholar"
   
-# Define other lab members if needed for post attribution
+# Define other lab members here as needed
