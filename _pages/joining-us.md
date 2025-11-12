@@ -1,6 +1,6 @@
 ---
 title: "Joining Us"
-permalink: /joining-us/
+permalink: /joining-us.html
 layout: single
 ---
 
