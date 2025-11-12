@@ -1,0 +1,13 @@
+# _data/authors.yml
+
+# Define the primary author (the key must match any 'author:' defined in your posts/pages)
+pandarasamy_arjunan:
+  name: "Prof. Pandarasamy Arjunan"
+  avatar: "/assets/images/pandarasamy.jpg" 
+  bio: "Principal Investigator and Director of the AI-IOT Lab. Research focuses on Edge Computing and Federated Learning."
+  web: "https://your-pi-homepage.com"
+  email: "pandarasamy@your-univ.edu"
+  github: "your-github-user"
+  scholar: "link-to-google-scholar"
+  
+# Define other lab members if needed for post attribution
