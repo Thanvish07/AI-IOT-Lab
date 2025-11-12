@@ -6,8 +6,8 @@ header:
   overlay_filter: "0.5" 
 ---
 
-# Machine Intelligence Lab
+# AI-IOT Lab
 
-Welcome to the website of the Machine Intelligence Lab at the Department of Computer Science at University College London (UCL). We are part of the UCL Centre for Artificial Intelligence and the Intelligent Systems Group.
+Welcome to the website of the AI-IOT Lab. We are part of the RBCCPS at IISC.
 
 # What's New
