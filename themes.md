@@ -1,7 +1,10 @@
 ---
-title: "Research Themes"
+title: ""
 permalink: themes.html
 layout: single
+---
+
+Research Themes
 ---
 
 Our current research interests lie in the intersection of **Cyber-Physical Systems** and **Data Science** and their applications pertaining to smart built environments and energy sustainability. 
