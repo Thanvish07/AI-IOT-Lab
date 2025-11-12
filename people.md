@@ -1,5 +1,5 @@
 ---
-title: "People"
+title: ""
 permalink: people.html
 layout: single
 ---
