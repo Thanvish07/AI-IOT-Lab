@@ -1,5 +1,5 @@
 ---
-title: "Joining Us"
+title: ""
 permalink: joining-us.html
 layout: single
 ---
