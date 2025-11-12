@@ -1,7 +1,10 @@
 ---
-title: "Contact"
+title: ""
 permalink: contact.html
 layout: single
+---
+
+# Contact
 ---
 
 For inquiries about potential opportunities or collaborations in the lab, please reach out to Mirco Musolesi via one of the following channels:
