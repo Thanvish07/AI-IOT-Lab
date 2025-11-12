@@ -1,13 +1,12 @@
 ---
-title: ""
+title: "Joining Us"
 permalink: joining-us.html
 layout: single
 ---
+We actively looking for highly motivated candidates for various positions, including:
 
-# Joining and Collaborating with the Lab
----
+* Project Assistant
+* M.Tech/PhD Research
+* Postdoc
 
-## Undergraduate Research Opportunities
-
-If you are an Undergraduate student at UCL and you are interested in getting involved in our research activities, please get in touch. We are happy to offer internships during the summer and Final Year projects linked to our research activities.
-...
+If you are interested, please get in touch with us through email.
