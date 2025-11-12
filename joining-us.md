@@ -1,8 +1,12 @@
 ---
-title: "Joining Us"
+title: ""
 permalink: joining-us.html
 layout: single
 ---
+
+Joining Us
+---
+
 We actively looking for highly motivated candidates for various positions, including:
 
 * Project Assistant
