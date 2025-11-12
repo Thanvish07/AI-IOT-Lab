@@ -18,9 +18,9 @@ repository: Thanvish07/AI-IOT-Lab
 # BUILD SETTINGS
 # -------------------------------------------------------------------------------- #
 
-# CRITICAL FIX: Using the installed gem theme name
+# CRITICAL FIX: Tell Jekyll to use the installed theme gem
 theme: minimal-mistakes-jekyll
-# REMOVE the 'remote_theme:' line entirely
+# REMOVE the 'remote_theme:' line if it exists
 
 plugins:
   - jekyll-feed
