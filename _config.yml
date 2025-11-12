@@ -6,7 +6,7 @@ title: "AI-IOT Lab"
 name: "AI-IOT Lab"
 masthead_title: "AI-IOT Lab"
 
-# CRITICAL FIX: baseurl MUST be the repository name for Project Pages
+# CRITICAL FIX: Base URL MUST be set to the repository name for Project Pages
 url: "https://Thanvish07.github.io"
 baseurl: "/AI-IOT-Lab" 
 
@@ -18,7 +18,10 @@ repository: Thanvish07/AI-IOT-Lab
 # BUILD SETTINGS
 # -------------------------------------------------------------------------------- #
 
+# CRITICAL FIX: Using the installed gem theme name
 theme: minimal-mistakes-jekyll
+# REMOVE the 'remote_theme:' line entirely
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -27,7 +30,6 @@ plugins:
 sidebar:
   nav: "main"
 
-# Exclude unnecessary files
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -46,7 +48,7 @@ exclude:
 
 author:
   name: "Prof. Pandarasamy Arjunan"
-  avatar: "/assets/images/lab_logo.png" 
+  avatar: "/assets/images/lab_logo.png"
   bio: "The Machine Intelligence Lab focuses on next-generation AI systems..."
   location: "Department of Computer Science, University"
   links:
