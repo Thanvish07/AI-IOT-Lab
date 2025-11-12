@@ -14,12 +14,10 @@ For all inquiries, please get in touch via email.
 ---
 
 ### Address
-
-**Pandarasamy Arjunan (Samy)**
-Assistant Professor
-Robert Bosch Centre for Cyber-Physical Systems (RBCCPS)
-Indian Institute of Science (IISC)
-Bangalore, India
+IDR Building, 
+Robert Bosch Centre for Cyber-Physical Systems (RBCCPS),
+Indian Institute of Science (IISC),
+Bangalore, India.
 
 ---
 
