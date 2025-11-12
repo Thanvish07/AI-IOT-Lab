@@ -5,6 +5,7 @@ layout: single
 ---
 
 # Joining and Collaborating with the Lab
+---
 
 ## Undergraduate Research Opportunities
 
