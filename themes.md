@@ -5,6 +5,7 @@ layout: single
 ---
 
 # What We're Working On!
+---
 
 Hey there! Our lab is all about digging into the **big ideas** behind machine intelligence and seeing how we can use them to tackle real-world problems. It's pretty exciting stuff!
 
