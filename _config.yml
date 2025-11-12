@@ -3,14 +3,15 @@
 # -------------------------------------------------------------------------------- #
 
 title: "AI-IOT Lab"
-name: "AI-IOT Lab"
+name: "AI-IOT Lab @ RBCCPS, IISC"
 masthead_title: "AI-IOT Lab"
 
 # CRITICAL FIX: Base URL MUST be set to the repository name
 url: "https://Thanvish07.github.io"
 baseurl: "/AI-IOT-Lab" 
 
-email: "lab-contact@university.edu"
+# PI Contact Email
+email: "mkusamy@gmail.com"
 minimal_mistakes_skin: "air" 
 repository: Thanvish07/AI-IOT-Lab 
 
@@ -18,10 +19,7 @@ repository: Thanvish07/AI-IOT-Lab
 # BUILD SETTINGS
 # -------------------------------------------------------------------------------- #
 
-# CRITICAL FIX: Tell Jekyll to use the installed theme gem
 theme: minimal-mistakes-jekyll
-# REMOVE the 'remote_theme:' line if it exists
-
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -43,26 +41,38 @@ exclude:
   - vendor/ruby/
 
 # -------------------------------------------------------------------------------- #
-# AUTHOR/SOCIAL MEDIA CONFIGURATION
+# AUTHOR/SOCIAL MEDIA CONFIGURATION (Default Author)
 # -------------------------------------------------------------------------------- #
 
 author:
-  name: "Prof. Pandarasamy Arjunan"
-  avatar: "/assets/images/lab_logo.png"
-  bio: "The Machine Intelligence Lab focuses on next-generation AI systems..."
-  location: "Department of Computer Science, University"
+  name: "Pandarasamy Arjunan (Samy)"
+  avatar: "/assets/images/samy-profile.jpg" # Add your profile photo here
+  bio: "Assistant Professor at RBCCPS, IISC, Bangalore. Researching CPS, Data Science, and Energy Sustainability."
+  location: "Bangalore, India"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:lab-contact@university.edu"
+      url: "mailto:samy@iisc.ac.in"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/your-lab-github"
+      url: "https://github.com/samy101"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=6zG4VnQAAAAJ"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/pandarasamy-arjunan-5580a215"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-7697-3576"
+    - label: "ResearchGate"
+      icon: "fab fa-fw fa-researchgate"
+      url: "https://www.researchgate.net/profile/Pandarasamy_Arjunan/"
 
 # -------------------------------------------------------------------------------- #
 # COLLECTIONS AND DEFAULTS
 # -------------------------------------------------------------------------------- #
-
+# (No changes needed from previous version)
 collections:
   people:
     output: true
