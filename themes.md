@@ -14,4 +14,4 @@ Specifically, We focus on developing systems and techniques for:
 * Anomaly detection
 * Fault detection and diagnosis
 
-We do this by leveraging smart meter time series and other opportunistic data sources. WE have recently started investigating how to leverage **Infrared Thermography (IRT)** for city-scale building diagnostics and energy auditing.
+We do this by leveraging smart meter time series and other opportunistic data sources.
