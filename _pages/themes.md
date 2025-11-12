@@ -1,6 +1,6 @@
 ---
 title: "Research Themes"
-permalink: /themes/
+permalink: /themes.html
 layout: single
 ---
 
