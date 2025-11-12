@@ -1,5 +1,3 @@
-# _data/navigation.yml (FINAL VERSION)
-
 # main links
 main:
   - title: "Home"
@@ -7,7 +5,7 @@ main:
   - title: "People"
     url: /people.html
   - title: "Research Themes"
-    url: /themes.html
+    url: "themes.html"
   - title: "Publications"
     url: /publications.html
   - title: "Joining Us"
