@@ -10,9 +10,6 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
-  # Add other common plugins if you need them:
-  # gem "jekyll-gist" 
-  # gem "jemoji"
 end
 
 # Windows-only dependency (keep for local testing on Windows)
