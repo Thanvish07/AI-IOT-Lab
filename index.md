@@ -1,9 +1,10 @@
 ---
-layout: splash 
+# CRITICAL FIX: Change 'splash' to 'home'
+layout: home
 permalink: /
 header:
-  overlay_image: /assets/images/header_splash_ai.jpg 
-  overlay_filter: "0.5" 
+  overlay_image: /assets/images/header_splash_ai.jpg
+  overlay_filter: "0.5"
   caption: "AI-IOT Lab @ RBCCPS, IISC"
 ---
 
@@ -14,5 +15,3 @@ Our lab is part of **Robert Bosch Centre for Cyber-Physical Systems (RBCCPS), In
 ---
 
 # What's New
-
-<!-- Posts from _posts/ will appear here automatically -->
