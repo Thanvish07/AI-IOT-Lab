@@ -1,20 +1,18 @@
-# Gemfile (FINAL, CLEAN VERSION)
+# Gemfile (FINAL, CORRECTED VERSION)
 
 source "https://rubygems.org"
 
-# CRITICAL FIX: Explicitly list the theme gem for GitHub Actions to install
+# CRITICAL FIX: Explicitly list the Minimal Mistakes theme gem
 gem "minimal-mistakes-jekyll" 
-
-# We do NOT use the github-pages gem since we are using Actions 
-# and explicitly listing all dependencies.
 
 # List necessary plugins:
 group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
-  # You can remove others like jekyll-gist, jemoji if not strictly needed, 
-  # but they are often included in the MM starter kit.
+  # Add other common plugins if you need them:
+  # gem "jekyll-gist" 
+  # gem "jemoji"
 end
 
 # Windows-only dependency (keep for local testing on Windows)
