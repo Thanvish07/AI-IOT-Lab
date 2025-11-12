@@ -4,8 +4,6 @@ permalink: publications.html
 layout: single
 ---
 
-# Publications
-
 ## Preprints
 
 * **[Opponent Shaping in LLM Agents](link-to-pdf)**
