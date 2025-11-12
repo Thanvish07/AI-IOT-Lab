@@ -18,8 +18,7 @@ repository: Thanvish07/AI-IOT-Lab
 # BUILD SETTINGS
 # -------------------------------------------------------------------------------- #
 
-remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-theme: minimal-mistakes-jekyll # Added for better dependency resolution
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-sitemap
