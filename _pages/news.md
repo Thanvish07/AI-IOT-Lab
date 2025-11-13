@@ -1,12 +1,17 @@
 ---
-title: "News"
+title: "Lab News"
 layout: archive
 permalink: /news/
 author_profile: false
 ---
 
+A chronological list of our lab's activities, publications, and announcements.
+
+---
+
 {% raw %}
-{% for post in site.posts %}
+{% assign posts = site.posts | sort: "date" | reverse %}
+{% for post in posts %}
   {% include archive-single.html %}
 {% endfor %}
 {% endraw %}
