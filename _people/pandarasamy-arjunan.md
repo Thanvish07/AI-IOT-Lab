@@ -1,6 +1,6 @@
 ---
-title: "Pandarasamy Arjunan (Samy)"
-name: "Pandarasamy Arjunan (Samy)"
+title: "Pandarasamy Arjunan"
+name: "Pandarasamy Arjunan"
 position: "Assistant Professor (Lab Head)"
 avatar: "/assets/images/samy-profile.jpg" # This path is from your _config.yml
 links:
