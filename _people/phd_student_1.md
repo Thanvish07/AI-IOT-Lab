@@ -1,15 +1,15 @@
 ---
-title: "Person-1"
-name: "Person-1"
-position: "PhD Student"
-avatar: "https://via.placeholder.com/400" # <-- REPLACE with /assets/images/jane-doe.jpg
+title: "Jane Doe"
+name: "Jane Doe"
+position: "PhD Student" # <-- This "position" is the magic key
+avatar: "/assets/images/jane-doe-profile.jpg" # <-- Add a photo for her
 links:
   - label: "Email"
     icon: "fas fa-fw fa-envelope-square"
     url: "mailto:jane.doe@iisc.ac.in"
   - label: "LinkedIn"
     icon: "fab fa-fw fa-linkedin"
-    url: "https://linkedin.com/in/janedoe"
+    url: "https://linkedin.com/in/..."
 ---
 
-Person's research focuses on data-driven fault detection and diagnosis (FDD) for chiller systems.
+Jane is a PhD student researching energy anomaly detection.
