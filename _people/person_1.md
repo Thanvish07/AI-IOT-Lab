@@ -1,14 +1,15 @@
 ---
-title: "Jane Doe"
-name: "Jane Doe"
+title: "Person-1"
+name: "Person-1"
 position: "PhD Student"
-avatar: "/assets/images/jane-doe-profile.jpg" # (You'll need to add this image)
+avatar: "https://via.placeholder.com/400" # <-- REPLACE with /assets/images/jane-doe.jpg
 links:
   - label: "Email"
     icon: "fas fa-fw fa-envelope-square"
-    url: "mailto:jane@iisc.ac.in"
+    url: "mailto:jane.doe@iisc.ac.in"
   - label: "LinkedIn"
     icon: "fab fa-fw fa-linkedin"
-    url: "httpss://linkedin.com/in/..."
+    url: "https://linkedin.com/in/janedoe"
 ---
-Jane is researching energy anomaly detection.
+
+Person's research focuses on data-driven fault detection and diagnosis (FDD) for chiller systems.
