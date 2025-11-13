@@ -1,10 +1,10 @@
 ---
 title: "People"
 permalink: /people.html
-layout: collection
+layout: single
 collection: people
 entries_layout: grid
-author_profile: false # Hides the default author sidebar for a cleaner look
+author_profile: false
 ---
 
 ## Lab Head
