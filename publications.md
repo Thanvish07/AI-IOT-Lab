@@ -2,6 +2,7 @@
 title: ""
 permalink: publications.html
 layout: single
+author_profile: false
 ---
 
 Publications
