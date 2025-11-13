@@ -1,28 +1,10 @@
 ---
-title: ""
-permalink: people.html
-layout: single
+title: "People"
+permalink: /people.html
+layout: collection
+collection: people
+entries_layout: grid
+author_profile: false # Hides the default author sidebar for a cleaner look
 ---
 
-# Lab Head
----
-
-### Pandarasamy Arjunan
-*Assistant Professor*
-
-* **Email:** samy@iisc.ac.in
-* **GitHub:** [samy101](https://github.com/samy101)
-* **Google Scholar:** [Profile](https://scholar.google.com/citations?user=6zG4VnQAAAAJ)
-
----
-
-# PhD Students
-
----
-
-# M.Tech Students
-
----
-
-# Project Staff
-
+## Lab Head
