@@ -2,6 +2,7 @@
 title: ""
 permalink: joining-us.html
 layout: single
+author_profile: false
 ---
 
 Joining Us
