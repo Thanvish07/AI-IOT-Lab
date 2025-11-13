@@ -1,6 +1,6 @@
 ---
 title: "Priya Singh"
-name: "Priya Singh (Project Associate)"
+name: "Priya Singh"
 position: "Project Staff" # <-- This MUST match your people.md code
 avatar: "/assets/images/priya-singh.jpg" # <-- Add a real photo to this path
 links:
