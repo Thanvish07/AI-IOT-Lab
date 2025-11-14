@@ -76,7 +76,7 @@ author_profile: false
         <h3 class="author__name" itemprop="name">Narasimha</h3>
         <p class="author__bio" itemprop="description">
           Narasimha is an M.Tech student exploring sustainable energy solutions using IoT.
-        </p>
+        </C>
       </div>
       <div class="author__urls-wrapper">
         <button class="btn btn--inverse">Follow</button>
@@ -130,4 +130,4 @@ author_profile: false
         </ul>
       </div>
     </div>
-  </div> </div>
+  </div> </div> ```
