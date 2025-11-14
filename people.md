@@ -39,7 +39,6 @@ author_profile: false
   </div>
 </div>
 
-<hr>
 
 ## PhD Students
 
@@ -63,7 +62,6 @@ author_profile: false
     </ul>
   </div>
 </div>
-<hr>
 
 ## M.Tech Students
 
@@ -87,14 +85,13 @@ author_profile: false
     </ul>
   </div>
 </div>
-<hr>
 
 ## Project Staff
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
     <img src="/assets/images/Kajeeth.jpg" alt="Kajeeth" itemprop="image">
-    </div>
+  </div>
 
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Kajeeth</h3>
@@ -112,10 +109,12 @@ author_profile: false
   </div>
 </div>
 
+<br>
+
 <div class="sidebar__author-profile">
   <div class="author__avatar">
     <img src="/assets/images/Thanish.jpg" alt="Thanish" itemprop="image">
-    </div>
+  </div>
 
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Thanish</h3>
