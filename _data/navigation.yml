@@ -10,8 +10,6 @@ main:
     url: /projects.html
   - title: "Publications"
     url: /publications.html
-  - title: "News"
-    url: /news.html
   - title: "Joining Us"
     url: /joining-us.html
   - title: "Contact"
