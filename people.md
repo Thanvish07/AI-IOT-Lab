@@ -40,66 +40,74 @@ author_profile: false
 
 ## PhD Students
 
-<div class="feature__row">
+<div class="grid__wrapper">
 
-  <div class="feature__item">
-    <div class="archive__item-teaser">
-      <img src="/assets/images/Naman.jpg" alt="Naman" />
-    </div>
-    <div class="feature__item-content">
-      <h3 class="feature__item-title">Naman</h3>
-      <p>Naman is a PhD student researching energy anomaly detection.</p>
-      <ul class="social-icons">
-        <li><a href="mailto:naman@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
-        <li><a href="https://linkedin.com/in/naman" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-      </ul>
-    </div>
+  <div class="grid__item">
+    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+      <div class="archive__item-teaser">
+        <img src="/assets/images/Naman.jpg" alt="Naman" />
+      </div>
+      <div class="archive__item-body">
+        <h3 class="archive__item-title" itemprop="headline">Naman</h3>
+        <p class="archive__item-excerpt" itemprop="description">Naman is a PhD student researching energy anomaly detection.</p>
+        <ul class="social-icons">
+          <li><a href="mailto:naman@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          <li><a href="https://linkedin.com/in/naman" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+    </article>
   </div> </div> <hr>
 
 ## M.Tech Students
 
-<div class="feature__row">
+<div class="grid__wrapper">
 
-  <div class="feature__item">
-    <div class="archive__item-teaser">
-      <img src="/assets/images/Narasimha.jpg" alt="Narasimha" />
-    </div>
-    <div class="feature__item-content">
-      <h3 class="feature__item-title">Narasimha</h3>
-      <p>Narasimha is an M.Tech student exploring sustainable energy solutions using IoT.</p>
-      <ul class="social-icons">
-        <li><a href="mailto:narasimha@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
-        <li><a href="httpss://linkedin.com/in/narasimha" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-      </ul>
-    </div>
+  <div class="grid__item">
+    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+      <div class="archive__item-teaser">
+        <img src="/assets/images/Narasimha.jpg" alt="Narasimha" />
+      </div>
+      <div class="archive__item-body">
+        <h3 class="archive__item-title" itemprop="headline">Narasimha</h3>
+        <p class="archive__item-excerpt" itemprop="description">Narasimha is an M.Tech student exploring sustainable energy solutions using IoT.</p>
+        <ul class="social-icons">
+          <li><a href="mailto:narasimha@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          <li><a href="httpss://linkedin.com/in/narasimha" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+    </article>
   </div> </div> <hr>
 
 ## Project Staff
 
-<div class="feature__row">
+<div class="grid__wrapper">
 
-  <div class="feature__item">
-    <div class="archive__item-teaser">
-      <img src="/assets/images/Kajeeth.jpg" alt="Kajeeth" />
-    </div>
-    <div class="feature__item-content">
-      <h3 class="feature__item-title">Kajeeth</h3>
-      <p>Kajeeth is a Project Associate working on the data-driven fault detection and diagnosis project.</p>
-      <ul class="social-icons">
-        <li><a href="mailto:kajeeth@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
-        <li><a href="httpss://linkedin.com/in/kajeeth" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-      </ul>
-    </div>
-  </div> <div class="feature__item">
-    <div class="archive__item-teaser">
-      <img src="/assets/images/Thanish.jpg" alt="Thanish" />
-    </div>
-    <div class="feature__item-content">
-      <h3 class="feature__item-title">Thanish</h3>
-      <p>Thanish is a Project Associate working on the data-driven fault detection and diagnosis project.</p>
-      <ul class="social-icons">
-        <li><a href="mailto:Thanish@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
-        <li><a href="httpsj://linkedin.com/in/thanish" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-      </ul>
-    </div>
+  <div class="grid__item">
+    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+      <div class="archive__item-teaser">
+        <img src="/assets/images/Kajeeth.jpg" alt="Kajeeth" />
+      </div>
+      <div class="archive__item-body">
+        <h3 class_ ="archive__item-title" itemprop="headline">Kajeeth</h3>
+        <p class="archive__item-excerpt" itemprop="description">Kajeeth is a Project Associate working on the data-driven fault detection and diagnosis project.</p>
+        <ul class="social-icons">
+          <li><a href="mailto:kajeeth@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          <li><a href="httpss://linkedin.com/in/kajeeth" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+    </article>
+  </div> <div class="grid__item">
+    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+      <div class="archive__item-teaser">
+        <img src="/assets/images/Thanish.jpg" alt="Thanish" />
+      </div>
+      <div class="archive__item-body">
+        <h3 class="archive__item-title" itemprop="headline">Thanish</h3>
+        <p class="archive__item-excerpt" itemprop="description">Thanish is a Project Associate working on the data-driven fault detection and diagnosis project.</p>
+        <ul class="social-icons">
+          <li><a href="mailto:Thanish@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          <li><a href="httpss://linkedin.com/in/thanish" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+    </article>
   </div> </div>
