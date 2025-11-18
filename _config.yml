@@ -55,7 +55,7 @@ container_width:
 
 author:
   name: "Pandarasamy Arjunan (Samy)"
-  avatar: "{{site.baseurl}}/assets/images/speaker_pandarasamy.jpg" # Add your profile photo here
+  avatar: "/assets/images/speaker_pandarasamy.jpg" # Add your profile photo here
   bio: "Assistant Professor at RBCCPS, IISC, Bangalore. Researching CPS, Data Science, and Energy Sustainability."
   location: "Bangalore, India"
   links:
