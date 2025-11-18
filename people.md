@@ -9,7 +9,7 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/samy-profile.jpg" alt="Pandarasamy Arjunan" itemprop="image">
+    <img src="/assets/images/speaker_pandarasamy.jpg" alt="Pandarasamy Arjunan" itemprop="image">
   </div>
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Pandarasamy Arjunan</h3>
@@ -42,7 +42,7 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/Naman.jpg" alt="Naman" itemprop="image">
+    <img src="/assets/images/Person.jpg" alt="Naman" itemprop="image">
   </div>
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Naman</h3>
@@ -65,12 +65,12 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/Narasimha.jpg" alt="Narasimha" itemprop="image">
+    <img src="/assets/images/Person.jpg" alt="Moin" itemprop="image">
   </div>
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">Narasimha</h3>
+    <h3 class="author__name" itemprop="name">Moin</h3>
     <p class="author__bio" itemprop="description">
-      Narasimha is an M.Tech student exploring sustainable energy solutions using IoT.
+      Moin is an M.Tech student exploring sustainable energy solutions using IoT.
     </p>
   </div>
   <div class="author__urls-wrapper">
@@ -88,7 +88,7 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/Kajeeth.jpg" alt="Kajeeth" itemprop="image">
+    <img src="/assets/images/Person.jpg" alt="Kajeeth" itemprop="image">
   </div>
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Kajeeth</h3>
@@ -108,12 +108,12 @@ author_profile: false
 <br> 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/Thanish.jpg" alt="Thanish" itemprop="image">
+    <img src="/assets/images/Person.jpg" alt="Thanish" itemprop="image">
   </div>
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Thanish</h3>
     <p class="author__bio" itemprop="description">
-      Thanish is a Project Associate working on the data-driven fault detection and diagnosis project.
+      Thanish is a Project Associate working on the EnergyBench Datasets.
     </p>
   </div>
   <div class="author__urls-wrapper">
