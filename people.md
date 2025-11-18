@@ -105,7 +105,7 @@ author_profile: false
   </div>
 </div>
 
----
+<br>
 
 <br> <div class="sidebar__author-profile">
   <div class="author__avatar">
@@ -125,3 +125,5 @@ author_profile: false
     </ul>
   </div>
 </div>
+
+<br>
