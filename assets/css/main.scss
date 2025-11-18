@@ -1,0 +1,9 @@
+// 1. Import the theme's default styles
+@import "minimal-mistakes";
+
+// 2. Add your custom override
+.page__hero--overlay::after, .page__hero.page__hero--overlay::after {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
