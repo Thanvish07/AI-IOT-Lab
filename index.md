@@ -3,7 +3,7 @@
 layout: home
 permalink: /
 header:
-  overlay_image: /assets/images/bg_1.png
+  overlay_image: /assets/images/bg_2.png
   overlay_filter: "0.5"
   caption: "AI-IOT Lab @ RBCCPS, IISC"
 ---
