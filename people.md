@@ -84,8 +84,6 @@ author_profile: false
 
 <hr>
 
----
-
 ## Project Staff
 
 <div class="sidebar__author-profile">
@@ -106,6 +104,8 @@ author_profile: false
     </ul>
   </div>
 </div>
+
+---
 
 <br> <div class="sidebar__author-profile">
   <div class="author__avatar">
