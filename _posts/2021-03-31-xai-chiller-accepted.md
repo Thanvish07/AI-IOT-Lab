@@ -6,4 +6,6 @@ header:
   teaser: "/AI-IOT-Lab/assets/images/accepted.jpg" # Optional: Add teaser image
 ---
 
+(/AI-IOT-Lab/assets/images/document-accepted.png)
+
 Our research article titled **Explainable AI for Chiller Fault-Detection Systems: Gaining Trust and Human Connect** got accepted to the IEEE Computer magazine’s special issue on “Explainable AI and Machine Learning” to be publicized in October 2021.
