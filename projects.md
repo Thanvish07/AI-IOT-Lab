@@ -13,7 +13,7 @@ We focus on a variety of themes at the intersection of CPS and Data Science.
 
   <div class="feature__item">
     <div class="archive__item-teaser">
-      <img src="https://via.placeholder.com/500x300.png?text=LEAD+Project" alt="Energy Anomaly Detection">
+      <img src="/AI-IOT-Lab/assets/images/anomaly.png" alt="Energy Anomaly Detection">
       </div>
     <div class="feature__item-content">
       <h3 class="feature__item-title">Energy Anomaly Detection (LEAD)</h3>
@@ -23,7 +23,7 @@ We focus on a variety of themes at the intersection of CPS and Data Science.
 
   <div class="feature__item">
     <div class="archive__item-teaser">
-      <img src="https://via.placeholder.com/500x300.png?text=FDD+Project" alt="Fault Detection and Diagnosis">
+      <img src="/AI-IOT-Lab/assets/images/fault.png" alt="Fault Detection and Diagnosis">
       </div>
     <div class="feature__item-content">
       <h3 class="feature__item-title">Fault Detection and Diagnosis (FDD)</h3>
@@ -33,7 +33,7 @@ We focus on a variety of themes at the intersection of CPS and Data Science.
 
   <div class="feature__item">
     <div class="archive__item-teaser">
-      <img src="https://via.placeholder.com/500x300.png?text=IRT+Project" alt="Infrared Thermography">
+      <img src="/AI-IOT-Lab/assets/images/infrared.png" alt="Infrared Thermography">
       </div>
     <div class="feature__item-content">
       <h3 class="feature__item-title">Infrared Thermography (IRT)</h3>
@@ -43,7 +43,7 @@ We focus on a variety of themes at the intersection of CPS and Data Science.
 
   <div class="feature__item">
     <div class="archive__item-teaser">
-      <img src="https://via.placeholder.com/500x300.png?text=Benchmarking" alt="Building Energy Benchmarking">
+      <img src="/AI-IOT-Lab/assets/images/benchmarking.png" alt="Building Energy Benchmarking">
       </div>
     <div class="feature__item-content">
       <h3 class="feature__item-title">Building Energy Benchmarking</h3>
