@@ -7,7 +7,7 @@ header:
 ---
 
 <div class="archive__item-teaser">
-    <img src=/AI-IOT-Lab/assets/images/accepted.jpg" alt="Accepted">
+    <img src="/AI-IOT-Lab/assets/images/accepted.jpg" alt="Accepted">
 </div>
 
 Our dataset description article titled **LEAD1.0: A Large-scale Annotated Dataset for Energy Anomaly Detection in Commercial Buildings** got accepted to the International Workshop on Energy Data and Analytics workshop co-located with the 13th ACM International Conference on Future Energy Systems (ACM e-Energy).
