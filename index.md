@@ -1,5 +1,4 @@
 ---
-# CRITICAL FIX: Change 'splash' to 'home'
 layout: home
 permalink: /
 header:
