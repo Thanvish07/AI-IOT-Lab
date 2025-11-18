@@ -9,10 +9,10 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/samy-profile.jpg" alt="Pandarasamy Arjunan (Samy)" itemprop="image">
+    <img src="/assets/images/samy-profile.jpg" alt="Pandarasamy Arjunan" itemprop="image">
   </div>
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">Pandarasamy Arjunan (Samy)</h3>
+    <h3 class="author__name" itemprop="name">Pandarasamy Arjunan</h3>
     <p class="author__bio" itemprop="description">
       Assistant Professor at RBCCPS, IISC. Researching CPS, Data Science, and Energy Sustainability.
     </p>
