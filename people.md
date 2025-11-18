@@ -9,7 +9,7 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/speaker_pandarasamy.jpg" alt="Pandarasamy Arjunan" itemprop="image">
+    <img src="{{site.baseurl}}/assets/images/speaker_pandarasamy.jpg" alt="Pandarasamy Arjunan" itemprop="image">
   </div>
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Pandarasamy Arjunan</h3>
@@ -42,7 +42,7 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/Person.jpg" alt="Naman" itemprop="image">
+    <img src="{{site.baseurl}}/assets/images/Person.jpg" alt="Naman" itemprop="image">
   </div>
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Naman</h3>
@@ -65,7 +65,7 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/Person.jpg" alt="Moin" itemprop="image">
+    <img src="{{site.baseurl}}/assets/images/Person.jpg" alt="Moin" itemprop="image">
   </div>
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Moin</h3>
@@ -88,7 +88,7 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/Person.jpg" alt="Kajeeth" itemprop="image">
+    <img src="{{site.baseurl}}/assets/images/Person.jpg" alt="Kajeeth" itemprop="image">
   </div>
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Kajeeth</h3>
@@ -108,7 +108,7 @@ author_profile: false
 <br> 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/Person.jpg" alt="Thanish" itemprop="image">
+    <img src="{{site.baseurl}}/assets/images/Person.jpg" alt="Thanish" itemprop="image">
   </div>
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Thanish</h3>
