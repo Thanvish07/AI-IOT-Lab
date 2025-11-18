@@ -100,12 +100,10 @@ author_profile: false
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       <li><a href="mailto:kajeeth@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-      <li><a href="httpss://linkedin.com/in/kajeeth" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a>
-    </ul>
+      <li><a href="httpss://linkedin.com/in/kajeeth" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li> </ul>
   </div>
 </div>
 
-<br>
 
 <br> <div class="sidebar__author-profile">
   <div class="author__avatar">
@@ -121,9 +119,7 @@ author_profile: false
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       <li><a href="mailto:Thanish@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-      <li><a href="httpss://linkedin.com/in/thanish" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a>
-    </ul>
+      <li><a href="httpss://linkedin.com/in/thanish" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li> </ul>
   </div>
 </div>
 
-<br>
