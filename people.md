@@ -105,7 +105,8 @@ author_profile: false
 </div>
 
 
-<br> <div class="sidebar__author-profile">
+<br> 
+<div class="sidebar__author-profile">
   <div class="author__avatar">
     <img src="/assets/images/Thanish.jpg" alt="Thanish" itemprop="image">
   </div>
