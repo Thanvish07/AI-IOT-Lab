@@ -1,7 +1,9 @@
-// If using _custom.scss, no @import needed, it's auto-imported.
-// If using assets/css/main.scss, uncomment the @import below:
-@import "minimal-mistakes"; 
+---
+# Only the front matter lines (the ---) are needed
+---
 
+// 1. Import the theme's default styles
+@import "minimal-mistakes";
 
 // 1. Make the header taller and ensure the image covers
 .page__hero.page__hero--overlay {
