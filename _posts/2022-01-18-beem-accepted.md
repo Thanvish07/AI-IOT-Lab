@@ -4,6 +4,7 @@ date: 2022-01-18
 layout: single
 header:
   teaser: "/AI-IOT-Lab/aassets/images/accepted.jpg" # Optional: Add teaser image
+excerpt: "Our research article titled BEEM: Data-driven Building Energy bEnchMarking for Singapore got accepted to the Energy and Buildings journal."
 ---
 
 <div class="archive__item-teaser">
