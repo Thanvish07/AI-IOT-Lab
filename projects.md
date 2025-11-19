@@ -5,7 +5,7 @@ layout: single
 author_profile: false # Hides the redundant sidebar
 ---
 
-## Research Projects
+# Research Projects
 
 We focus on a variety of themes at the intersection of CPS and Data Science.
 
