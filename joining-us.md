@@ -1,11 +1,8 @@
 ---
-title: ""
+title: "Join Our Team"
 permalink: joining-us.html
 layout: single
 author_profile: false
----
-
-# Join Our Team
 ---
 
 We are actively looking for highly motivated candidates to join the **AI-IOT Lab** at RBCCPS, IISc. 
