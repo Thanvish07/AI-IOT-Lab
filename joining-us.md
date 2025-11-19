@@ -11,7 +11,6 @@ We are actively looking for highly motivated candidates to join the **AI-IOT Lab
 
 Our research lies at the intersection of **Cyber-Physical Systems (CPS)**, **Internet of Things (IoT)**, and **Data Science**, with a strong focus on energy sustainability and smart building applications.
 
----
 
 ## Current Openings
 
@@ -27,7 +26,6 @@ If you are already admitted to IISc (or planning to apply), we welcome you to di
 ### 3. Postdoctoral Fellows
 We welcome applications from prospective postdoctoral fellows with a strong publication record in CPS, Data Mining, or Energy Analytics.
 
----
 
 ## How to Apply
 
