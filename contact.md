@@ -17,7 +17,6 @@ For general inquiries, research questions, or application details, please reach 
   <strong>Email:</strong> <a href="mailto:samy@iisc.ac.in">samy@iisc.ac.in</a>
 </div>
 
----
 
 ## <i class="fas fa-map-marker-alt"></i> Visit Our Lab
 
@@ -40,7 +39,6 @@ Bangalore - 560012, India.
   </iframe>
 </div>
 
----
 
 ## <i class="fas fa-link"></i> Connect with Lab Head
 
