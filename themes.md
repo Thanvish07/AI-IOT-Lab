@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Research Themes"
 permalink: /themes.html
 layout: single
 author_profile: false
@@ -22,8 +22,6 @@ themes_list:
     title: "Anomaly Detection"
     excerpt: "Buildings often waste energy due to unnoticed irregularities. We research unsupervised learning algorithms to automatically scan time-series data and **detect point and contextual anomalies**, flagging unusual consumption spikes in real-time."
 ---
-
-# Research Themes
 
 Our current research interests lie in the intersection of **Cyber-Physical Systems** and **Data Science**, specifically applied to smart built environments and energy sustainability. 
 
