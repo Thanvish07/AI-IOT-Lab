@@ -25,7 +25,7 @@ feature_row:
 
 Our lab is part of the **Robert Bosch Centre for Cyber-Physical Systems (RBCCPS)** at the **Indian Institute of Science (IISc)**, Bangalore.
 
-We focus on the intersection of **Artificial Intelligence**, **Internet of Things (IoT)**, and **Sustainability**. Our goal is to build data-driven solutions that solve real-world challenges in smart built environments and energy management.
+We focus on the intersection of **Machine Learning**, **Internet of Things (IoT)**, and **Sustainability**. Our goal is to build data-driven solutions that solve real-world challenges in smart built environments and energy management.
 
 {% include feature_row %}
 
