@@ -20,7 +20,7 @@ We frequently look for project staff to assist with ongoing research and develop
 * A Bachelor's or Master's degree in CS, ECE, or related fields.
 
 ### 2. PhD & M.Tech Research
-If you are already admitted to IISc (or planning to apply), we welcome you to discuss potential research topics. We are looking for students with a strong mathematical background and a passion for systems research.
+If you are already admitted to IISc (or planning to apply), we welcome you to discuss potential research topics.
 
 ### 3. Postdoctoral Fellows
 We welcome applications from prospective postdoctoral fellows with a strong publication record in CPS, Data Mining, or Energy Analytics.
