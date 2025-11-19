@@ -91,7 +91,7 @@ author_profile: false
     <p class="author__bio" itemprop="description">
       Project Associate
       <br>
-      <strong>Project:</strong> Data-driven fault detection and diagnosis (FDD).
+      <strong>Focus:</strong> Energy Time-Series Modeling & Analysis.
     </p>
   </div>
   
@@ -110,7 +110,7 @@ author_profile: false
     <p class="author__bio" itemprop="description">
       Project Associate
       <br>
-      <strong>Project:</strong> EnergyBench Datasets & Benchmarking.
+      <strong>Focus:</strong> EnergyBench Datasets & Benchmarking.
     </p>
   </div>
   
