@@ -1,21 +1,50 @@
 ---
-title: ""
-permalink: themes.html
+title: "Research Themes"
+permalink: /themes.html
 layout: single
 author_profile: false
+
+# Define the research areas with icons and descriptions
+research_areas:
+  - icon: "fas fa-chart-line"
+    title: "Energy Analytics & Benchmarking"
+    excerpt: "We develop data-driven frameworks to benchmark building energy performance. By analyzing large-scale smart meter data, we create baselines to identify inefficient buildings and track energy savings potential across city-scale infrastructures."
+  
+  - icon: "fas fa-exclamation-triangle"
+    title: "Anomaly Detection & FDD"
+    excerpt: "Our lab focuses on detecting anomalies in time-series data. We build deep learning models for **Fault Detection and Diagnosis (FDD)** in commercial HVAC systems (Chillers, AHUs) to reduce energy wastage and improve occupant comfort."
+  
+  - icon: "fas fa-temperature-high"
+    title: "Infrared Thermography"
+    excerpt: "We leverage **Infrared Thermography (IRT)** for non-intrusive building diagnostics. Our research utilizes thermal imaging to detect insulation defects, air leakage, and to characterize the operational efficiency of residential air conditioners."
+  
+  - icon: "fas fa-brain"
+    title: "Predictive Modeling & AI"
+    excerpt: "Using advanced machine learning techniques to forecast energy demand and occupancy patterns. Our work bridges the gap between physical sensor data and actionable intelligence for smart building control."
 ---
 
-Research Themes
+Our research lies at the intersection of **Cyber-Physical Systems (CPS)** and **Data Science**, specifically applied to smart built environments and energy sustainability.
+
+We aim to transform raw sensor data into actionable insights to make buildings smarter, more efficient, and sustainable.
+
 ---
 
-Our current research interests lie in the intersection of **Cyber-Physical Systems** and **Data Science** and their applications pertaining to smart built environments and energy sustainability. 
+## Core Research Areas
 
-Specifically, We focus on developing systems and techniques for:
+{% include feature_row id="research_areas" type="left" %}
 
-* Energy monitoring
-* Benchmarking
-* Prediction
-* Anomaly detection
-* Fault detection and diagnosis
+---
 
-We do this by leveraging smart meter time series and other opportunistic data sources.
+## Our Methodology
+
+We adopt a **data-first approach** to solve problems in the energy domain. Our work involves:
+
+1.  **Sensing:** Deploying IoT sensors and utilizing opportunistic data sources (Smart Meters, BMS).
+2.  **Analysis:** Applying statistical modeling, signal processing, and Deep Learning.
+3.  **Actuation:** Developing feedback loops for better building management.
+
+### Key Data Sources
+* **Smart Meter Time-Series:** High-frequency power consumption data.
+* **Building Management Systems (BMS):** Operational data from HVAC components.
+* **Thermal Imaging:** Visual data for non-intrusive auditing.
+* **IoT Sensors:** Environmental parameters (Temperature, Humidity, CO2).
