@@ -21,7 +21,7 @@ feature_row:
     excerpt: "Bridging the gap between physical sensors and digital analysis through Cyber-Physical Systems and Internet of Things deployments."
 ---
 
-## About the Lab
+# About the Lab
 
 Our lab is part of the **Robert Bosch Centre for Cyber-Physical Systems (RBCCPS)** at the **Indian Institute of Science (IISc)**, Bangalore.
 
