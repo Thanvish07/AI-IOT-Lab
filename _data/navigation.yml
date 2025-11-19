@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Home"
-    url: /
   - title: "People"
     url: /people.html
   - title: "Research Themes"
