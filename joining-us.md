@@ -5,6 +5,9 @@ layout: single
 author_profile: false
 ---
 
+## Join Our Team
+---
+
 We are actively looking for highly motivated candidates to join the **AI-IOT Lab** at RBCCPS, IISc. 
 
 Our research lies at the intersection of **Cyber-Physical Systems (CPS)**, **Internet of Things (IoT)**, and **Data Science**, with a strong focus on energy sustainability and smart building applications.
