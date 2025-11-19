@@ -1,11 +1,9 @@
 ---
-title: ""
+title: "Publications"
 permalink: publications.html
 layout: single
 author_profile: false
 ---
-
-# Publications
 
 ## 2023
 
