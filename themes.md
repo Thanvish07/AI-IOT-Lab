@@ -6,6 +6,10 @@ author_profile: false
 
 # Define the research areas with images and descriptions
 research_areas:
+  - image: "/AI-IOT-Lab/assets/images/EA.png" 
+    title: "Energy Analytics"
+    excerpt: "Developing data-driven frameworks to benchmark building energy performance and identify savings potential across city-scale infrastructures."
+
   - image: "/AI-IOT-Lab/assets/images/AD.png" # FIXED PATH
     title: "Anomaly Detection & FDD"
     excerpt: "Our lab focuses on detecting anomalies in time-series data. We build deep learning models for **Fault Detection and Diagnosis (FDD)** in commercial HVAC systems."
@@ -17,11 +21,6 @@ research_areas:
   - image: "/AI-IOT-Lab/assets/images/PA.png" # FIXED PATH
     title: "Predictive Modeling & AI"
     excerpt: "Using advanced machine learning techniques to forecast energy demand and occupancy patterns, bridging the gap between sensors and actionable intelligence."
-    
-  # If you have a 4th image, add it here with the full path like above
-  - image: "/AI-IOT-Lab/assets/images/energy_analytics.png" 
-    title: "Energy Analytics"
-    excerpt: "Developing data-driven frameworks to benchmark building energy performance and identify savings potential across city-scale infrastructures."
 ---
 
 Our research lies at the intersection of **Cyber-Physical Systems (CPS)** and **Data Science**, specifically applied to smart built environments and energy sustainability.
