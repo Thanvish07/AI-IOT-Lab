@@ -14,7 +14,7 @@ We are always open to discussing new research collaborations, student opportunit
 For general inquiries, research questions, or application details, please reach out via email.
 
 <div class="notice--info">
-  <strong><i class="fas fa-paper-plane"></i> Email:</strong> <a href="mailto:samy@iisc.ac.in">samy@iisc.ac.in</a>
+  <strong>Email:</strong> <a href="mailto:samy@iisc.ac.in">samy@iisc.ac.in</a>
 </div>
 
 ---
