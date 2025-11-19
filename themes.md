@@ -28,6 +28,11 @@ Research Themes
 
 Our current research interests lie in the intersection of **Cyber-Physical Systems** and **Data Science**, specifically applied to smart built environments and energy sustainability. 
 
+---
+
+## Core Methodologies
+
 We primarily leverage **smart meter time series** and other opportunistic data sources to develop systems and techniques for the following key areas:
 
 {% include custom_feature_row.html id="themes_list" type="left" %}
+
