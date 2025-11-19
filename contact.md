@@ -1,11 +1,9 @@
 ---
-title: ""
+title: "Contact Us"
 permalink: /contact.html
 layout: single
 author_profile: false
 ---
-
-# Contact Us
 
 We are always open to discussing new research collaborations, student opportunities, and industry partnerships.
 
