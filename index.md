@@ -22,6 +22,7 @@ feature_row:
 ---
 
 # About the Lab
+---
 
 Our lab is part of the **Robert Bosch Centre for Cyber-Physical Systems (RBCCPS)** at the **Indian Institute of Science (IISc)**, Bangalore.
 
