@@ -1,5 +1,5 @@
 ---
-title: "Join Our Team"
+title: ""
 permalink: joining-us.html
 layout: single
 author_profile: false
