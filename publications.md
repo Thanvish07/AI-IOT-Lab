@@ -5,8 +5,7 @@ layout: single
 author_profile: false
 ---
 
-Publications
----
+# Publications
 
 ## 2023
 
