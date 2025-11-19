@@ -14,8 +14,18 @@
           {% elsif feature.icon %}
             <i class="fas {{ feature.icon }} fa-5x" {% if feature.icon_color %}style="color: {{ feature.icon_color }};"{% endif %}></i>
           {% endif %}
+          
           <h2 class="archive__item-title">{{ feature.title }}</h2>
-          <p class="archive__item-excerpt">{{ feature.excerpt }}</p>
+          
+          {% if feature.excerpt %}
+            <div class="archive__item-excerpt">
+              {{ feature.excerpt | markdownify }}
+            </div>
+          {% endif %}
+          
+          {% if feature.url %}
+            <p><a href="{{ feature.url | relative_url }}" class="btn btn--primary">{{ feature.btn_label | default: "Learn More" }}</a></p>
+          {% endif %}
         </div>
       </div>
     {% endfor %}
