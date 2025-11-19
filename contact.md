@@ -6,6 +6,7 @@ author_profile: false
 ---
 
 # <i class="fas fa-paper-plane"></i> Contact Us
+---
 
 We are always open to discussing new research collaborations, student opportunities, and industry partnerships.
 
