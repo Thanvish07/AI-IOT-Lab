@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "People"
 permalink: /people.html
 layout: single
 author_profile: false
@@ -14,25 +14,23 @@ author_profile: false
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Pandarasamy Arjunan</h3>
     <p class="author__bio" itemprop="description">
-      Assistant Professor at RBCCPS, IISC. Researching CPS, Data Science, and Energy Sustainability.
+      Assistant Professor at RBCCPS, IISc.
+      <br>
+      <strong>Research:</strong> CPS, Data Science, and Energy Sustainability.
     </p>
   </div>
+  
+  <div style="margin: 10px 0; font-size: 0.9em; color: #666;">
+    <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Bangalore, India
+  </div>
+
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      <li>
-        <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
-        <span itemprop="homeLocation" itemscope="" itemtype="http://schema.org/Place">
-          <span itemprop="name">Bangalore, India</span>
-        </span>
-      </li>
-      <li><a href="mailto:samy@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-      <li><a href="https://github.com/samy101" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
-      <li><a href="https://scholar.google.com/citations?user=6zG4VnQAAAAJ" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i><span class="label">Google Scholar</span></a></li>
-      <li><a href="https://www.linkedin.com/in/pandarasamy-arjunan-5580a215" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://orcid.org/0000-0002-7697-3576" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-orcid" aria-hidden="true"></i><span class="label">ORCID</span></a></li>
-      <li><a href="https://www.researchgate.net/profile/Pandarasamy_Arjunan/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i><span class="label">ResearchGate</span></a></li>
-    </ul>
+    <a href="mailto:samy@iisc.ac.in" class="btn btn--inverse btn--small"><i class="fas fa-fw fa-envelope-square"></i> Email</a>
+    <a href="https://github.com/samy101" class="btn btn--inverse btn--small"><i class="fab fa-fw fa-github"></i> GitHub</a>
+    <a href="https://scholar.google.com/citations?user=6zG4VnQAAAAJ" class="btn btn--info btn--small"><i class="fas fa-fw fa-graduation-cap"></i> Scholar</a>
+    <a href="https://www.linkedin.com/in/pandarasamy-arjunan-5580a215" class="btn btn--primary btn--small"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a>
+    <br> <a href="https://orcid.org/0000-0002-7697-3576" class="btn btn--success btn--small" style="margin-top: 5px;"><i class="fab fa-fw fa-orcid"></i> ORCID</a>
+    <a href="https://www.researchgate.net/profile/Pandarasamy_Arjunan/" class="btn btn--warning btn--small" style="margin-top: 5px;"><i class="fab fa-fw fa-researchgate"></i> Res.Gate</a>
   </div>
 </div>
 
@@ -47,15 +45,15 @@ author_profile: false
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Naman</h3>
     <p class="author__bio" itemprop="description">
-      Naman is a PhD student researching energy anomaly detection.
+      PhD Student
+      <br>
+      <strong>Focus:</strong> Energy Anomaly Detection & Deep Learning.
     </p>
   </div>
+  
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      <li><a href="mailto:naman@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-      <li><a href="https://linkedin.com/in/naman" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
-    </ul>
+    <a href="mailto:naman@iisc.ac.in" class="btn btn--inverse btn--small"><i class="fas fa-fw fa-envelope-square"></i> Email</a>
+    <a href="https://linkedin.com/in/naman" class="btn btn--primary btn--small"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a>
   </div>
 </div>
 
@@ -70,15 +68,15 @@ author_profile: false
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Moin</h3>
     <p class="author__bio" itemprop="description">
-      Moin is an M.Tech student exploring sustainable energy solutions using IoT.
+      M.Tech Student
+      <br>
+      <strong>Focus:</strong> Sustainable Energy Solutions & IoT Systems.
     </p>
   </div>
+  
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      <li><a href="mailto:narasimha@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-      <li><a href="httpss://linkedin.com/in/narasimha" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
-    </ul>
+    <a href="mailto:narasimha@iisc.ac.in" class="btn btn--inverse btn--small"><i class="fas fa-fw fa-envelope-square"></i> Email</a>
+    <a href="httpss://linkedin.com/in/narasimha" class="btn btn--primary btn--small"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a>
   </div>
 </div>
 
@@ -93,19 +91,20 @@ author_profile: false
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Kajeeth</h3>
     <p class="author__bio" itemprop="description">
-      Kajeeth is a Project Associate working on the data-driven fault detection and diagnosis project.
+      Project Associate
+      <br>
+      <strong>Project:</strong> Data-driven fault detection and diagnosis (FDD).
     </p>
   </div>
+  
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      <li><a href="mailto:kajeeth@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-      <li><a href="httpss://linkedin.com/in/kajeeth" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li> </ul>
+    <a href="mailto:kajeeth@iisc.ac.in" class="btn btn--inverse btn--small"><i class="fas fa-fw fa-envelope-square"></i> Email</a>
+    <a href="httpss://linkedin.com/in/kajeeth" class="btn btn--primary btn--small"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a>
   </div>
 </div>
 
+<br>
 
-<br> 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
     <img src="/AI-IOT-Lab/assets/images/Person.jpg" alt="Thanish" itemprop="image">
@@ -113,14 +112,14 @@ author_profile: false
   <div class="author__content">
     <h3 class="author__name" itemprop="name">Thanish</h3>
     <p class="author__bio" itemprop="description">
-      Thanish is a Project Associate working on the EnergyBench Datasets.
+      Project Associate
+      <br>
+      <strong>Project:</strong> EnergyBench Datasets & Benchmarking.
     </p>
   </div>
+  
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      <li><a href="mailto:Thanish@iisc.ac.in" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-      <li><a href="httpss://linkedin.com/in/thanish" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li> </ul>
+    <a href="mailto:Thanish@iisc.ac.in" class="btn btn--inverse btn--small"><i class="fas fa-fw fa-envelope-square"></i> Email</a>
+    <a href="httpss://linkedin.com/in/thanish" class="btn btn--primary btn--small"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a>
   </div>
 </div>
-
