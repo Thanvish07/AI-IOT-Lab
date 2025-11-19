@@ -4,21 +4,21 @@ permalink: /themes.html
 layout: single
 author_profile: false
 
-# Define the research areas with icons and descriptions
+# Define the research areas with images and descriptions
 research_areas:
-  - icon: "fas fa-chart-line"
+  - image: "/AI-IOT-Lab/assets/images/EA.png" # Replace with your image path
     title: "Energy Analytics & Benchmarking"
     excerpt: "We develop data-driven frameworks to benchmark building energy performance. By analyzing large-scale smart meter data, we create baselines to identify inefficient buildings and track energy savings potential across city-scale infrastructures."
   
-  - icon: "fas fa-exclamation-triangle"
+  - image: "/AI-IOT-Lab/assets/images/AD.png" # Replace with your image path
     title: "Anomaly Detection & FDD"
     excerpt: "Our lab focuses on detecting anomalies in time-series data. We build deep learning models for **Fault Detection and Diagnosis (FDD)** in commercial HVAC systems (Chillers, AHUs) to reduce energy wastage and improve occupant comfort."
   
-  - icon: "fas fa-temperature-high"
+  - image: "/AI-IOT-Lab/assets/images/TG.png" # Replace with your image path
     title: "Infrared Thermography"
     excerpt: "We leverage **Infrared Thermography (IRT)** for non-intrusive building diagnostics. Our research utilizes thermal imaging to detect insulation defects, air leakage, and to characterize the operational efficiency of residential air conditioners."
   
-  - icon: "fas fa-brain"
+  - image: "/AI-IOT-Lab/assets/images/PA.png" # Replace with your image path
     title: "Predictive Modeling & AI"
     excerpt: "Using advanced machine learning techniques to forecast energy demand and occupancy patterns. Our work bridges the gap between physical sensor data and actionable intelligence for smart building control."
 ---
@@ -31,7 +31,7 @@ We aim to transform raw sensor data into actionable insights to make buildings s
 
 ## Core Research Areas
 
-{% include feature_row id="research_areas" type="left" %}
+{% include custom_feature_row id="research_areas" type="left" %}
 
 ---
 
