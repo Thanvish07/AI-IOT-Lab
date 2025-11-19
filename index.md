@@ -29,6 +29,5 @@ We focus on the intersection of **Machine Learning**, **Internet of Things (IoT)
 
 {% include feature_row %}
 
----
 
 # <i class="fas fa-newspaper"></i> What's New
