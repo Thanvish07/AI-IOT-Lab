@@ -1,44 +1,37 @@
 ---
-title: "Research Themes"
+title: ""
 permalink: /themes.html
 layout: single
 author_profile: false
 
-# Define the research areas with images and descriptions
-research_areas:
-  - image: "/assets/images/EA.png" 
-    title: "Energy Analytics"
-    excerpt: "Developing data-driven frameworks to benchmark building energy performance and identify savings potential across city-scale infrastructures."
+# Defining the 5 core themes based strictly on your list
+themes_list:
+  - image: "/AI-IOT-Lab/assets/images/energy_analytics.png" # Use generic energy/graph image
+    title: "Energy Monitoring"
+    excerpt: "We develop systems to collect and process high-frequency **smart meter time-series data**. By monitoring consumption patterns at granular levels, we enable real-time visibility into building performance and identify opportunistic data sources for deeper analysis."
 
-  - image: "/assets/images/AD.png" # FIXED PATH
-    title: "Anomaly Detection & FDD"
-    excerpt: "Our lab focuses on detecting anomalies in time-series data. We build deep learning models for **Fault Detection and Diagnosis (FDD)** in commercial HVAC systems."
-  
-  - image: "/assets/images/TG.png" # FIXED PATH
-    title: "Infrared Thermography"
-    excerpt: "We leverage **Infrared Thermography (IRT)** for non-intrusive building diagnostics, detecting insulation defects and characterizing air conditioner efficiency."
-  
-  - image: "/assets/images/PA.png" # FIXED PATH
-    title: "Predictive Modeling & AI"
-    excerpt: "Using advanced machine learning techniques to forecast energy demand and occupancy patterns, bridging the gap between sensors and actionable intelligence."
+  - image: "/AI-IOT-Lab/assets/images/benchmarking.png" # Use the benchmarking image
+    title: "Energy Benchmarking"
+    excerpt: "Comparing raw energy consumption is often unfair due to varying building sizes and operations. We build **data-driven benchmarking models** that normalize for weather and occupancy, allowing for accurate peer-to-peer comparison and efficiency ranking."
+
+  - image: "/AI-IOT-Lab/assets/images/PA.png" # Use the predictive analysis image
+    title: "Energy Prediction"
+    excerpt: "Forecasting future energy demand is critical for grid stability. We apply statistical and machine learning techniques to **predict load profiles** based on historical smart meter data, weather forecasts, and calendar variables."
+
+  - image: "/AI-IOT-Lab/assets/images/anomaly.png" # Use the anomaly image
+    title: "Anomaly Detection"
+    excerpt: "Buildings often waste energy due to unnoticed irregularities. We research unsupervised learning algorithms to automatically scan time-series data and **detect point and contextual anomalies**, flagging unusual consumption spikes in real-time."
+
+  - image: "/AI-IOT-Lab/assets/images/fault.png" # Use the fault detection image
+    title: "Fault Detection & Diagnosis (FDD)"
+    excerpt: "Going beyond simple anomalies, we focus on identifying specific equipment failures. Our FDD research utilizes system-level data to **diagnose root causes** of inefficiencies in HVAC components like Chillers and Air Handling Units."
 ---
 
-Our research lies at the intersection of **Cyber-Physical Systems (CPS)** and **Data Science**, specifically applied to smart built environments and energy sustainability.
-
-We aim to transform raw sensor data into actionable insights to make buildings smarter, more efficient, and sustainable.
-
+Research Themes
 ---
 
-## Core Research Areas
+Our current research interests lie in the intersection of **Cyber-Physical Systems** and **Data Science**, specifically applied to smart built environments and energy sustainability. 
 
-{% include custom_feature_row.html id="research_areas" type="left" %}
+We primarily leverage **smart meter time series** and other opportunistic data sources to develop systems and techniques for the following key areas:
 
----
-
-## Our Methodology
-
-We adopt a **data-first approach** to solve problems in the energy domain. Our work involves:
-
-1.  **Sensing:** Deploying IoT sensors and utilizing opportunistic data sources (Smart Meters, BMS).
-2.  **Analysis:** Applying statistical modeling, signal processing, and Deep Learning.
-3.  **Actuation:** Developing feedback loops for better building management.
+{% include custom_feature_row.html id="themes_list" type="left" %}
