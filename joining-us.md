@@ -10,7 +10,7 @@ Joining Us
 
 We actively looking for highly motivated candidates for various positions, including:
 
-* Project Associate
+* Project Staff
 * M.Tech/PhD Research
 * Postdoc
 
