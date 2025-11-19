@@ -6,6 +6,7 @@ author_profile: false
 ---
 
 # Lab Members
+---
 
 ## Lab Head
 
