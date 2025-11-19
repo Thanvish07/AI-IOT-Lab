@@ -37,8 +37,6 @@ author_profile: false
   </div>
 </div>
 
-<hr>
-
 ## PhD Students
 
 <div class="sidebar__author-profile">
@@ -59,8 +57,6 @@ author_profile: false
     <a href="https://linkedin.com/in/naman" class="btn btn--primary btn--small"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a>
   </div>
 </div>
-
-<hr>
 
 ## M.Tech Students
 
@@ -83,7 +79,6 @@ author_profile: false
   </div>
 </div>
 
-<hr>
 
 ## Project Staff
 
@@ -105,8 +100,6 @@ author_profile: false
     <a href="httpss://linkedin.com/in/kajeeth" class="btn btn--primary btn--small"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a>
   </div>
 </div>
-
-<br>
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
