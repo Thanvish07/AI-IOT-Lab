@@ -1,5 +1,5 @@
 ---
-title: "Contact Us"
+title: ""
 permalink: /contact.html
 layout: single
 author_profile: false
