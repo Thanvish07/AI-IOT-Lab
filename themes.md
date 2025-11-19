@@ -31,7 +31,7 @@ We aim to transform raw sensor data into actionable insights to make buildings s
 
 ## Core Research Areas
 
-{% include custom_feature_row id="research_areas" type="left" %}
+{% include custom_feature_row.html id="research_areas" type="left" %}
 
 ---
 
