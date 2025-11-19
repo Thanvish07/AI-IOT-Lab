@@ -1,11 +1,9 @@
 ---
-title: ""
+title: "Lab Members"
 permalink: /people.html
 layout: single
 author_profile: false
 ---
-
-# Lab Members
 
 ## Lab Head
 
