@@ -19,7 +19,7 @@ search: true           # Enables the magnifying glass search overlay
 search_full_content: true # Searches inside the text, not just titles
 
 # Breadcrumbs (adds the Home > Page path at the top)
-breadcrumbs: true
+breadcrumbs: false
 
 # -------------------------------------------------------------------------------- #
 # BUILD SETTINGS
