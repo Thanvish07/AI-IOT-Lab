@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: ""
 permalink: /publications.html
 layout: single
 author_profile: false
@@ -14,6 +14,8 @@ toc_label: "Year"
   .page__content { width: 100% !important; }
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 </style>
+
+## Publications
 
 ## 2023
 
