@@ -1,6 +1,6 @@
 ---
 title: ""
-permalink: contact.html
+permalink: /contact.html
 layout: single
 author_profile: false
 ---
@@ -12,7 +12,7 @@ author_profile: false
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 </style>
 
-## <i class="fas fa-envelope"></i> Contact Us
+## <i class="fas fa-comments"></i> Contact Us
 
 We are always open to discussing new research collaborations, student opportunities, and industry partnerships.
 
