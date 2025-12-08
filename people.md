@@ -27,6 +27,7 @@ author_profile: false
 </style>
 
 # Lab Members
+---
 
 ## Lab Head
 
