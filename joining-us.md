@@ -1,58 +1,37 @@
 ---
-title: ""
+title: "Join Our Team"
 permalink: joining-us.html
-classes: wide
 layout: single
 author_profile: false
 toc: true
-toc_label: "Positions"
 toc_sticky: true
+toc_label: "Openings"
 ---
 
 <style>
-  .page__inner-wrap { max-width: 95% !important; width: 100% !important; }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  .notice--info, .notice--success {
-    animation: fadeIn 1s ease-out forwards;
-  }
+  .sidebar, .page__sidebar { display: none !important; }
+  .page__inner-wrap { float: none !important; margin: 0 auto !important; width: 100% !important; max-width: 1200px !important; }
+  .page__content { width: 100% !important; }
+  @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 </style>
 
-# Join Our Team
----
-
-We are actively looking for highly motivated candidates to join the **AI-IOT Lab** at RBCCPS, IISc. 
-
-Our research lies at the intersection of **Cyber-Physical Systems (CPS)**, **Internet of Things (IoT)**, and **Data Science**, with a strong focus on energy sustainability.
+We are actively looking for highly motivated candidates to join the **AI-IOT Lab** at RBCCPS, IISc.
 
 ## Current Openings
 
 ### 1. Project Staff / Research Associates
-
-We frequently look for project staff to assist with ongoing research and development. 
-
+We frequently look for project staff to assist with ongoing research.
 <div class="notice--info">
-  <h4><i class="fas fa-user-check"></i> Ideal Candidate Profile</h4>
-  <ul>
-    <li>Strong programming skills in <strong>Python</strong> (Pandas, PyTorch, Scikit-learn).</li>
-    <li>Experience with <strong>IoT sensors</strong> or <strong>Time-series data</strong>.</li>
-    <li>A Bachelor's or Master's degree in CS, ECE, or related fields.</li>
-  </ul>
+  **Ideal candidates should have:**
+  * Strong programming skills in **Python**.
+  * A Bachelor's or Master's degree in CS, ECE, or related fields.
 </div>
 
 ### 2. PhD & M.Tech Research
-
-If you are already admitted to IISc (or planning to apply), we welcome you to discuss potential research topics. We are looking for students with a strong mathematical background and a passion for systems research.
+If you are already admitted to IISc (or planning to apply), we welcome you to discuss potential research topics.
 
 ### 3. Postdoctoral Fellows
-
-We welcome applications from prospective postdoctoral fellows with a strong publication record in CPS, Data Mining, or Energy Analytics.
-
----
+We welcome applications from prospective postdoctoral fellows with a strong publication record in CPS or Energy Analytics.
 
 ## How to Apply
 
