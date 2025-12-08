@@ -4,7 +4,7 @@ permalink: /projects.html
 layout: single
 author_profile: false
 toc: true
-toc_sticky: false  # MOVED TOC TO TOP (INLINE) TO FIX OVERLAP
+toc_sticky: true  # MOVED TOC TO TOP (INLINE) TO FIX OVERLAP
 toc_label: "Active Projects"
 ---
 
