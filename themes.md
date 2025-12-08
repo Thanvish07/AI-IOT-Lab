@@ -103,8 +103,6 @@ Our research philosophy is grounded in the convergence of **Data Science** and *
 
 We primarily leverage **smart meter time series** and other opportunistic data sources to develop systems and techniques for the following key areas:
 
----
-
 <div class="feature__row">
 
   <div class="feature__item">
