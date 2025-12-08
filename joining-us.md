@@ -15,7 +15,7 @@ toc_label: "Openings"
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 </style>
 
-## Join Our Teams
+# Join Our Teams
 
 We are actively looking for highly motivated candidates to join the **AI-IOT Lab** at RBCCPS, IISc.
 
