@@ -1,6 +1,7 @@
 ---
 title: ""
 permalink: /contact.html
+classes: wide
 layout: single
 author_profile: false
 ---
