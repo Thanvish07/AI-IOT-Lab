@@ -4,7 +4,7 @@ permalink: /projects.html
 layout: single
 author_profile: false
 toc: true
-toc_sticky: false
+toc_sticky: true
 toc_label: "Active Projects"
 ---
 
