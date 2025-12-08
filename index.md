@@ -1,12 +1,13 @@
 ---
 layout: home
 permalink: /
+classes: wide
 header:
   overlay_image: /assets/images/bg_2.png
   overlay_filter: "0.5"
   caption: "AI-IOT Lab @ RBCCPS, IISC"
   actions:
-    - label: "Explore Research"
+    - label: "Explore Our Research"
       url: "/themes.html"
       btn_class: "btn--primary"
 
@@ -42,8 +43,18 @@ feature_row:
       width: 100% !important;
     }
   }
+
+  /* 4. Animations (Make it Alive) */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
   
-  /* 4. General Typography Fixes */
+  .feature__item, .notice--info, h1, h2, .page__content p {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+  
+  /* 5. Typography Polish */
   h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; }
   .notice--info { font-size: 1.1em; text-align: center; }
 </style>
@@ -51,14 +62,15 @@ feature_row:
 # About the Lab
 
 <div class="notice--info" markdown="1">
-  * We focus on the intersection of **Machine Learning**, **Internet of Things (IoT)**, and **Sustainability**. <br>
-  * Our goal is to build data-driven solutions that solve real-world challenges in smart built environments.
+### Mission Statement
+* We focus on the intersection of **Machine Learning**, **Internet of Things (IoT)**, and **Sustainability**.
+* Our goal is to build data-driven solutions that solve real-world challenges in smart built environments.
 </div>
 
 {% include feature_row %}
 
 # <i class="fas fa-newspaper"></i> What's New
 
-<div style="text-align: center; margin-top: 30px;">
-  <a href="/year-archive/" class="btn btn--inverse">View News Archive</a>
+<div style="text-align: center; margin-top: 40px;">
+  <a href="/year-archive/" class="btn btn--inverse btn--large">View News Archive</a>
 </div>
