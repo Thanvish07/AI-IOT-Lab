@@ -1,6 +1,6 @@
 ---
-title: ""
-permalink: people.html
+title: "Lab Members"
+permalink: /people.html
 layout: single
 author_profile: false
 ---
@@ -26,13 +26,11 @@ author_profile: false
   @media (max-width: 768px) { .sidebar__author-profile { flex-direction: column; align-items: center; text-align: center; } }
 </style>
 
-## Lab Members
-
 ## Lab Head
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/speaker_pandarasamy.jpg" alt="Pandarasamy Arjunan">
+    <img src="/AI-IOT-Lab/assets/images/speaker_pandarasamy.jpg" alt="Pandarasamy Arjunan">
   </div>
   <div class="author__content">
     <h3 class="author__name">Pandarasamy Arjunan</h3>
@@ -49,7 +47,7 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/Person.jpg" alt="Naman">
+    <img src="/AI-IOT-Lab/assets/images/Person.jpg" alt="Naman">
   </div>
   <div class="author__content">
     <h3 class="author__name">Naman</h3>
@@ -65,11 +63,39 @@ author_profile: false
 
 <div class="sidebar__author-profile">
   <div class="author__avatar">
-    <img src="/assets/images/Person.jpg" alt="Moin">
+    <img src="/AI-IOT-Lab/assets/images/Person.jpg" alt="Moin">
   </div>
   <div class="author__content">
     <h3 class="author__name">Moin</h3>
     <p><strong>M.Tech Student</strong><br>Focus: Sustainable Energy Solutions & IoT Systems.</p>
+    <div class="author__urls-wrapper">
+      <a href="mailto:narasimha@iisc.ac.in" class="btn btn--inverse btn--small">Email</a>
+    </div>
+  </div>
+</div>
+
+## Project Staff
+
+<div class="sidebar__author-profile">
+  <div class="author__avatar">
+    <img src="/AI-IOT-Lab/assets/images/Person.jpg" alt="Kajeeth">
+  </div>
+  <div class="author__content">
+    <h3 class="author__name">Kajeeth</h3>
+    <p><strong>Project Associate</strong><br>Focus: Energy Time-Series Modeling & Analysis.</p>
+    <div class="author__urls-wrapper">
+      <a href="mailto:narasimha@iisc.ac.in" class="btn btn--inverse btn--small">Email</a>
+    </div>
+  </div>
+</div>
+
+<div class="sidebar__author-profile">
+  <div class="author__avatar">
+    <img src="/AI-IOT-Lab/assets/images/Person.jpg" alt="Thanish">
+  </div>
+  <div class="author__content">
+    <h3 class="author__name">Thanish</h3>
+    <p><strong>Project Associate</strong><br>Focus: EnergyBench Datasets & Benchmarking.</p>
     <div class="author__urls-wrapper">
       <a href="mailto:narasimha@iisc.ac.in" class="btn btn--inverse btn--small">Email</a>
     </div>
