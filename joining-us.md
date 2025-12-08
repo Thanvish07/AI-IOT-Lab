@@ -16,6 +16,7 @@ toc_label: "Openings"
 </style>
 
 # Join Our Teams
+---
 
 We are actively looking for highly motivated candidates to join the **AI-IOT Lab** at RBCCPS, IISc.
 
