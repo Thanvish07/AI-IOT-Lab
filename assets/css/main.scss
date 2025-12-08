@@ -1,51 +1,69 @@
-// --------------------------------------------------------
-// 1. GLOBAL WIDTH SETTINGS
-// --------------------------------------------------------
-// Define this BEFORE importing the theme to override the default.
-// You can use a pixel value (e.g., 1600px) or percentage (e.g., 95%).
-$max-width: 1600px; 
+/* --------------------------------------------------------
+   1. VARIABLES (MUST BE DEFINED BEFORE IMPORT)
+   -------------------------------------------------------- */
 
+/* Makes the site span almost the full width of the screen */
+$max-width: 95% !default; 
 
-// --------------------------------------------------------
-// 2. IMPORT THEME
-// --------------------------------------------------------
+/* Reduces the base font size (Standard is often 16px or larger) */
+$doc-font-size: 16px !default; 
+
+/* --------------------------------------------------------
+   2. IMPORT THEME
+   -------------------------------------------------------- */
 @import "minimal-mistakes";
 
 
-// --------------------------------------------------------
-// 3. YOUR CUSTOM OVERRIDES
-// --------------------------------------------------------
+/* --------------------------------------------------------
+   3. CUSTOM CSS OVERRIDES (MUST BE AFTER IMPORT)
+   -------------------------------------------------------- */
 
-// Make the header taller and ensure the image covers
+/* FORCE the content to spread out (Fixes "Center Focused" issue) */
+.page__inner-wrap {
+  float: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100% !important;
+  max-width: 100% !important; /* Overrides the theme's narrow limit */
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+/* Ensure the main container actually uses the space */
+#main {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Make Headings Smaller (Fixes "Text too big" issue) */
+h1 { font-size: 2em !important; }
+h2 { font-size: 1.75em !important; }
+h3 { font-size: 1.5em !important; }
+h4 { font-size: 1.25em !important; }
+
+/* Adjust Paragraph Text */
+p, li {
+  font-size: 1em; /* This ensures it respects the base 16px size */
+  line-height: 1.6; /* Better readability for wide lines */
+}
+
+/* Fix the Header Image Height Again (Just in case) */
 .page__hero.page__hero--overlay {
-  min-height: 50vh; 
-  background-size: cover !important; 
-  background-position: center center !important; 
+  min-height: 50vh;
+  background-size: cover !important;
+  background-position: center center !important;
 }
 
-// Center the text content within the header
 .page__hero--overlay .wrapper {
-  max-width: 100% !important; 
-  text-align: center; 
-  padding-left: 1em; 
-  padding-right: 1em; 
+  max-width: 95% !important; /* Matches the site width */
+  padding-left: 0;
+  padding-right: 0;
 }
 
-// Ensure title text allows full width
-.page__hero--overlay .page__title,
-.page__hero--overlay .page__meta {
-  max-width: none !important; 
-  width: 100% !important; 
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.page__hero--overlay .page__title {
-  display: block; 
-  font-size: 3em; 
-  line-height: 1.2;
-}
-
-.page__hero--overlay .page__meta {
-  font-size: 1.2em; 
+/* Fix feature rows (The grid items) to use full width */
+.archive {
+  width: 100% !important;
+  max-width: 100% !important;
 }
