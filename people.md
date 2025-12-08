@@ -1,6 +1,6 @@
 ---
 title: "Lab Members"
-permalink: people.html
+permalink: /people.html
 layout: single
 author_profile: false
 ---
