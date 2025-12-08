@@ -5,7 +5,7 @@ layout: single
 author_profile: false
 toc: true
 toc_sticky: true
-toc_label: "Core Themes"
+toc_label: "Themes"
 ---
 
 <style>
