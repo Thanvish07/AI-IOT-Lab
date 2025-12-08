@@ -1,5 +1,5 @@
 ---
-title: "Research Themes"
+title: ""
 permalink: /themes.html
 layout: single
 author_profile: false
