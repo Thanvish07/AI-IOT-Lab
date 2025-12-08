@@ -4,30 +4,23 @@ permalink: /themes.html
 layout: single
 author_profile: false
 toc: true
-toc_sticky: true  # MOVED TOC TO TOP (INLINE) TO FIX OVERLAP
+toc_sticky: true
 toc_label: "Core Themes"
 ---
 
 <style>
-  /* 1. AGGRESSIVE LAYOUT RESET */
+  /* 1. LAYOUT STYLE (Copied from joining-us.md) */
   .sidebar, .page__sidebar { display: none !important; }
-  
-  #main { margin: 0 !important; padding: 0 !important; width: 100% !important; max-width: 100% !important; }
-
-  .page__inner-wrap {
-    float: none !important;
-    margin: 0 auto !important;
-    width: 95% !important; 
-    max-width: 1600px !important;
-    padding: 0 20px !important;
-    box-sizing: border-box;
+  .page__inner-wrap { 
+    float: none !important; 
+    margin: 0 auto !important; 
+    width: 100% !important; 
+    max-width: 1200px !important; 
   }
-  
-  .page__content { width: 100% !important; max-width: 100% !important; }
-
+  .page__content { width: 100% !important; }
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* 2. THEME CARD STYLING */
+  /* 2. INTERACTIVE CARD STYLING (Kept to make it "Alive") */
   .feature__row {
     display: flex !important;
     flex-wrap: wrap;
@@ -37,8 +30,8 @@ toc_label: "Core Themes"
   }
 
   .feature__item {
-    flex: 1 1 300px; 
-    max-width: 400px;
+    flex: 1 1 300px;
+    max-width: 350px; /* Adjusted to fit 1200px width nicely */
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -81,9 +74,13 @@ toc_label: "Core Themes"
     color: #333;
   }
   
-  .feature__item-content p { color: #555; font-size: 0.95em; line-height: 1.6; }
+  .feature__item-content p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
 
-  /* Animations */
+  /* 3. ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
@@ -95,7 +92,6 @@ toc_label: "Core Themes"
   .feature__item:nth-child(3) { animation-delay: 0.3s; }
   .feature__item:nth-child(4) { animation-delay: 0.4s; }
   .feature__item:nth-child(5) { animation-delay: 0.5s; }
-
 </style>
 
 # Research Themes
