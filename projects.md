@@ -4,28 +4,25 @@ permalink: /projects.html
 layout: single
 author_profile: false
 toc: true
-toc_sticky: true
-toc_label: "Active Projects"
+toc_sticky: True
+toc_label: "Projects"
 ---
 
 <style>
-  /* 1. LAYOUT STYLE (Standardized Center) */
+  /* --- 1. LAYOUT MATCHING JOINING-US.MD --- */
   .sidebar, .page__sidebar { display: none !important; }
   
   .page__inner-wrap { 
     float: none !important; 
     margin: 0 auto !important; 
-    width: 95% !important; 
-    max-width: 1600px !important; /* Visual pages get more width */
-    padding: 0 20px;
-    box-sizing: border-box;
+    width: 100% !important; 
+    max-width: 1200px !important; /* Matches joining-us.md exactly */
   }
   
   .page__content { width: 100% !important; }
-  
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* 2. CARD STYLING */
+  /* --- 2. INTERACTIVE CARD STYLING --- */
   .feature__row {
     display: flex !important;
     flex-wrap: wrap;
@@ -36,7 +33,7 @@ toc_label: "Active Projects"
 
   .feature__item {
     flex: 1 1 300px;
-    max-width: 450px;
+    max-width: 400px;
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -52,8 +49,8 @@ toc_label: "Active Projects"
   }
 
   .feature__item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     border-color: #007bff;
   }
 
@@ -61,7 +58,7 @@ toc_label: "Active Projects"
     background: #f1f1f1;
     margin: 0;
     overflow: hidden;
-    height: 220px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +72,7 @@ toc_label: "Active Projects"
     transition: transform 0.6s ease;
   }
 
-  .feature__item:hover .archive__item-teaser img { transform: scale(1.1); }
+  .feature__item:hover .archive__item-teaser img { transform: scale(1.08); }
 
   .feature__item-content {
     padding: 25px;
@@ -100,9 +97,9 @@ toc_label: "Active Projects"
 
   .btn--small { align-self: flex-start; margin-top: 15px; }
 
-  /* 3. ANIMATIONS */
+  /* Animations */
   @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
+    from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
