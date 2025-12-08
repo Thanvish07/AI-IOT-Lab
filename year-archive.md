@@ -1,6 +1,6 @@
 ---
 title: "News Archive"
-permalink: /year-archive/
+permalink: /year-archive.html
 layout: archive
 author_profile: false
 classes: wide
