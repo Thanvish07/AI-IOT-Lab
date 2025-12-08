@@ -39,7 +39,6 @@ author_profile: false
     <p><strong>Assistant Professor at RBCCPS, IISc.</strong><br>Research: CPS, Data Science, and Energy Sustainability.</p>
     <div class="author__urls-wrapper">
       <a href="mailto:samy@iisc.ac.in" class="btn btn--inverse btn--small">Email</a>
-      <a href="https://scholar.google.com/citations?user=6zG4VnQAAAAJ" class="btn btn--info btn--small">Scholar</a>
       <a href="https://www.linkedin.com/in/pandarasamy-arjunan-5580a215" class="btn btn--primary btn--small">LinkedIn</a>
     </div>
   </div>
@@ -71,7 +70,8 @@ author_profile: false
     <h3 class="author__name">Moin</h3>
     <p><strong>M.Tech Student</strong><br>Focus: Sustainable Energy Solutions & IoT Systems.</p>
     <div class="author__urls-wrapper">
-      <a href="mailto:narasimha@iisc.ac.in" class="btn btn--inverse btn--small">Email</a>
+      <a href="mailto:moin@iisc.ac.in" class="btn btn--inverse btn--small">Email</a>
+      <a href="https://linkedin.com/in/Moin" class="btn btn--primary btn--small">LinkedIn</a>
     </div>
   </div>
 </div>
@@ -86,7 +86,8 @@ author_profile: false
     <h3 class="author__name">Kajeeth</h3>
     <p><strong>Project Associate</strong><br>Focus: Energy Time-Series Modeling & Analysis.</p>
     <div class="author__urls-wrapper">
-      <a href="mailto:narasimha@iisc.ac.in" class="btn btn--inverse btn--small">Email</a>
+      <a href="mailto:kajeeth@iisc.ac.in" class="btn btn--inverse btn--small">Email</a>
+      <a href="https://linkedin.com/in/kajeeth" class="btn btn--primary btn--small">LinkedIn</a>
     </div>
   </div>
 </div>
@@ -99,7 +100,8 @@ author_profile: false
     <h3 class="author__name">Thanish</h3>
     <p><strong>Project Associate</strong><br>Focus: EnergyBench Datasets & Benchmarking.</p>
     <div class="author__urls-wrapper">
-      <a href="mailto:narasimha@iisc.ac.in" class="btn btn--inverse btn--small">Email</a>
+      <a href="mailto:thanish@iisc.ac.in" class="btn btn--inverse btn--small">Email</a>
+      <a href="https://linkedin.com/in/thanish" class="btn btn--primary btn--small">LinkedIn</a>
     </div>
   </div>
 </div>
