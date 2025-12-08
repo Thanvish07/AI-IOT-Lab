@@ -1,5 +1,5 @@
 ---
-title: "Research Projects"
+title: ""
 permalink: projects.html
 layout: single
 author_profile: false
@@ -18,6 +18,8 @@ toc_label: "Projects"
   .feature__item { margin-bottom: 30px; }
   .archive__item-teaser img { max-height: 200px; object-fit: cover; width: 100%; border-radius: 6px; }
 </style>
+
+## Research Projects
 
 We focus on a variety of themes at the intersection of **Cyber-Physical Systems** and **Data Science**, spanning from theoretical frameworks to real-world deployment.
 
