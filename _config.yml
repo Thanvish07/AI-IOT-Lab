@@ -2,9 +2,9 @@
 # SITE CONFIGURATION
 # -------------------------------------------------------------------------------- #
 
-title: "AI-IOT Lab"
-name: "AI-IOT Lab @ RBCCPS, IISC"
-masthead_title: "AI-IOT Lab"
+title: "AIM-Lab"
+name: "AIM-Lab @ RBCCPS, IISC"
+masthead_title: "AIM-Lab"
 
 # CRITICAL FIX: Base URL MUST be set to the repository name
 url: "https://Thanvish07.github.io"
