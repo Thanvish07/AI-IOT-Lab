@@ -1,5 +1,5 @@
 ---
-title: "Contact Us"
+title: ""
 permalink: contact.html
 layout: single
 author_profile: false
@@ -11,6 +11,8 @@ author_profile: false
   .page__content { width: 100% !important; }
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 </style>
+
+## Contact Us
 
 We are always open to discussing new research collaborations, student opportunities, and industry partnerships.
 
