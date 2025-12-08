@@ -1,123 +1,68 @@
 ---
 title: "Research Themes"
 permalink: /themes.html
-classes: wide
 layout: single
 author_profile: false
 toc: true
 toc_sticky: true
 toc_label: "Core Themes"
 
-# Defining the 5 core themes
 themes_list:
   - image: "/assets/images/EA.png"
     title: "Energy Monitoring"
-    excerpt: "We develop systems to collect and process high-frequency **smart meter time-series data**. By monitoring consumption patterns at granular levels, we enable real-time visibility into building performance and identify opportunistic data sources for deeper analysis."
-
+    excerpt: "We develop systems to collect and process high-frequency **smart meter time-series data**. By monitoring consumption patterns at granular levels, we enable real-time visibility into building performance and identify opportunistic data sources."
+  
   - image: "/assets/images/EB.png"
     title: "Energy Benchmarking"
-    excerpt: "Comparing raw energy consumption is often unfair due to varying building sizes and operations. We build **data-driven benchmarking models** that normalize for weather and occupancy, allowing for accurate peer-to-peer comparison and efficiency ranking."
-
+    excerpt: "Comparing raw energy consumption is often unfair due to varying building sizes and operations. We build **data-driven benchmarking models** that normalize for weather and occupancy, allowing for accurate peer-to-peer comparison."
+  
   - image: "/assets/images/PA.png"
     title: "Energy Prediction"
     excerpt: "Forecasting future energy demand is critical for grid stability. We apply statistical and machine learning techniques to **predict load profiles** based on historical smart meter data, weather forecasts, and calendar variables."
-
+  
   - image: "/assets/images/AD.png"
     title: "Anomaly Detection"
-    excerpt: "Buildings often waste energy due to unnoticed irregularities. We research unsupervised learning algorithms to automatically scan time-series data and **detect point and contextual anomalies**, flagging unusual consumption spikes in real-time."
-    
-  - image: "/assets/images/fault.png" 
+    excerpt: "Buildings often waste energy due to unnoticed irregularities. We research unsupervised learning algorithms to automatically scan time-series data and **detect point and contextual anomalies**, flagging unusual consumption spikes."
+
+  - image: "/assets/images/fault.png"
     title: "Fault Detection (FDD)"
-    excerpt: "Going beyond simple anomalies, we focus on identifying specific equipment failures. Our FDD research utilizes system-level data to **diagnose root causes** of inefficiencies in HVAC components like Chillers and Air Handling Units."
+    excerpt: "Going beyond simple anomalies, we focus on identifying specific equipment failures. Our FDD research utilizes system-level data to **diagnose root causes** of inefficiencies in HVAC components like Chillers and AHUs."
 ---
 
 <style>
-  /* -----------------------------------------------------
-     1. FIX LEFT SPACE (Make page full width)
-     ----------------------------------------------------- */
+  /* GLOBAL FIXES */
   .sidebar, .page__sidebar { display: none !important; }
+  .page__inner-wrap { float: none !important; margin: 0 auto !important; width: 100% !important; max-width: 1200px !important; }
+  .page__content { width: 100% !important; }
+  @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  @media (min-width: 64em) {
-    .layout--single .page {
-      display: block !important;
-      padding-left: 0 !important; padding-right: 0 !important;
-      margin-left: 0 !important; margin-right: 0 !important;
-    }
-  }
-
-  .page__inner-wrap {
-    float: none !important; margin: 0 !important;
-    width: 100% !important; max-width: 100% !important;
-    padding: 0 20px !important;
-  }
-
-  .page__content { width: 100% !important; max-width: 100% !important; }
-
-  /* -----------------------------------------------------
-     2. THEMES SPECIFIC: LIST VIEW (Line after Line)
-     ----------------------------------------------------- */
+  /* THEME LIST SPECIFIC STYLES */
+  .feature__wrapper { display: flex; flex-direction: column; gap: 30px; }
   
-  /* Force the grid wrapper to be a single column */
-  .feature__wrapper {
-    display: flex !important;
-    flex-direction: column !important; /* Stack vertically */
-    gap: 30px; /* Space between rows */
-  }
-
-  /* Make each item take full width and look like a row */
   .feature__item {
-    width: 100% !important;
-    max-width: 100% !important;
-    display: flex; /* Use flexbox for Image Left / Text Right layout */
-    flex-direction: row;
-    align-items: flex-start;
-    background: #f9f9f9; /* Light grey background for separation */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex; flex-direction: row; align-items: center;
+    background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+    padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   }
   
-  /* Style the inner teaser container to work with flex */
-  .feature__item .archive__item-teaser {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    text-align: left; /* Ensure text aligns left */
+  /* Image Styles */
+  .feature__item .archive__item-teaser img {
+    width: 200px !important; height: auto; object-fit: contain;
+    margin-right: 30px; border-radius: 4px;
   }
+  
+  /* Text Styles */
+  .archive__item-title { font-size: 1.5em !important; margin-top: 0 !important; }
+  .archive__item-excerpt { font-size: 1.05em; line-height: 1.6; color: #444; }
 
-  /* Style the Image */
-  .feature__item img {
-    width: 150px !important; /* Fixed width for consistency */
-    height: auto;
-    margin-right: 30px !important; /* Space between image and text */
-    margin-bottom: 0 !important;
-    object-fit: contain;
-  }
-
-  /* Style the Text Area */
-  .feature__item-content {
-    flex: 1; /* Take remaining space */
-  }
-
-  /* Mobile Responsive: Stack them on small screens */
+  /* Mobile Responsive */
   @media (max-width: 768px) {
-    .feature__item .archive__item-teaser {
-      flex-direction: column;
-      text-align: center;
-    }
-    .feature__item img {
-      margin-right: 0 !important;
-      margin-bottom: 20px !important;
-    }
+    .feature__item { flex-direction: column; text-align: center; }
+    .feature__item .archive__item-teaser img { margin: 0 0 20px 0; }
   }
 </style>
 
-# Research Themes
----
-
-Our current research interests lie in the intersection of **Cyber-Physical Systems** and **Data Science**, specifically applied to smart built environments and energy sustainability. 
-
+Our research philosophy is grounded in the convergence of **Data Science** and **Cyber-Physical Systems**.
 
 ## Core Methodologies
 
