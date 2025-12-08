@@ -51,7 +51,6 @@ Indian Institute of Science (IISc), Bangalore - 560012, India.
 
 Follow our PI's work and academic updates through these platforms:
 
-[<i class="fas fa-envelope"></i> Email](mailto:samy@iisc.ac.in){: .btn .btn--inverse}
 [<i class="fab fa-github"></i> GitHub](https://github.com/samy101){: .btn .btn--inverse}
 [<i class="fas fa-graduation-cap"></i> Google Scholar](https://scholar.google.com/citations?user=6zG4VnQAAAAJ){: .btn .btn--info}
 [<i class="fab fa-linkedin"></i> LinkedIn](https://www.linkedin.com/in/pandarasamy-arjunan-5580a215){: .btn .btn--primary}
