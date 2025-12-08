@@ -15,6 +15,12 @@ email: "mkusamy@gmail.com"
 minimal_mistakes_skin: "air"
 repository: Thanvish07/AI-IOT-Lab
 
+search: true           # Enables the magnifying glass search overlay
+search_full_content: true # Searches inside the text, not just titles
+
+# Breadcrumbs (adds the Home > Page path at the top)
+breadcrumbs: true
+
 # -------------------------------------------------------------------------------- #
 # BUILD SETTINGS
 # -------------------------------------------------------------------------------- #
