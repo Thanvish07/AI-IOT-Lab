@@ -5,6 +5,13 @@ layout: single
 author_profile: false
 ---
 
+<style>
+  .sidebar__author-profile .author__avatar img {
+    border-radius: 0 !important; /* This removes the rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds a nice shadow for a card effect */
+  }
+</style>
+
 # Lab Members
 ---
 
