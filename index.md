@@ -1,13 +1,12 @@
 ---
 layout: home
 permalink: /
-classes: wide
 header:
   overlay_image: /assets/images/bg_2.png
   overlay_filter: "0.5"
   caption: "AI-IOT Lab @ RBCCPS, IISC"
   actions:
-    - label: "Explore Our Research"
+    - label: "Explore Research"
       url: "/themes.html"
       btn_class: "btn--primary"
 
@@ -24,54 +23,43 @@ feature_row:
 ---
 
 <style>
-  /* 1. Hide the sidebar container completely */
-  .sidebar, .page__sidebar {
-    display: none !important;
-  }
+  /* 1. Hide Sidebar Completely */
+  .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
 
-  /* 2. FORCE the page to ignore the sidebar grid layout */
-  @media (min-width: 64em) {
-    .layout--single .page, 
-    .layout--home .page, 
-    .layout--archive .page {
-      display: block !important; /* Kills the grid */
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-    }
-  }
-
-  /* 3. Force the content wrapper to touch the edges */
+  /* 2. Force Content to Center and take Full Width */
   .page__inner-wrap {
     float: none !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding-left: 20px !important; /* Small padding so text doesn't touch screen edge */
-    padding-right: 20px !important;
+    margin-left: auto !important; margin-right: auto !important;
+    width: 100% !important; max-width: 1200px !important;
+    padding-right: 20px; padding-left: 20px;
   }
-
-  /* 4. Fix the Content Width itself */
-  .page__content {
-    width: 100% !important;
-    max-width: 100% !important;
+  .page__content { width: 100% !important; max-width: 100% !important; }
+  
+  /* 3. Fix Layout logic for large screens */
+  @media (min-width: 64em) {
+    .layout--single .page, .layout--home .page, .layout--archive .page {
+      padding-left: 0 !important; padding-right: 0 !important;
+      width: 100% !important;
+    }
   }
+  
+  /* 4. General Typography Fixes */
+  h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+  .notice--info { font-size: 1.1em; text-align: center; }
 </style>
 
 # About the Lab
 ---
 
 <div class="notice--info">
-  <h4 class="no_toc">Mission Statement</h4>
-  <p>Our lab is part of the <strong>Robert Bosch Centre for Cyber-Physical Systems (RBCCPS)</strong> at the <strong>Indian Institute of Science (IISc)</strong>. We focus on the intersection of <strong>Machine Learning</strong>, <strong>IoT</strong>, and <strong>Sustainability</strong> to build data-driven solutions for smart built environments.</p>
+  We focus on the intersection of **Machine Learning**, **Internet of Things (IoT)**, and **Sustainability**. <br>
+  Our goal is to build data-driven solutions that solve real-world challenges in smart built environments.
 </div>
 
 {% include feature_row %}
 
 # <i class="fas fa-newspaper"></i> What's New
 
-<div style="text-align: center; margin-top: 20px;">
-  <a href="year-archive.html" class="btn btn--inverse">View News Archive</a>
+<div style="text-align: center; margin-top: 30px;">
+  <a href="/year-archive/" class="btn btn--inverse">View News Archive</a>
 </div>
