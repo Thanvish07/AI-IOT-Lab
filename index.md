@@ -24,16 +24,39 @@ feature_row:
 ---
 
 <style>
-  .page__inner-wrap { max-width: 95% !important; width: 100% !important; }
-  
-  /* Animation Keyframes */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+  /* 1. Hide the sidebar container completely */
+  .sidebar, .page__sidebar {
+    display: none !important;
   }
-  
-  .feature__item, .notice--info, h1, h2 {
-    animation: fadeUp 0.8s ease-out forwards;
+
+  /* 2. FORCE the page to ignore the sidebar grid layout */
+  @media (min-width: 64em) {
+    .layout--single .page, 
+    .layout--home .page, 
+    .layout--archive .page {
+      display: block !important; /* Kills the grid */
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+
+  /* 3. Force the content wrapper to touch the edges */
+  .page__inner-wrap {
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 20px !important; /* Small padding so text doesn't touch screen edge */
+    padding-right: 20px !important;
+  }
+
+  /* 4. Fix the Content Width itself */
+  .page__content {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 </style>
 
