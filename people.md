@@ -1,5 +1,5 @@
 ---
-title: "Lab Members"
+title: ""
 permalink: /people.html
 layout: single
 author_profile: false
