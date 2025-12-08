@@ -22,6 +22,13 @@ feature_row:
     excerpt: "Bridging the gap between physical sensors and digital analysis through Cyber-Physical Systems and Internet of Things deployments."
 ---
 
+<style>
+  .page__inner-wrap {
+    max-width: 95% !important;
+    width: 100% !important;
+  }
+</style>
+
 # About the Lab
 ---
 
