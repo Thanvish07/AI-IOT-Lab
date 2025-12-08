@@ -1,6 +1,7 @@
 ---
 layout: home
 permalink: /
+classes: wide    # <--- ADD THIS LINE ONLY
 header:
   overlay_image: /assets/images/bg_2.png
   overlay_filter: "0.5"
@@ -29,6 +30,5 @@ Our lab is part of the **Robert Bosch Centre for Cyber-Physical Systems (RBCCPS)
 We focus on the intersection of **Machine Learning**, **Internet of Things (IoT)**, and **Sustainability**. Our goal is to build data-driven solutions that solve real-world challenges in smart built environments and energy management.
 
 {% include feature_row %}
-
 
 # <i class="fas fa-newspaper"></i> What's New
