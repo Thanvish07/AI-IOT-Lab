@@ -130,6 +130,7 @@ feature_row:
 </style>
 
 # About the Lab
+---
 
 <div class="notice--info" markdown="1">
 **Mission Statement**
@@ -138,3 +139,6 @@ feature_row:
 </div>
 
 {% include feature_row %}
+
+# <i class="fas fa-newspaper"></i> What's New
+---
