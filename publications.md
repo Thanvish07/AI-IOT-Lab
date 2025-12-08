@@ -30,11 +30,3 @@ toc_label: "Year"
 * **The way forward for building energy benchmarking in India**
   <br>Kalluri et al. *ACM BuildSys 2022*
   <br><a href="#" class="btn btn--inverse btn--x-small">PDF</a>
-
-**Trimming outliers using trees: winning solution of the large-scale energy anomaly detection (LEAD) competition**
-<br>
-Fu, Chun, Pandarasamy Arjunan, and Miller, Clayton
-<br>
-*In Proceedings of the 9th ACM International Conference on Systems for Energy-Efficient Buildings 2022*
-<br>
-<a href="#" class="btn btn--info btn--small">PDF</a> <a href="#" class="btn btn--inverse btn--small">BibTeX</a>
