@@ -1,5 +1,5 @@
 ---
-title: "Research Themes"
+title: ""
 permalink: /themes.html
 layout: single
 author_profile: false
@@ -61,6 +61,8 @@ themes_list:
     .feature__item .archive__item-teaser img { margin: 0 0 20px 0; }
   }
 </style>
+
+## Research Themes
 
 Our research philosophy is grounded in the convergence of **Data Science** and **Cyber-Physical Systems**.
 
