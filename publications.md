@@ -9,11 +9,46 @@ toc_label: "Year"
 ---
 
 <style>
-  /* 1. MASTER LAYOUT FIX (Full Width) */
-  .sidebar, .page__sidebar { display: none !important; }
-  .page__inner-wrap { float: none !important; margin: 0 auto !important; width: 100% !important; max-width: 1200px !important; }
-  .page__content { width: 100% !important; }
-  @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
+  /* 1. LAYOUT LOGIC (Wide Center + Right TOC) */
+  
+  /* Hide the LEFT sidebar (Author profile) only */
+  .page__sidebar { display: none !important; }
+
+  /* Allow the container to use full width */
+  .page__inner-wrap {
+    float: none !important;
+    margin: 0 auto !important;
+    width: 95% !important;
+    max-width: 1600px !important;
+  }
+
+  /* On Desktop: Split screen between Content (Left) and TOC (Right) */
+  @media (min-width: 64em) {
+    .layout--single .page {
+      width: 100% !important;
+      padding-right: 0 !important;
+    }
+
+    /* Main Content takes 75% width */
+    .page__content {
+      width: 75% !important;
+      float: left !important;
+      padding-right: 30px !important; /* Buffer space between text and TOC */
+    }
+
+    /* TOC Sidebar takes 25% width */
+    .sidebar__right {
+      width: 25% !important;
+      float: right !important;
+      display: block !important; /* Force TOC to show */
+      margin-left: 0 !important;
+    }
+    
+    /* Fix sticky positioning */
+    .sidebar__right.sticky {
+      top: 20px;
+    }
+  }
 
   /* 2. CARD STYLING */
   .pub-card {
@@ -24,17 +59,15 @@ toc_label: "Year"
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 4px solid #d9d9d9; /* Default gray accent */
+    border-left: 4px solid #d9d9d9;
   }
 
-  /* Hover Effect: Lift up */
   .pub-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-left-color: #007bff; /* Change accent color on hover */
+    border-left-color: #007bff;
   }
 
-  /* 3. TYPOGRAPHY IN CARDS */
   .pub-title {
     font-size: 1.2em;
     font-weight: bold;
@@ -50,7 +83,7 @@ toc_label: "Year"
     font-style: italic;
   }
 
-  /* 4. COLLAPSIBLE ABSTRACT (The "Interactive" part) */
+  /* 3. INTERACTIVE DETAILS */
   details {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -60,27 +93,16 @@ toc_label: "Year"
     cursor: pointer;
   }
 
-  summary {
-    font-weight: bold;
-    color: #0056b3;
-    outline: none;
-  }
-  
+  summary { font-weight: bold; color: #0056b3; outline: none; }
   summary:hover { text-decoration: underline; }
 
-  /* 5. ANIMATIONS */
+  /* 4. ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* Apply animation to cards sequentially (using nth-child logic in a simpler way via general class) */
-  .pub-card {
-    animation: fadeUp 0.6s ease-out forwards;
-    opacity: 0; /* Start hidden */
-  }
-  
-  /* Stagger delays for a "waterfall" effect */
+  .pub-card { opacity: 0; animation: fadeUp 0.6s ease-out forwards; }
   .pub-card:nth-of-type(1) { animation-delay: 0.1s; }
   .pub-card:nth-of-type(2) { animation-delay: 0.2s; }
   .pub-card:nth-of-type(3) { animation-delay: 0.3s; }
@@ -103,7 +125,7 @@ toc_label: "Year"
   <details>
     <summary>Read Abstract</summary>
     <p style="margin-top: 10px; font-size: 0.95em; color: #444;">
-      Short-term load forecasting (STLF) is crucial for energy management and integrating renewables, but traditional models often fail to generalize across diverse buildings. While Time Series Foundation Models (TSFM) offer potential, most are transformer-based, making them computationally heavy and unsuitable for edge deployment. We introduce Mix-BEATS, a lightweight and accurate model combining N-BEATS and TSMixer architectures for building-level energy prediction.
+      Short-term load forecasting (STLF) is crucial for energy management and integrating renewables, but traditional models often fail to generalize across diverse buildings. We introduce Mix-BEATS, a lightweight and accurate model combining N-BEATS and TSMixer architectures for building-level energy prediction.
     </p>
   </details>
 
@@ -121,7 +143,7 @@ toc_label: "Year"
   <details>
     <summary>Read Abstract</summary>
     <p style="margin-top: 10px; font-size: 0.95em; color: #444;">
-      Smart energy meters generate large volumes of fine-grained time series data that captures building’s energy consumption patterns. This data can be leveraged to detect anomalous energy consumption patterns and reduce energy waste in buildings. Traditional anomaly detection methods for smart meter data rely on statistical and machine learning techniques, which often struggle to model complex temporal patterns, require extensive feature engineering, and have poor scalability.
+      Smart energy meters generate large volumes of fine-grained time series data that captures building’s energy consumption patterns. This data can be leveraged to detect anomalous energy consumption patterns and reduce energy waste in buildings.
     </p>
   </details>
 
@@ -139,7 +161,7 @@ toc_label: "Year"
   <details>
     <summary>Read Abstract</summary>
     <p style="margin-top: 10px; font-size: 0.95em; color: #444;">
-      Short-term Load Forecasting (STLF) for buildings is essential for optimizing energy management and supporting renewable energy integration, but traditional models often struggle with generalization across diverse building profiles. While recent Time Series Foundation Models (TSFMs) show promise, they remain underexplored for STLF. In this paper, we introduce MixForecast, a novel TSFM for universal energy forecasting.
+      Short-term Load Forecasting (STLF) for buildings is essential for optimizing energy management. While recent Time Series Foundation Models (TSFMs) show promise, they remain underexplored for STLF. In this paper, we introduce MixForecast, a novel TSFM for universal energy forecasting.
     </p>
   </details>
 
@@ -159,7 +181,7 @@ toc_label: "Year"
   <details>
     <summary>Read Abstract</summary>
     <p style="margin-top: 10px; font-size: 0.95em; color: #444;">
-      Recent advancements in Time Series Foundation Models (TSFMs), pre-trained on extensive time series data from diverse domains, offer a promising domain-agnostic solution that can handle universal forecasting tasks without requiring task-specific training. In this paper, we analyze the performance of four open-source TSFMs - Chronos, Lag-Llama, Moirai, and TimesFM - for STLF in both commercial and residential buildings.
+      Recent advancements in Time Series Foundation Models (TSFMs), pre-trained on extensive time series data from diverse domains, offer a promising domain-agnostic solution. In this paper, we analyze the performance of four open-source TSFMs - Chronos, Lag-Llama, Moirai, and TimesFM.
     </p>
   </details>
 
@@ -177,7 +199,7 @@ toc_label: "Year"
   <details>
     <summary>Read Abstract</summary>
     <p style="margin-top: 10px; font-size: 0.95em; color: #444;">
-      The current manual visual inspection of built environments is time-consuming, labor-intensive, prone to errors, costly, and lacks scalability. To address these limitations, automated building inspection techniques have emerged in recent years, leveraging low-cost computer vision systems, drones and mobile robots. However, the practical implementation of these systems is hindered by the lack of robust and generalizable models trained on comprehensive defect image datasets. In this paper, we present BD3: Building Defects Detection Dataset, a comprehensive image dataset designed to benchmark computer vision techniques aimed at improving the robustness and generalizability of automated building inspection systems.
+      We present BD3: Building Defects Detection Dataset, a comprehensive image dataset designed to benchmark computer vision techniques aimed at improving the robustness and generalizability of automated building inspection systems.
     </p>
   </details>
 
@@ -195,7 +217,7 @@ toc_label: "Year"
   <details>
     <summary>Read Abstract</summary>
     <p style="margin-top: 10px; font-size: 0.95em; color: #444;">
-      In this paper, we employ a 1D deep convolutional generative adversarial network (DCGAN) for sequential anomaly detection in energy time series data. Anomaly detection involves gradient descent to reconstruct energy sub-sequences, identifying the noise vector that closely generates them through the generator network. Soft-DTW is used as a differentiable alternative for the reconstruction loss and is found to be superior to Euclidean distance.
+      In this paper, we employ a 1D deep convolutional generative adversarial network (DCGAN) for sequential anomaly detection in energy time series data using Soft-DTW as a differentiable alternative for the reconstruction loss.
     </p>
   </details>
 
