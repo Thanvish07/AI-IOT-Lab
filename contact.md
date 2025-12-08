@@ -35,8 +35,8 @@ For general inquiries, research questions, or application details, please reach 
 
 ## <i class="fas fa-map-marker-alt"></i> Visit Our Lab
 
-**Mailing Address:**
-IDR Building, Robert Bosch Centre for Cyber-Physical Systems (RBCCPS),
+**Address:**
+Room No: 215,IDR Building, Robert Bosch Centre for Cyber-Physical Systems (RBCCPS),
 Indian Institute of Science (IISc), Bangalore - 560012, India.
 
 <div style="width: 100%; height: 400px; margin-top: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
