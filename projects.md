@@ -4,23 +4,28 @@ permalink: /projects.html
 layout: single
 author_profile: false
 toc: true
-toc_sticky: true
+toc_sticky: false
 toc_label: "Active Projects"
 ---
 
 <style>
-  /* 1. LAYOUT STYLE (Copied from joining-us.md) */
+  /* 1. LAYOUT STYLE (Standardized Center) */
   .sidebar, .page__sidebar { display: none !important; }
+  
   .page__inner-wrap { 
     float: none !important; 
     margin: 0 auto !important; 
-    width: 100% !important; 
-    max-width: 1200px !important; 
+    width: 95% !important; 
+    max-width: 1600px !important; /* Visual pages get more width */
+    padding: 0 20px;
+    box-sizing: border-box;
   }
+  
   .page__content { width: 100% !important; }
+  
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* 2. INTERACTIVE PROJECT CARD STYLING */
+  /* 2. CARD STYLING */
   .feature__row {
     display: flex !important;
     flex-wrap: wrap;
