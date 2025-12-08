@@ -13,6 +13,7 @@ author_profile: false
 </style>
 
 # <i class="fas fa-comments"></i> Contact Us
+---
 
 We are always open to discussing new research collaborations, student opportunities, and industry partnerships.
 
