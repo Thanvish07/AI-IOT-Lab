@@ -71,7 +71,7 @@ toc_label: "Active Projects"
   }
 
   .archive__item-teaser img {
-    width: 100%;
+    width: 75%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.6s ease;
