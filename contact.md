@@ -1,6 +1,6 @@
 ---
 title: ""
-permalink: /contact.html
+permalink: contact.html
 layout: single
 author_profile: false
 ---
