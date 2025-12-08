@@ -1,22 +1,134 @@
 ---
 title: ""
-permalink: projects.html
+permalink: /projects.html
 layout: single
 author_profile: false
 toc: true
 toc_sticky: true
-toc_label: "Projects"
+toc_label: "Active Projects"
 ---
 
 <style>
+  /* 1. AGGRESSIVE LAYOUT RESET (Full Width) */
   .sidebar, .page__sidebar { display: none !important; }
-  .page__inner-wrap { float: none !important; margin: 0 auto !important; width: 100% !important; max-width: 1200px !important; }
-  .page__content { width: 100% !important; }
-  @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
   
-  /* Grid Fixes */
-  .feature__item { margin-bottom: 30px; }
-  .archive__item-teaser img { max-height: 200px; object-fit: cover; width: 100%; border-radius: 6px; }
+  #main { margin: 0 !important; padding: 0 !important; width: 100% !important; max-width: 100% !important; }
+
+  .page__inner-wrap {
+    float: none !important;
+    margin: 0 auto !important;
+    width: 95% !important; 
+    max-width: 1600px !important;
+    padding: 0 20px !important;
+    box-sizing: border-box;
+  }
+  
+  .page__content { width: 100% !important; max-width: 100% !important; }
+
+  @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
+
+  /* 2. PROJECT CARD STYLING */
+  /* Override default to be a flexible grid */
+  .feature__row {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .feature__item {
+    flex: 1 1 300px; /* Grow, Shrink, Basis */
+    max-width: 450px; /* Projects can be slightly wider than themes */
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 0; /* Removing padding to let image flush to edges if desired, or keep generic padding */
+    padding-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Hover Effect: Lift & Shadow */
+  .feature__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-color: #007bff;
+  }
+
+  /* 3. IMAGE STYLING & ZOOM EFFECT */
+  .archive__item-teaser {
+    background: #f1f1f1;
+    margin: 0; /* Flush with top */
+    overflow: hidden; /* Contains the zoom */
+    height: 220px; /* Fixed height for uniformity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+  }
+
+  .archive__item-teaser img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the box nicely */
+    transition: transform 0.6s ease;
+  }
+
+  /* Zoom image on card hover */
+  .feature__item:hover .archive__item-teaser img {
+    transform: scale(1.1);
+  }
+
+  /* 4. CONTENT STYLING */
+  .feature__item-content {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature__item-title {
+    font-size: 1.35em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .feature__item-content p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+    flex-grow: 1; /* Pushes button to bottom */
+  }
+
+  .btn--small {
+    align-self: flex-start;
+    margin-top: 15px;
+  }
+
+  /* 5. ANIMATIONS (Waterfall Effect) */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .feature__item {
+    opacity: 0; /* Start hidden */
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  /* Stagger delays */
+  .feature__item:nth-child(1) { animation-delay: 0.1s; }
+  .feature__item:nth-child(2) { animation-delay: 0.2s; }
+  .feature__item:nth-child(3) { animation-delay: 0.3s; }
+  .feature__item:nth-child(4) { animation-delay: 0.4s; }
+
 </style>
 
 # Research Projects
@@ -26,7 +138,7 @@ We focus on a variety of themes at the intersection of **Cyber-Physical Systems*
 
 ## Active Projects
 
-<div class="feature__row feature__row--left">
+<div class="feature__row">
 
   <div class="feature__item">
     <div class="archive__item-teaser">
@@ -34,8 +146,8 @@ We focus on a variety of themes at the intersection of **Cyber-Physical Systems*
     </div>
     <div class="feature__item-content">
       <h3 class="feature__item-title">Energy Anomaly Detection (LEAD)</h3>
-      <p>Developing techniques and a Large-scale Anomaly Detection (LEAD) dataset for building energy consumption.</p>
-      <p><a href="#" class="btn btn--primary btn--small">View Details</a></p>
+      <p>Developing techniques and a Large-scale Anomaly Detection (LEAD) dataset for building energy consumption analysis.</p>
+      <a href="#" class="btn btn--primary btn--small">View Details</a>
     </div>
   </div>
 
@@ -45,8 +157,8 @@ We focus on a variety of themes at the intersection of **Cyber-Physical Systems*
     </div>
     <div class="feature__item-content">
       <h3 class="feature__item-title">Fault Detection (FDD)</h3>
-      <p>Using data-driven methods for fault detection and diagnosis (FDD) in commercial chiller systems.</p>
-      <p><a href="#" class="btn btn--primary btn--small">View Details</a></p>
+      <p>Using data-driven methods for fault detection and diagnosis (FDD) in commercial chiller systems to improve efficiency.</p>
+      <a href="#" class="btn btn--primary btn--small">View Details</a>
     </div>
   </div>
 
@@ -57,7 +169,7 @@ We focus on a variety of themes at the intersection of **Cyber-Physical Systems*
     <div class="feature__item-content">
       <h3 class="feature__item-title">Infrared Thermography (IRT)</h3>
       <p>Leveraging Infrared Thermography for city-scale building diagnostics, occupant behaviour, and energy auditing.</p>
-      <p><a href="#" class="btn btn--primary btn--small">View Details</a></p>
+      <a href="#" class="btn btn--primary btn--small">View Details</a>
     </div>
   </div>
 
@@ -68,7 +180,7 @@ We focus on a variety of themes at the intersection of **Cyber-Physical Systems*
     <div class="feature__item-content">
       <h3 class="feature__item-title">Building Benchmarking</h3>
       <p>Creating more accurate and explanatory building energy benchmarking systems for Singapore and India.</p>
-      <p><a href="#" class="btn btn--primary btn--small">View Details</a></p>
+      <a href="#" class="btn btn--primary btn--small">View Details</a>
     </div>
   </div>
 
