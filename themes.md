@@ -1,64 +1,43 @@
 ---
-title: ""
-permalink: themes.html
+title: "Research Themes"
+permalink: /themes.html
 layout: single
 author_profile: false
 toc: true
 toc_sticky: true
-toc_label: "Themes"
-
-themes_list:
-  - image: "/assets/images/EA.png"
-    title: "Energy Monitoring"
-    excerpt: "We develop systems to collect and process high-frequency **smart meter time-series data**. By monitoring consumption patterns at granular levels, we enable real-time visibility into building performance and identify opportunistic data sources."
-  
-  - image: "/assets/images/EB.png"
-    title: "Energy Benchmarking"
-    excerpt: "Comparing raw energy consumption is often unfair due to varying building sizes and operations. We build **data-driven benchmarking models** that normalize for weather and occupancy, allowing for accurate peer-to-peer comparison."
-  
-  - image: "/assets/images/PA.png"
-    title: "Energy Prediction"
-    excerpt: "Forecasting future energy demand is critical for grid stability. We apply statistical and machine learning techniques to **predict load profiles** based on historical smart meter data, weather forecasts, and calendar variables."
-  
-  - image: "/assets/images/AD.png"
-    title: "Anomaly Detection"
-    excerpt: "Buildings often waste energy due to unnoticed irregularities. We research unsupervised learning algorithms to automatically scan time-series data and **detect point and contextual anomalies**, flagging unusual consumption spikes."
-
-  - image: "/assets/images/fault.png"
-    title: "Fault Detection (FDD)"
-    excerpt: "Going beyond simple anomalies, we focus on identifying specific equipment failures. Our FDD research utilizes system-level data to **diagnose root causes** of inefficiencies in HVAC components like Chillers and AHUs."
+toc_label: "Core Themes"
 ---
 
 <style>
-  /* GLOBAL FIXES */
+  /* 1. Hide Sidebar Completely */
   .sidebar, .page__sidebar { display: none !important; }
-  .page__inner-wrap { float: none !important; margin: 0 auto !important; width: 100% !important; max-width: 1200px !important; }
-  .page__content { width: 100% !important; }
-  @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* THEME LIST SPECIFIC STYLES */
-  .feature__wrapper { display: flex; flex-direction: column; gap: 30px; }
-  
-  .feature__item {
-    display: flex; flex-direction: row; align-items: center;
-    background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
-    padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  /* 2. Force Content to Center and take Full Width */
+  .page__inner-wrap {
+    float: none !important;
+    margin-left: auto !important; margin-right: auto !important;
+    width: 100% !important; max-width: 1200px !important;
+    padding-right: 20px; padding-left: 20px;
   }
+  .page__content { width: 100% !important; max-width: 100% !important; }
   
-  /* Image Styles */
-  .feature__item .archive__item-teaser img {
-    width: 200px !important; height: auto; object-fit: contain;
-    margin-right: 30px; border-radius: 4px;
+  /* 3. Fix Layout logic for large screens */
+  @media (min-width: 64em) {
+    .layout--single .page, .layout--home .page, .layout--archive .page {
+      padding-left: 0 !important; padding-right: 0 !important;
+      width: 100% !important;
+    }
   }
-  
-  /* Text Styles */
-  .archive__item-title { font-size: 1.5em !important; margin-top: 0 !important; }
-  .archive__item-excerpt { font-size: 1.05em; line-height: 1.6; color: #444; }
 
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .feature__item { flex-direction: column; text-align: center; }
-    .feature__item .archive__item-teaser img { margin: 0 0 20px 0; }
+  /* 4. Grid Card Styling */
+  .feature__item { margin-bottom: 30px; }
+  .archive__item-teaser img { 
+    max-height: 200px; 
+    object-fit: contain; /* Keeps the whole image visible */
+    width: 100%; 
+    border-radius: 6px;
+    background: #f8f8f8; /* Subtle background for transparent PNGs */
+    padding: 10px;
   }
 </style>
 
@@ -71,4 +50,58 @@ Our research philosophy is grounded in the convergence of **Data Science** and *
 
 We primarily leverage **smart meter time series** and other opportunistic data sources to develop systems and techniques for the following key areas:
 
-{% include custom_feature_row.html id="themes_list" type="left" %}
+---
+
+<div class="feature__row feature__row--left">
+
+  <div class="feature__item">
+    <div class="archive__item-teaser">
+      <img src="/AI-IOT-Lab/assets/images/EA.png" alt="Energy Monitoring">
+    </div>
+    <div class="feature__item-content">
+      <h3 class="feature__item-title">Energy Monitoring</h3>
+      <p>We develop systems to collect and process high-frequency <strong>smart meter time-series data</strong>. By monitoring consumption patterns at granular levels, we enable real-time visibility into building performance and identify opportunistic data sources.</p>
+    </div>
+  </div>
+
+  <div class="feature__item">
+    <div class="archive__item-teaser">
+      <img src="/AI-IOT-Lab/assets/images/EB.png" alt="Energy Benchmarking">
+    </div>
+    <div class="feature__item-content">
+      <h3 class="feature__item-title">Energy Benchmarking</h3>
+      <p>Comparing raw energy consumption is often unfair due to varying building sizes and operations. We build <strong>data-driven benchmarking models</strong> that normalize for weather and occupancy, allowing for accurate peer-to-peer comparison.</p>
+    </div>
+  </div>
+
+  <div class="feature__item">
+    <div class="archive__item-teaser">
+      <img src="/AI-IOT-Lab/assets/images/PA.png" alt="Energy Prediction">
+    </div>
+    <div class="feature__item-content">
+      <h3 class="feature__item-title">Energy Prediction</h3>
+      <p>Forecasting future energy demand is critical for grid stability. We apply statistical and machine learning techniques to <strong>predict load profiles</strong> based on historical smart meter data, weather forecasts, and calendar variables.</p>
+    </div>
+  </div>
+
+  <div class="feature__item">
+    <div class="archive__item-teaser">
+      <img src="/AI-IOT-Lab/assets/images/AD.png" alt="Anomaly Detection">
+    </div>
+    <div class="feature__item-content">
+      <h3 class="feature__item-title">Anomaly Detection</h3>
+      <p>Buildings often waste energy due to unnoticed irregularities. We research unsupervised learning algorithms to automatically scan time-series data and <strong>detect point and contextual anomalies</strong>, flagging unusual consumption spikes.</p>
+    </div>
+  </div>
+
+  <div class="feature__item">
+    <div class="archive__item-teaser">
+      <img src="/AI-IOT-Lab/assets/images/fault.png" alt="Fault Detection (FDD)">
+    </div>
+    <div class="feature__item-content">
+      <h3 class="feature__item-title">Fault Detection (FDD)</h3>
+      <p>Going beyond simple anomalies, we focus on identifying specific equipment failures. Our FDD research utilizes system-level data to <strong>diagnose root causes</strong> of inefficiencies in HVAC components like Chillers and AHUs.</p>
+    </div>
+  </div>
+
+</div>
