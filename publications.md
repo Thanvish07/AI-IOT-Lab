@@ -52,7 +52,7 @@ toc_label: "Year"
   <br><a href="https://dl.acm.org/doi/abs/10.1145/3671127.3698789" class="btn btn--inverse btn--x-small">Link</a>
   <br><a href="https://dl.acm.org/doi/pdf/10.1145/3671127.3698789" class="btn btn--inverse btn--x-small">PDF</a>
 
-  * **Generative Adversarial Network with Soft-Dynamic Time Warping and Parallel Reconstruction for Energy Time Series Anomaly Detection**
+* **Generative Adversarial Network with Soft-Dynamic Time Warping and Parallel Reconstruction for Energy Time Series Anomaly Detection**
   <br>Hardik Prabhu, Jayaraman Valadi, Pandarasamy Arjunan. *arXiv:2402.14384*
   <br>Description: In this paper, we employ a 1D deep convolutional generative adversarial network (DCGAN) for sequential anomaly detection in energy time series data. Anomaly detection involves gradient descent to reconstruct energy sub-sequences, identifying the noise vector that closely generates them through the generator network. Soft-DTW is used as a differentiable alternative for the reconstruction loss and is found to be superior to Euclidean distance.
   <br><a href="https://arxiv.org/abs/2402.14384" class="btn btn--inverse btn--x-small">Link</a>
