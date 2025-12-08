@@ -1,15 +1,15 @@
 ---
-title: ""
+title: "Research Themes"
 permalink: /themes.html
 layout: single
 author_profile: false
 toc: true
-toc_sticky: true
+toc_sticky: false  # MOVED TOC TO TOP (INLINE) TO FIX OVERLAP
 toc_label: "Core Themes"
 ---
 
 <style>
-  /* 1. AGGRESSIVE LAYOUT RESET (Full Width) */
+  /* 1. AGGRESSIVE LAYOUT RESET */
   .sidebar, .page__sidebar { display: none !important; }
   
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; max-width: 100% !important; }
@@ -28,18 +28,17 @@ toc_label: "Core Themes"
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
   /* 2. THEME CARD STYLING */
-  /* Override the default feature row to be a flexible grid */
   .feature__row {
     display: flex !important;
     flex-wrap: wrap;
-    justify-content: center; /* Center cards if they don't fill the row */
+    justify-content: center;
     gap: 30px;
     margin-top: 30px;
   }
 
   .feature__item {
-    flex: 1 1 300px; /* Grow, Shrink, Basis (Min width 300px) */
-    max-width: 400px; /* Don't get too wide on huge screens */
+    flex: 1 1 300px; 
+    max-width: 400px;
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -48,39 +47,33 @@ toc_label: "Core Themes"
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     position: relative;
     overflow: hidden;
-    margin-bottom: 0 !important; /* CSS Grid handles gap */
-    text-align: center; /* Center align content for better look */
+    margin-bottom: 0 !important;
+    text-align: center;
   }
 
-  /* Hover Effect: Lift & Shadow */
   .feature__item:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     border-color: #007bff;
   }
 
-  /* 3. IMAGE STYLING & ZOOM EFFECT */
   .archive__item-teaser {
     background: #f8f9fa;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
-    overflow: hidden; /* Contains the zoom */
+    overflow: hidden;
   }
 
   .archive__item-teaser img {
     max-height: 160px;
     object-fit: contain;
     width: 100%;
-    transition: transform 0.5s ease; /* Smooth zoom */
+    transition: transform 0.5s ease;
   }
 
-  /* Zoom image on card hover */
-  .feature__item:hover .archive__item-teaser img {
-    transform: scale(1.1);
-  }
+  .feature__item:hover .archive__item-teaser img { transform: scale(1.1); }
 
-  /* 4. TEXT STYLING */
   .feature__item-title {
     font-size: 1.4em;
     font-weight: 700;
@@ -88,24 +81,15 @@ toc_label: "Core Themes"
     color: #333;
   }
   
-  .feature__item-content p {
-    color: #555;
-    font-size: 0.95em;
-    line-height: 1.6;
-  }
+  .feature__item-content p { color: #555; font-size: 0.95em; line-height: 1.6; }
 
-  /* 5. ANIMATIONS (Waterfall Effect) */
+  /* Animations */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .feature__item {
-    opacity: 0; /* Start hidden */
-    animation: fadeUp 0.8s ease-out forwards;
-  }
-
-  /* Stagger delays */
+  .feature__item { opacity: 0; animation: fadeUp 0.8s ease-out forwards; }
   .feature__item:nth-child(1) { animation-delay: 0.1s; }
   .feature__item:nth-child(2) { animation-delay: 0.2s; }
   .feature__item:nth-child(3) { animation-delay: 0.3s; }
