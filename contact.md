@@ -9,25 +9,24 @@ author_profile: false
 # Contact Us
 ---
 
-We are always open to discussing new research collaborations and student opportunities.
+We are always open to discussing new research collaborations, student opportunities, and industry partnerships.
 
 <div class="notice--success">
   <strong><i class="fas fa-info-circle"></i> Note:</strong> For PhD/M.Tech applications, please review the "Join Us" page requirements first.
 </div>
 
-## <i class="fas fa-paper-plane"></i> Send a Message
+## <i class="fas fa-paper-plane"></i> Get in Touch
 
-<form action="https://formspree.io/f/mqknqzkr" method="POST" style="background: #f8f9fa; padding: 20px; border-radius: 5px; border: 1px solid #ddd;">
-  <label>
-    Your Email:
-    <input type="email" name="email" style="width: 100%; padding: 8px; margin-bottom: 10px;">
-  </label>
-  <label>
-    Message:
-    <textarea name="message" style="width: 100%; padding: 8px; height: 100px; margin-bottom: 10px;"></textarea>
-  </label>
-  <button type="submit" class="btn btn--primary">Send Message</button>
-</form>
+For general inquiries, research questions, or application details, please reach out via email.
+
+<div style="background: #f8f9fa; padding: 30px; border-radius: 8px; border: 1px solid #ddd; text-align: center;">
+  <h3>Ready to start a conversation?</h3>
+  <p>Click the button below to send us an email directly.</p>
+  
+  <a href="mailto:samy@iisc.ac.in?subject=Inquiry from AI-IOT Lab Website" class="btn btn--primary btn--large">
+    <i class="fas fa-envelope"></i> Send Email to samy@iisc.ac.in
+  </a>
+</div>
 
 <br>
 
@@ -50,6 +49,11 @@ Indian Institute of Science (IISc), Bangalore - 560012, India.
 
 ## <i class="fas fa-link"></i> Connect with Lab Head
 
+Follow our PI's work and academic updates through these platforms:
+
+[<i class="fas fa-envelope"></i> Email](mailto:samy@iisc.ac.in){: .btn .btn--inverse}
 [<i class="fab fa-github"></i> GitHub](https://github.com/samy101){: .btn .btn--inverse}
 [<i class="fas fa-graduation-cap"></i> Google Scholar](https://scholar.google.com/citations?user=6zG4VnQAAAAJ){: .btn .btn--info}
 [<i class="fab fa-linkedin"></i> LinkedIn](https://www.linkedin.com/in/pandarasamy-arjunan-5580a215){: .btn .btn--primary}
+[<i class="fab fa-orcid"></i> ORCID](https://orcid.org/0000-0002-7697-3576){: .btn .btn--success}
+[<i class="fab fa-researchgate"></i> ResearchGate](https://www.researchgate.net/profile/Pandarasamy_Arjunan/){: .btn .btn--warning}
