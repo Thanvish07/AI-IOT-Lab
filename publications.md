@@ -15,7 +15,7 @@ toc_label: "Year"
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 </style>
 
-## Publications
+# Publications
 
 ## 2023
 
