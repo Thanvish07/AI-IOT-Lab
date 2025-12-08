@@ -1,43 +1,51 @@
----
-# Only the front matter lines (the ---) are needed
----
+// --------------------------------------------------------
+// 1. GLOBAL WIDTH SETTINGS
+// --------------------------------------------------------
+// Define this BEFORE importing the theme to override the default.
+// You can use a pixel value (e.g., 1600px) or percentage (e.g., 95%).
+$max-width: 1600px; 
 
-// 1. Import the theme's default styles
+
+// --------------------------------------------------------
+// 2. IMPORT THEME
+// --------------------------------------------------------
 @import "minimal-mistakes";
 
-// 1. Make the header taller and ensure the image covers
+
+// --------------------------------------------------------
+// 3. YOUR CUSTOM OVERRIDES
+// --------------------------------------------------------
+
+// Make the header taller and ensure the image covers
 .page__hero.page__hero--overlay {
-  min-height: 50vh; /* Make the header cover at least 50% of the viewport height */
-  background-size: cover !important; /* Ensure the image covers the area */
-  background-position: center center !important; /* Center the image */
+  min-height: 50vh; 
+  background-size: cover !important; 
+  background-position: center center !important; 
 }
 
-// 2. Center the text content within the header
+// Center the text content within the header
 .page__hero--overlay .wrapper {
-  max-width: 100% !important; /* Allow the text container to be full width */
-  text-align: center; /* Center the text */
-  padding-left: 1em; /* Add some padding on the sides */
-  padding-right: 1em; /* Add some padding on the sides */
+  max-width: 100% !important; 
+  text-align: center; 
+  padding-left: 1em; 
+  padding-right: 1em; 
 }
 
+// Ensure title text allows full width
 .page__hero--overlay .page__title,
 .page__hero--overlay .page__meta {
-  max-width: none !important; /* Remove any max-width limits on the text itself */
-  width: 100% !important; /* Force text to take full width of wrapper */
+  max-width: none !important; 
+  width: 100% !important; 
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
-// Ensure the "AI-IOT Lab" text in the header itself is also centered
 .page__hero--overlay .page__title {
-  display: block; // Ensures it takes full width for centering
-}
-
-// Optional: Adjust font size if the text looks too small when widespread
-.page__hero--overlay .page__title {
-  font-size: 3em; /* Adjust as needed */
+  display: block; 
+  font-size: 3em; 
   line-height: 1.2;
 }
+
 .page__hero--overlay .page__meta {
-  font-size: 1.2em; /* Adjust as needed */
+  font-size: 1.2em; 
 }
