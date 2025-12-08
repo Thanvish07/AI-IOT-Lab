@@ -1,6 +1,6 @@
 ---
 title: ""
-permalink: /themes.html
+permalink: themes.html
 layout: single
 author_profile: false
 toc: true
