@@ -1,6 +1,7 @@
 ---
 title: ""
 permalink: /people.html
+classes: wide
 layout: single
 author_profile: false
 ---
