@@ -26,7 +26,7 @@ author_profile: false
   @media (max-width: 768px) { .sidebar__author-profile { flex-direction: column; align-items: center; text-align: center; } }
 </style>
 
-## Lab Members
+# Lab Members
 
 ## Lab Head
 
