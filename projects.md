@@ -1,6 +1,6 @@
 ---
 title: ""
-permalink: /projects.html
+permalink: projects.html
 classes: wide
 layout: single
 author_profile: false
