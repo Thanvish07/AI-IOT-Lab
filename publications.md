@@ -16,6 +16,7 @@ toc_label: "Year"
 </style>
 
 # Publications
+---
 
 ## 2023
 
