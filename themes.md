@@ -5,38 +5,36 @@ layout: single
 author_profile: false
 toc: true
 toc_sticky: true
-toc_label: "Core Themes"
+toc_label: "Themes Themes"
 ---
 
 <style>
-  /* 1. LAYOUT STYLE */
+  /* --- 1. LAYOUT MATCHING JOINING-US.MD --- */
   .sidebar, .page__sidebar { display: none !important; }
   
   .page__inner-wrap { 
     float: none !important; 
     margin: 0 auto !important; 
-    width: 95% !important; 
-    max-width: 1600px !important; 
-    padding: 0 20px;
-    box-sizing: border-box;
+    width: 100% !important; 
+    max-width: 1200px !important; /* Matches joining-us.md exactly */
   }
   
   .page__content { width: 100% !important; }
   
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* 2. CARD STYLING */
+  /* --- 2. INTERACTIVE CARD STYLING --- */
   .feature__row {
     display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     margin-top: 30px;
   }
 
   .feature__item {
     flex: 1 1 300px;
-    max-width: 400px;
+    max-width: 350px;
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -50,11 +48,12 @@ toc_label: "Core Themes"
   }
 
   .feature__item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     border-color: #007bff;
   }
 
+  /* Image Styling */
   .archive__item-teaser {
     background: #f8f9fa;
     border-radius: 8px;
@@ -64,16 +63,17 @@ toc_label: "Core Themes"
   }
 
   .archive__item-teaser img {
-    max-height: 160px;
+    max-height: 150px;
     object-fit: contain;
     width: 100%;
     transition: transform 0.5s ease;
   }
 
-  .feature__item:hover .archive__item-teaser img { transform: scale(1.1); }
+  .feature__item:hover .archive__item-teaser img { transform: scale(1.08); }
 
+  /* Typography */
   .feature__item-title {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 700;
     margin-bottom: 10px;
     color: #333;
@@ -85,13 +85,13 @@ toc_label: "Core Themes"
     line-height: 1.6;
   }
 
-  /* 3. ANIMATIONS */
+  /* Animations */
   @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
+    from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .feature__item { opacity: 0; animation: fadeUp 0.8s ease-out forwards; }
+  .feature__item { opacity: 0; animation: fadeUp 0.7s ease-out forwards; }
   .feature__item:nth-child(1) { animation-delay: 0.1s; }
   .feature__item:nth-child(2) { animation-delay: 0.2s; }
   .feature__item:nth-child(3) { animation-delay: 0.3s; }
