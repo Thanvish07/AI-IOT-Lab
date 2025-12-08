@@ -5,7 +5,7 @@ classes: wide
 header:
   overlay_image: /assets/images/bg_2.png
   overlay_filter: "0.5"
-  caption: "AI-IOT Lab @ RBCCPS, IISC"
+  caption: "AIM-Lab @ RBCCPS, IISC"
   actions:
     - label: "Explore Our Research"
       url: "/themes.html"
@@ -27,13 +27,16 @@ feature_row:
   /* 1. Hide Sidebar Completely */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
 
-  /* 2. Force Content to Center and take Full Width */
+  /* 2. FORCE FULL WIDTH (The Fix) */
   .page__inner-wrap {
     float: none !important;
     margin-left: auto !important; margin-right: auto !important;
-    width: 100% !important; max-width: 1200px !important;
-    padding-right: 20px; padding-left: 20px;
+    width: 100% !important; 
+    max-width: 95% !important; /* Changed from 1200px to 95% */
+    padding-right: 0 !important; 
+    padding-left: 0 !important;
   }
+  
   .page__content { width: 100% !important; max-width: 100% !important; }
   
   /* 3. Fix Layout logic for large screens */
@@ -44,7 +47,7 @@ feature_row:
     }
   }
 
-  /* 4. Animations (Make it Alive) */
+  /* 4. Animations */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -56,7 +59,7 @@ feature_row:
   
   /* 5. Typography Polish */
   h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-  .notice--info { font-size: 1.1em; text-align: center; }
+  .notice--info { font-size: 1.1em; text-align: center; margin-left: auto; margin-right: auto; max-width: 80%; }
 </style>
 
 # About the Lab
@@ -72,5 +75,5 @@ feature_row:
 # <i class="fas fa-newspaper"></i> What's New
 
 <div style="text-align: center; margin-top: 40px;">
-  <a href="year-archive.html" class="btn btn--inverse btn--large">View News Archive</a>
+  <a href="/year-archive.html" class="btn btn--inverse btn--large">View News Archive</a>
 </div>
