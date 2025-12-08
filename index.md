@@ -5,7 +5,7 @@ classes: wide
 header:
   overlay_image: /assets/images/bg_2.png
   overlay_filter: "0.5"
-  caption: "AI-IOT Lab @ RBCCPS, IISC"
+  caption: "AIM-Lab @ RBCCPS, IISC"
   actions:
     - label: "Explore Our Research"
       url: "/themes.html"
@@ -39,14 +39,17 @@ feature_row:
     width: 95% !important; 
     max-width: 1600px !important;
     padding: 0 20px !important;
+    box-sizing: border-box; /* Crucial for preventing overflow */
   }
 
-  /* 2. MISSION STATEMENT FIX (Left Aligned) */
+  /* 2. MISSION STATEMENT FIX (Prevent Overflow) */
   .notice--info { 
     font-size: 1.15em; 
-    text-align: left !important; /* FIXED: Now Left Aligned */
-    margin: 30px 0 50px 0; /* Removed auto margins to stick left */
-    max-width: 100%; 
+    text-align: left !important;
+    margin: 30px 0 50px 0;
+    width: 100%; /* Force it to fit container */
+    max-width: 100%; /* Ensure it never exceeds parent */
+    box-sizing: border-box; /* Includes padding in width calculation */
     border-left: 5px solid #007bff;
     background: #f4f9ff;
     padding: 20px;
@@ -54,26 +57,28 @@ feature_row:
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
 
-  /* 3. CARD CONTAINER FIX (Prevent Overflow) */
+  /* 3. CARD CONTAINER FIX */
   .feature__wrapper {
     display: flex !important;
     justify-content: space-between;
-    gap: 20px; /* Consistent gap between cards */
-    flex-wrap: wrap; /* Allows wrapping on small mobile screens */
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%; /* Ensure wrapper fits container */
+    box-sizing: border-box;
   }
 
-  /* 4. INDIVIDUAL CARD FIX (Fixed Size & Behavior) */
+  /* 4. INDIVIDUAL CARD FIX */
   .feature__item {
-    flex: 1; /* Forces all 3 cards to be equal width */
-    min-width: 280px; /* Prevents them from getting too squished */
-    max-width: 32%; /* Ensures 3 cards fit perfectly in one row */
-    
+    flex: 1;
+    min-width: 280px;
+    max-width: 32%;
     background: #fff;
     border-radius: 8px;
     padding: 25px;
     border: 1px solid #eee; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Prevent padding form pushing width out */
   }
 
   .feature__item:hover {
