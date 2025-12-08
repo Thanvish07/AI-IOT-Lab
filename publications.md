@@ -4,28 +4,26 @@ permalink: publications.html
 layout: single
 author_profile: false
 toc: true
-toc_sticky: false
+toc_sticky: True
 toc_label: "Year"
 ---
 
 <style>
-  /* 1. LAYOUT STYLE (Matches Joining Us & Standard Pages) */
+  /* --- 1. LAYOUT MATCHING JOINING-US.MD --- */
   .sidebar, .page__sidebar { display: none !important; }
   
   .page__inner-wrap { 
     float: none !important; 
     margin: 0 auto !important; 
-    width: 95% !important; 
-    max-width: 1200px !important; /* Matching Text Page Width */
-    padding: 0 20px;
-    box-sizing: border-box;
+    width: 100% !important; 
+    max-width: 1200px !important; /* Matches joining-us.md exactly */
   }
   
   .page__content { width: 100% !important; }
   
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* 2. CARD STYLING */
+  /* --- 2. CARD STYLING --- */
   .pub-card {
     background: #fff;
     border: 1px solid #e0e0e0;
@@ -58,7 +56,7 @@ toc_label: "Year"
     font-style: italic;
   }
 
-  /* 3. INTERACTIVE DETAILS */
+  /* Interactive Abstract */
   details {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -71,7 +69,7 @@ toc_label: "Year"
   summary { font-weight: bold; color: #0056b3; outline: none; }
   summary:hover { text-decoration: underline; }
 
-  /* 4. ANIMATIONS */
+  /* Animations */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
