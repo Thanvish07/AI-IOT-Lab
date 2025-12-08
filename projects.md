@@ -23,8 +23,6 @@ toc_label: "Projects"
 
 We focus on a variety of themes at the intersection of **Cyber-Physical Systems** and **Data Science**, spanning from theoretical frameworks to real-world deployment.
 
----
-
 ## Active Projects
 
 <div class="feature__row feature__row--left">
