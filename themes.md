@@ -1,26 +1,31 @@
 ---
-title: ""
+title: "Research Themes"
 permalink: /themes.html
 layout: single
 author_profile: false
 toc: true
-toc_sticky: true
+toc_sticky: false
 toc_label: "Core Themes"
 ---
 
 <style>
-  /* 1. LAYOUT STYLE (Copied from joining-us.md) */
+  /* 1. LAYOUT STYLE */
   .sidebar, .page__sidebar { display: none !important; }
+  
   .page__inner-wrap { 
     float: none !important; 
     margin: 0 auto !important; 
-    width: 100% !important; 
-    max-width: 1200px !important; 
+    width: 95% !important; 
+    max-width: 1600px !important; 
+    padding: 0 20px;
+    box-sizing: border-box;
   }
+  
   .page__content { width: 100% !important; }
+  
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* 2. INTERACTIVE CARD STYLING (Kept to make it "Alive") */
+  /* 2. CARD STYLING */
   .feature__row {
     display: flex !important;
     flex-wrap: wrap;
@@ -31,7 +36,7 @@ toc_label: "Core Themes"
 
   .feature__item {
     flex: 1 1 300px;
-    max-width: 350px; /* Adjusted to fit 1200px width nicely */
+    max-width: 400px;
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -102,6 +107,8 @@ Our research philosophy is grounded in the convergence of **Data Science** and *
 ## Core Methodologies
 
 We primarily leverage **smart meter time series** and other opportunistic data sources to develop systems and techniques for the following key areas:
+
+---
 
 <div class="feature__row">
 
