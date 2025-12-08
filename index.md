@@ -100,6 +100,7 @@ feature_row:
 </style>
 
 # About the Lab
+---
 
 <div class="notice--info" markdown="1">
 **Mission Statement**
