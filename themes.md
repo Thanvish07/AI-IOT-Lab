@@ -1,6 +1,7 @@
 ---
 title: ""
 permalink: /themes.html
+classes: wide
 layout: single
 author_profile: false
 
