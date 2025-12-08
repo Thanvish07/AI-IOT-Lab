@@ -65,7 +65,7 @@ feature_row:
 # About the Lab
 
 <div class="notice--info" markdown="1">
-### Mission Statement
+**Mission Statement**
 * We focus on the intersection of **Machine Learning**, **Internet of Things (IoT)**, and **Sustainability**.
 * Our goal is to build data-driven solutions that solve real-world challenges in smart built environments.
 </div>
