@@ -3,7 +3,9 @@ title: ""
 permalink: /projects.html
 layout: single
 author_profile: false
-toc: false  # DISABLED TOC TO FIX OVERLAP
+toc: true
+toc_sticky: true
+toc_label: "Active Projects"
 ---
 
 <style>
@@ -26,6 +28,7 @@ toc: false  # DISABLED TOC TO FIX OVERLAP
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
   /* 2. PROJECT CARD STYLING */
+  /* Override default to be a flexible grid */
   .feature__row {
     display: flex !important;
     flex-wrap: wrap;
@@ -35,12 +38,12 @@ toc: false  # DISABLED TOC TO FIX OVERLAP
   }
 
   .feature__item {
-    flex: 1 1 300px;
-    max-width: 450px;
+    flex: 1 1 300px; /* Grow, Shrink, Basis */
+    max-width: 450px; /* Projects can be slightly wider than themes */
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
-    padding: 0;
+    padding: 0; /* Removing padding to let image flush to edges if desired, or keep generic padding */
     padding-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -51,17 +54,19 @@ toc: false  # DISABLED TOC TO FIX OVERLAP
     flex-direction: column;
   }
 
+  /* Hover Effect: Lift & Shadow */
   .feature__item:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     border-color: #007bff;
   }
 
+  /* 3. IMAGE STYLING & ZOOM EFFECT */
   .archive__item-teaser {
     background: #f1f1f1;
-    margin: 0;
-    overflow: hidden;
-    height: 220px;
+    margin: 0; /* Flush with top */
+    overflow: hidden; /* Contains the zoom */
+    height: 220px; /* Fixed height for uniformity */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,12 +76,16 @@ toc: false  # DISABLED TOC TO FIX OVERLAP
   .archive__item-teaser img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures image fills the box nicely */
     transition: transform 0.6s ease;
   }
 
-  .feature__item:hover .archive__item-teaser img { transform: scale(1.1); }
+  /* Zoom image on card hover */
+  .feature__item:hover .archive__item-teaser img {
+    transform: scale(1.1);
+  }
 
+  /* 4. CONTENT STYLING */
   .feature__item-content {
     padding: 25px;
     flex: 1;
@@ -95,18 +104,26 @@ toc: false  # DISABLED TOC TO FIX OVERLAP
     color: #555;
     font-size: 0.95em;
     line-height: 1.6;
-    flex-grow: 1;
+    flex-grow: 1; /* Pushes button to bottom */
   }
 
-  .btn--small { align-self: flex-start; margin-top: 15px; }
+  .btn--small {
+    align-self: flex-start;
+    margin-top: 15px;
+  }
 
-  /* Animations */
+  /* 5. ANIMATIONS (Waterfall Effect) */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .feature__item { opacity: 0; animation: fadeUp 0.8s ease-out forwards; }
+  .feature__item {
+    opacity: 0; /* Start hidden */
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  /* Stagger delays */
   .feature__item:nth-child(1) { animation-delay: 0.1s; }
   .feature__item:nth-child(2) { animation-delay: 0.2s; }
   .feature__item:nth-child(3) { animation-delay: 0.3s; }
