@@ -73,5 +73,5 @@ feature_row:
 # <i class="fas fa-newspaper"></i> What's New
 
 <div style="text-align: center; margin-top: 20px;">
-  <a href="/year-archive.html" class="btn btn--inverse">View News Archive</a>
+  <a href="year-archive.html" class="btn btn--inverse">View News Archive</a>
 </div>
