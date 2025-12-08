@@ -1,0 +1,7 @@
+---
+title: "News Archive"
+permalink: /year-archive/
+layout: posts
+author_profile: false
+classes: wide
+---
