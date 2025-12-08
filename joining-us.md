@@ -23,10 +23,10 @@ We are actively looking for highly motivated candidates to join the **AI-IOT Lab
 
 ### 1. Project Staff / Research Associates
 We frequently look for project staff to assist with ongoing research.
-<div class="notice--info">
-  **Ideal candidates should have:**
-  * Strong programming skills in **Python**.
-  * A Bachelor's or Master's degree in CS, ECE, or related fields.
+<div class="notice--info" markdown="1">
+**Ideal candidates should have:**
+* Strong programming skills in **Python**.
+* A Bachelor's or Master's degree in CS, ECE, or related fields.
 </div>
 
 ### 2. PhD & M.Tech Research
