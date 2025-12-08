@@ -1,6 +1,7 @@
 ---
 title: ""
 permalink: /projects.html
+classes: wide
 layout: single
 author_profile: false # Hides the redundant sidebar
 ---
