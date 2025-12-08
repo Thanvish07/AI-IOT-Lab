@@ -1,5 +1,5 @@
 ---
-title: "Lab Members"
+title: ""
 permalink: /people.html
 layout: single
 author_profile: false
@@ -25,6 +25,8 @@ author_profile: false
   /* Mobile Stack */
   @media (max-width: 768px) { .sidebar__author-profile { flex-direction: column; align-items: center; text-align: center; } }
 </style>
+
+## Lab Members
 
 ## Lab Head
 
