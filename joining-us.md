@@ -1,6 +1,7 @@
 ---
 title: ""
 permalink: joining-us.html
+classes: wide
 layout: single
 author_profile: false
 ---
