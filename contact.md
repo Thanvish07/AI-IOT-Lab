@@ -1,19 +1,19 @@
 ---
-title: ""
-permalink: contact.html
-classes: wide
+title: "Contact Us"
+permalink: /contact.html
 layout: single
 author_profile: false
 ---
 
-# Contact Us
----
+<style>
+  .sidebar, .page__sidebar { display: none !important; }
+  .page__inner-wrap { float: none !important; margin: 0 auto !important; width: 100% !important; max-width: 1200px !important; }
+  .page__content { width: 100% !important; }
+  @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
+</style>
 
 We are always open to discussing new research collaborations, student opportunities, and industry partnerships.
 
-<div class="notice--success">
-  <strong><i class="fas fa-info-circle"></i> Note:</strong> For PhD/M.Tech applications, please review the "Join Us" page requirements first.
-</div>
 
 ## <i class="fas fa-paper-plane"></i> Get in Touch
 
