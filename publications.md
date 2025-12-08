@@ -1,6 +1,6 @@
 ---
 title: ""
-permalink: /publications.html
+permalink: publications.html
 layout: single
 author_profile: false
 toc: true
