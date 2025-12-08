@@ -63,6 +63,7 @@ themes_list:
 </style>
 
 # Research Themes
+---
 
 Our research philosophy is grounded in the convergence of **Data Science** and **Cyber-Physical Systems**.
 
