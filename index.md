@@ -27,7 +27,7 @@ feature_row:
 ---
 
 <style>
-  /* --- 1. LAYOUT: CENTERED 1200px (Strict Match) --- */
+  /* --- 1. LAYOUT: CENTERED 1200px --- */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
   
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
@@ -36,7 +36,7 @@ feature_row:
     float: none !important;
     margin: 0 auto !important;
     width: 100% !important; 
-    max-width: 1200px !important; /* Matches joining-us.md */
+    max-width: 1200px !important; 
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -45,11 +45,11 @@ feature_row:
 
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* --- 2. MISSION STATEMENT STYLING --- */
+  /* --- 2. MISSION STATEMENT --- */
   .notice--info { 
     font-size: 1.15em; 
     text-align: left !important;
-    margin: 40px 0 60px 0;
+    margin: 40px 0 50px 0;
     width: 100%; 
     max-width: 100%; 
     box-sizing: border-box;
@@ -66,20 +66,25 @@ feature_row:
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
 
-  /* --- 3. PREMIUM CARD STYLING (The "Alive" Look) --- */
+  /* --- 3. GRID LAYOUT (FORCED 1 ROW) --- */
   .feature__wrapper {
-    display: flex !important;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    display: grid; /* Use Grid instead of Flex */
+    grid-template-columns: repeat(3, 1fr); /* Forces exactly 3 equal columns */
+    gap: 30px; /* Space between cards */
+    width: 100%;
   }
 
+  /* Stack vertically ONLY on small mobile screens */
+  @media (max-width: 768px) {
+    .feature__wrapper { grid-template-columns: 1fr; }
+  }
+
+  /* --- 4. PREMIUM CARD STYLING --- */
   .feature__item {
-    flex: 1 1 300px;
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
-    border-radius: 16px; /* Soft curves */
-    padding: 0; /* Let header touch edges */
+    border-radius: 16px; 
+    padding: 0; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.04);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
@@ -87,7 +92,7 @@ feature_row:
     text-align: left; 
     display: flex;
     flex-direction: column;
-    margin-bottom: 0 !important;
+    height: 100%; /* Ensures they stretch to equal height */
   }
 
   /* Gradient Border Effect */
@@ -103,16 +108,17 @@ feature_row:
 
   .feature__item:hover::before { transform: scaleX(1); }
 
-  /* Hover State: Lift & Glow */
+  /* Hover State */
   .feature__item:hover {
     transform: translateY(-12px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,123,255,0.15);
     border-color: transparent;
+    z-index: 2; /* Bring to front */
   }
 
-  /* --- 4. ICON STYLING & ANIMATION --- */
+  /* --- 5. CONTENT STYLING --- */
   .feature__item-teaser {
-    background: #f8faff; /* Light blue tint header */
+    background: #f8faff; 
     padding: 30px;
     display: flex;
     align-items: center;
@@ -121,13 +127,12 @@ feature_row:
   }
 
   .feature__item-teaser i {
-    font-size: 3em; /* Big Icons */
+    font-size: 3em; 
     color: #007bff;
-    transition: transform 0.5s ease, color 0.3s ease;
+    transition: transform 0.5s ease;
     filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
   }
 
-  /* Pulse Animation on Hover */
   @keyframes pulseIcon {
     0% { transform: scale(1); }
     50% { transform: scale(1.15); }
@@ -136,10 +141,9 @@ feature_row:
 
   .feature__item:hover .feature__item-teaser i {
     animation: pulseIcon 1.5s infinite;
-    color: #00d4ff; /* Lighter blue on hover */
+    color: #00d4ff; 
   }
 
-  /* --- 5. CONTENT STYLING --- */
   .feature__item-body {
     padding: 25px;
     flex-grow: 1;
@@ -162,7 +166,7 @@ feature_row:
     flex-grow: 1;
   }
 
-  /* Interactive Arrow Hint */
+  /* Interactive Arrow */
   .read-more-arrow {
     margin-top: auto;
     font-weight: bold;
@@ -184,7 +188,7 @@ feature_row:
   
   .read-more-arrow:hover { color: #0056b3; }
 
-  /* --- 6. ANIMATIONS (Entrance) --- */
+  /* --- 6. ANIMATIONS --- */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
@@ -201,14 +205,8 @@ feature_row:
   .feature__item:nth-child(2) { animation-delay: 0.4s; }
   .feature__item:nth-child(3) { animation-delay: 0.5s; }
 
-  /* Typography Polish */
-  h1 { 
-    font-size: 2.2em !important; 
-    border-bottom: 2px solid #eee; 
-    padding-bottom: 10px; 
-    margin-bottom: 30px; 
-    width: 100%; 
-  }
+  /* Typography */
+  h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px; width: 100%; }
 </style>
 
 # About the Lab
