@@ -35,9 +35,9 @@ feature_row:
   .page__inner-wrap {
     float: none !important;
     margin: 0 auto !important;
-    width: 95% !important; 
+    width: 100% !important; 
     max-width: 1600px !important; /* Extends layout to Left and Right */
-    padding: 0 20px;
+    padding: 0 5px;
     box-sizing: border-box;
   }
   
