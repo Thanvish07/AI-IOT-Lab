@@ -27,20 +27,22 @@ feature_row:
 ---
 
 <style>
-  /* --- 1. LAYOUT: WIDER (1600px) --- */
+  /* --- 1. LAYOUT: WIDESPREAD (95% Width) --- */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
   
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
 
-  .page__inner-wrap { 
-    float: none !important; 
-    margin: 0 auto !important; 
-    width: 100% !important; 
-    max-width: 1200px !important; 
+  .page__inner-wrap {
+    float: none !important;
+    margin: 0 auto !important;
+    width: 95% !important; /* Uses 95% of screen width (Fixes "too much space on right") */
+    max-width: 100% !important; /* Removes the 1200px limit */
     padding: 0 20px;
     box-sizing: border-box;
   }
-  .page__content { width: 100% !important; }
+  
+  .page__content { width: 100% !important; max-width: 100% !important; }
+
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
   /* --- 2. MISSION STATEMENT --- */
@@ -64,19 +66,22 @@ feature_row:
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
 
-  /* --- 3. GRID LAYOUT (ONE ROW) --- */
+  /* --- 3. GRID LAYOUT (FORCED 1 ROW) --- */
   .feature__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Spreads them evenly */
-    gap: 30px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* STRICTLY 3 EQUAL COLUMNS */
+    gap: 30px; 
     width: 100%;
+    margin-bottom: 0 !important;
+  }
+
+  /* Only stack on very small mobile screens */
+  @media (max-width: 768px) {
+    .feature__wrapper { grid-template-columns: 1fr; }
   }
 
   /* --- 4. PREMIUM CARD STYLING --- */
   .feature__item {
-    flex: 1 1 300px; /* Allow them to grow */
-    max-width: 500px; /* Increased max-width so they fill the 1600px space without wrapping */
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; 
@@ -88,12 +93,7 @@ feature_row:
     text-align: left; 
     display: flex;
     flex-direction: column;
-    margin-bottom: 0 !important;
-  }
-
-  /* Mobile: Stack them */
-  @media (max-width: 1000px) {
-    .feature__item { max-width: 100%; flex-basis: 100%; }
+    height: 100%; /* Ensures all cards match height */
   }
 
   /* Gradient Border Effect */
@@ -146,7 +146,7 @@ feature_row:
   }
 
   .feature__item-body {
-    padding: 30px;
+    padding: 30px; /* Increased padding for wide layout */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ feature_row:
   .archive__item-title {
     font-size: 1.4em;
     font-weight: 800;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     color: #2c3e50;
   }
   
@@ -163,7 +163,7 @@ feature_row:
     font-size: 1em;
     line-height: 1.7;
     color: #555;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     flex-grow: 1;
   }
 
