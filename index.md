@@ -15,39 +15,40 @@ feature_row:
   - icon: "fas fa-chart-line"
     title: "Data Science"
     excerpt: "Developing advanced machine learning and deep learning models for time-series analysis, prediction, and anomaly detection."
+    url: "/themes.html" # Added link for the arrow
   - icon: "fas fa-bolt"
     title: "Energy Sustainability"
     excerpt: "Focusing on smart building energy efficiency, benchmarking, and fault detection and diagnosis (FDD) for HVAC systems."
+    url: "/themes.html"
   - icon: "fas fa-microchip"
     title: "IoT & CPS"
     excerpt: "Bridging the gap between physical sensors and digital analysis through Cyber-Physical Systems and Internet of Things."
+    url: "/themes.html"
 ---
 
 <style>
-  /* 1. LAYOUT: CENTERED 1200px (Fixes Line Length & Alignment) */
+  /* 1. LAYOUT: CENTERED 1200px */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
-  
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
 
   .page__inner-wrap {
     float: none !important;
     margin: 0 auto !important;
     width: 100% !important; 
-    max-width: 1200px !important; /* This aligns Header lines, Mission, and Cards perfectly */
+    max-width: 1200px !important;
     padding: 0 20px;
     box-sizing: border-box;
   }
   
   .page__content { width: 100% !important; max-width: 100% !important; }
-
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
   /* 2. MISSION STATEMENT STYLING */
   .notice--info { 
     font-size: 1.15em; 
     text-align: left !important;
-    margin: 40px 0 40px 0; /* Adjusted margins */
-    width: 75%; 
+    margin: 40px 0 60px 0;
+    width: 100%; 
     max-width: 100%; 
     box-sizing: border-box;
     border-left: 5px solid #007bff;
@@ -63,49 +64,106 @@ feature_row:
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
 
-  /* 3. FEATURE CARD STYLING */
+  /* 3. PREMIUM CARD STYLING (MATCHING THEMES.MD) */
   .feature__wrapper {
     display: flex !important;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ensures they fill the 1200px exactly like the Mission box */
-    gap: 20px;
-    margin-bottom: 0 !important; /* Removes bottom spacing that might look like a gap */
-    padding-bottom: 0 !important;
+    justify-content: space-between;
+    gap: 30px;
   }
 
   .feature__item {
-    flex: 1; /* Equal width */
-    min-width: 300px;
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    flex: 1 1 300px;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 16px; /* Soft curves */
     padding: 30px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    text-align: left; /* Align left for premium feel */
+    display: flex;
+    flex-direction: column;
     margin-bottom: 0 !important;
   }
 
-  .feature__item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    border-color: #007bff;
+  /* Gradient Border Effect */
+  .feature__item::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
   }
 
-  /* Icon Animation */
+  .feature__item:hover::before { transform: scaleX(1); }
+
+  /* Hover State: Lift & Glassmorphism */
+  .feature__item:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,123,255,0.15);
+    border-color: transparent;
+  }
+
+  /* 4. ICON STYLING & ANIMATION */
   .feature__item-teaser {
     margin-bottom: 20px;
     color: #007bff;
+    font-size: 2.5em; /* Make icons big and bold */
+    display: inline-block;
+  }
+
+  /* Pulse Animation on Hover (Adapted for Icons) */
+  @keyframes pulseIcon {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+
+  .feature__item:hover .feature__item-teaser i {
+    animation: pulseIcon 1.5s infinite;
+    color: #00d4ff; /* Lighter blue on hover */
+  }
+
+  /* 5. TEXT STYLING */
+  .archive__item-title {
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #2c3e50;
   }
   
-  .feature__item-teaser i { transition: transform 0.4s ease; }
-  .feature__item:hover .feature__item-teaser i { transform: scale(1.2) rotate(5deg); }
+  .archive__item-excerpt {
+    font-size: 0.95em;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
 
-  /* Text Styling */
-  .archive__item-title { font-size: 1.3em; font-weight: 700; margin-bottom: 15px; }
-  .archive__item-excerpt { font-size: 0.95em; line-height: 1.6; color: #555; }
+  /* Interactive Arrow Hint */
+  .read-more-arrow {
+    margin-top: auto;
+    font-weight: bold;
+    color: #007bff;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+  }
 
-  /* 4. ANIMATIONS */
+  .feature__item:hover .read-more-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* 6. ANIMATIONS (Entrance) */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
@@ -122,14 +180,8 @@ feature_row:
   .feature__item:nth-child(2) { animation-delay: 0.4s; }
   .feature__item:nth-child(3) { animation-delay: 0.5s; }
 
-  /* Typography */
-  h1 { 
-    font-size: 2.2em !important; 
-    border-bottom: 2px solid #eee; 
-    padding-bottom: 10px; 
-    margin-bottom: 30px; 
-    width: 100%; /* Obey the 1200px limit */
-  }
+  /* Typography Polish */
+  h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px; width: 100%; }
 </style>
 
 # About the Lab
@@ -141,7 +193,22 @@ feature_row:
 * Our goal is to build data-driven solutions that solve real-world challenges in smart built environments.
 </div>
 
-{% include feature_row %}
+<div class="feature__wrapper">
+  {% for feature in page.feature_row %}
+    <div class="feature__item">
+      <div class="feature__item-teaser">
+        <i class="{{ feature.icon }}"></i>
+      </div>
+      <div class="archive__item-body">
+        <h2 class="archive__item-title">{{ feature.title }}</h2>
+        <div class="archive__item-excerpt">
+          <p>{{ feature.excerpt }}</p>
+        </div>
+        <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
 <br>
 
