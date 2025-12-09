@@ -4,25 +4,30 @@ permalink: /projects.html
 layout: single
 author_profile: false
 toc: true
-toc_sticky: True
+toc_sticky: true
 toc_label: "Projects"
 ---
 
 <style>
-  /* --- 1. LAYOUT MATCHING JOINING-US.MD --- */
+  /* --- 1. LAYOUT: CENTERED & MATCHING JOINING-US.MD --- */
+  /* Hide the theme's default sidebar */
   .sidebar, .page__sidebar { display: none !important; }
   
+  /* Constrain content to a readable 1200px center column */
   .page__inner-wrap { 
     float: none !important; 
     margin: 0 auto !important; 
     width: 100% !important; 
-    max-width: 1200px !important; /* Matches joining-us.md exactly */
+    max-width: 1200px !important; 
+    padding: 0 20px;
+    box-sizing: border-box;
   }
   
   .page__content { width: 100% !important; }
+  
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* --- 2. INTERACTIVE CARD STYLING --- */
+  /* --- 2. INTERACTIVE PROJECT CARD STYLING --- */
   .feature__row {
     display: flex !important;
     flex-wrap: wrap;
@@ -32,12 +37,12 @@ toc_label: "Projects"
   }
 
   .feature__item {
-    flex: 1 1 300px;
-    max-width: 400px;
+    flex: 1 1 300px; /* Responsive: Grow, Shrink, Base width */
+    max-width: 450px;
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
-    padding: 0;
+    padding: 0; /* Padding removed so image touches edges */
     padding-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -48,17 +53,19 @@ toc_label: "Projects"
     flex-direction: column;
   }
 
+  /* Hover Effect: Lift Up + Deep Shadow */
   .feature__item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     border-color: #007bff;
   }
 
+  /* --- 3. IMAGE STYLING & ZOOM EFFECT --- */
   .archive__item-teaser {
     background: #f1f1f1;
     margin: 0;
-    overflow: hidden;
-    height: 200px;
+    overflow: hidden; /* Contains the zoomed image */
+    height: 220px; /* Fixed height for consistency */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,8 +79,12 @@ toc_label: "Projects"
     transition: transform 0.6s ease;
   }
 
-  .feature__item:hover .archive__item-teaser img { transform: scale(1.08); }
+  /* Zoom image slightly when hovering the card */
+  .feature__item:hover .archive__item-teaser img {
+    transform: scale(1.1);
+  }
 
+  /* --- 4. CONTENT & TYPOGRAPHY --- */
   .feature__item-content {
     padding: 25px;
     flex: 1;
@@ -92,18 +103,26 @@ toc_label: "Projects"
     color: #555;
     font-size: 0.95em;
     line-height: 1.6;
-    flex-grow: 1;
+    flex-grow: 1; /* Pushes the button to the bottom */
   }
 
-  .btn--small { align-self: flex-start; margin-top: 15px; }
+  .btn--small {
+    align-self: flex-start;
+    margin-top: 15px;
+  }
 
-  /* Animations */
+  /* --- 5. WATERFALL ANIMATIONS --- */
   @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .feature__item { opacity: 0; animation: fadeUp 0.8s ease-out forwards; }
+  .feature__item { 
+    opacity: 0; 
+    animation: fadeUp 0.8s ease-out forwards; 
+  }
+
+  /* Stagger the animation for each card */
   .feature__item:nth-child(1) { animation-delay: 0.1s; }
   .feature__item:nth-child(2) { animation-delay: 0.2s; }
   .feature__item:nth-child(3) { animation-delay: 0.3s; }
