@@ -32,17 +32,15 @@ feature_row:
   
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
 
-  .page__inner-wrap {
-    float: none !important;
-    margin: 0 auto !important;
-    width: 95% !important; 
-    max-width: 1600px !important; /* Increased width to use right-side space */
+  .page__inner-wrap { 
+    float: none !important; 
+    margin: 0 auto !important; 
+    width: 100% !important; 
+    max-width: 1200px !important; 
     padding: 0 20px;
     box-sizing: border-box;
   }
-  
-  .page__content { width: 100% !important; max-width: 100% !important; }
-
+  .page__content { width: 100% !important; }
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
   /* --- 2. MISSION STATEMENT --- */
