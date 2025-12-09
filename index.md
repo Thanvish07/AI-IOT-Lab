@@ -36,7 +36,7 @@ feature_row:
     float: none !important;
     margin: 0 auto !important;
     width: 100% !important; 
-    max-width: 1200px !important; /* THE FIXED BOUNDARY */
+    max-width: 2000px !important; /* THE FIXED BOUNDARY */
     padding: 0 20px; /* Slight padding from screen edge on mobile */
     box-sizing: border-box;
   }
@@ -50,7 +50,7 @@ feature_row:
     font-size: 1.15em; 
     text-align: left !important;
     margin: 40px 0 40px 0; /* Top/Bottom margins only */
-    width: 100%; /* FORCE FULL WIDTH of container */
+    width: 75%; /* FORCE FULL WIDTH of container */
     max-width: 100%; 
     box-sizing: border-box;
     border-left: 5px solid #007bff;
