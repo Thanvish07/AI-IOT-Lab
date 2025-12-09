@@ -9,94 +9,149 @@ toc_label: "Themes"
 ---
 
 <style>
-  /* --- 1. LAYOUT MATCHING JOINING-US.MD --- */
+  /* --- 1. LAYOUT CONSISTENCY (1200px Max) --- */
   .sidebar, .page__sidebar { display: none !important; }
   
   .page__inner-wrap { 
     float: none !important; 
     margin: 0 auto !important; 
     width: 100% !important; 
-    max-width: 1200px !important; /* Matches joining-us.md exactly */
+    max-width: 1200px !important; 
+    padding: 0 20px;
+    box-sizing: border-box;
   }
-  
   .page__content { width: 100% !important; }
-  
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* --- 2. INTERACTIVE CARD STYLING --- */
+  /* --- 2. ADVANCED CARD STYLING --- */
   .feature__row {
     display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-    margin-top: 30px;
+    gap: 30px;
+    margin-top: 40px;
   }
 
   .feature__item {
-    flex: 1 1 300px;
-    max-width: 350px;
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    flex: 1 1 320px; /* Base width */
+    max-width: 360px;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 16px; /* Softer curves */
+    padding: 0; /* Remove padding to let image sit flush */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04); /* Deep, soft shadow */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
     position: relative;
     overflow: hidden;
-    margin-bottom: 0 !important;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Align text left for better readability */
   }
 
+  /* Gradient Border Effect on Hover */
+  .feature__item::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+
+  .feature__item:hover::before { transform: scaleX(1); }
+
+  /* Hover State: Lift & Glassmorphism */
   .feature__item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    border-color: #007bff;
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,123,255,0.15);
+    border-color: transparent;
   }
 
-  /* Image Styling */
+  /* --- 3. IMAGE & ICON STYLING --- */
   .archive__item-teaser {
-    background: #f8f9fa;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    overflow: hidden;
+    background: #f8faff; /* Very light blue tint */
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
   }
 
   .archive__item-teaser img {
-    max-height: 150px;
+    height: 120px;
+    width: auto;
     object-fit: contain;
-    width: 100%;
     transition: transform 0.5s ease;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
   }
 
-  .feature__item:hover .archive__item-teaser img { transform: scale(1.08); }
+  /* Pulse Animation on Hover */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
 
-  /* Typography */
+  .feature__item:hover .archive__item-teaser img {
+    animation: pulse 1.5s infinite;
+  }
+
+  /* --- 4. CONTENT STYLING --- */
+  .feature__item-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
   .feature__item-title {
-    font-size: 1.3em;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #2c3e50;
+    letter-spacing: -0.5px;
   }
   
   .feature__item-content p {
     color: #555;
     font-size: 0.95em;
-    line-height: 1.6;
+    line-height: 1.7;
+    margin-bottom: 20px;
   }
 
-  /* Animations */
+  /* Interactive Arrow Hint */
+  .read-more-arrow {
+    margin-top: auto;
+    font-weight: bold;
+    color: #007bff;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .feature__item:hover .read-more-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* --- 5. WATERFALL ENTRANCE --- */
   @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(40px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .feature__item { opacity: 0; animation: fadeUp 0.7s ease-out forwards; }
+  .feature__item { opacity: 0; animation: fadeUp 0.8s ease-out forwards; }
   .feature__item:nth-child(1) { animation-delay: 0.1s; }
   .feature__item:nth-child(2) { animation-delay: 0.2s; }
   .feature__item:nth-child(3) { animation-delay: 0.3s; }
   .feature__item:nth-child(4) { animation-delay: 0.4s; }
   .feature__item:nth-child(5) { animation-delay: 0.5s; }
+
 </style>
 
 # Research Themes
@@ -119,6 +174,7 @@ We primarily leverage **smart meter time series** and other opportunistic data s
     <div class="feature__item-content">
       <h3 class="feature__item-title">Energy Monitoring</h3>
       <p>We develop systems to collect and process high-frequency <strong>smart meter time-series data</strong>. By monitoring consumption patterns at granular levels, we enable real-time visibility into building performance.</p>
+      <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
     </div>
   </div>
 
@@ -129,6 +185,7 @@ We primarily leverage **smart meter time series** and other opportunistic data s
     <div class="feature__item-content">
       <h3 class="feature__item-title">Energy Benchmarking</h3>
       <p>Comparing raw energy consumption is often unfair. We build <strong>data-driven benchmarking models</strong> that normalize for weather and occupancy, allowing for accurate peer-to-peer comparison.</p>
+      <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
     </div>
   </div>
 
@@ -139,6 +196,7 @@ We primarily leverage **smart meter time series** and other opportunistic data s
     <div class="feature__item-content">
       <h3 class="feature__item-title">Energy Prediction</h3>
       <p>Forecasting future energy demand is critical. We apply statistical and machine learning techniques to <strong>predict load profiles</strong> based on historical smart meter data and weather forecasts.</p>
+      <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
     </div>
   </div>
 
@@ -149,6 +207,7 @@ We primarily leverage **smart meter time series** and other opportunistic data s
     <div class="feature__item-content">
       <h3 class="feature__item-title">Anomaly Detection</h3>
       <p>We research unsupervised learning algorithms to automatically scan time-series data and <strong>detect point and contextual anomalies</strong>, flagging unusual consumption spikes.</p>
+      <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
     </div>
   </div>
 
@@ -159,6 +218,7 @@ We primarily leverage **smart meter time series** and other opportunistic data s
     <div class="feature__item-content">
       <h3 class="feature__item-title">Fault Detection (FDD)</h3>
       <p>Going beyond simple anomalies, we focus on specific failures. Our FDD research utilizes system-level data to <strong>diagnose root causes</strong> of inefficiencies in HVAC components.</p>
+      <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
     </div>
   </div>
 
