@@ -27,30 +27,42 @@ feature_row:
 ---
 
 <style>
-  /* --- 1. LAYOUT: CENTERED 1200px --- */
+  /* --- 1. LAYOUT FIX: FORCE CENTER ALIGNMENT --- */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
   
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
 
+  /* This fixes the "Left-Sided" issue */
   .page__inner-wrap {
-    float: none !important;
-    margin: 0 auto !important; /* Centers the whole container */
+    float: none !important; /* Stops it from sticking to the left */
+    margin-left: auto !important; /* Pushes from left */
+    margin-right: auto !important; /* Pushes from right */
     width: 100% !important; 
     max-width: 1200px !important; /* Matches Themes.md width */
     padding: 0 20px;
     box-sizing: border-box;
   }
   
-  .page__content { width: 100% !important; max-width: 100% !important; }
+  .page__content { 
+    width: 100% !important; 
+    max-width: 100% !important; 
+    margin: 0 auto !important;
+  }
 
-  @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
+  @media (min-width: 64em) { 
+    .page { 
+      width: 100% !important; 
+      padding: 0 !important; 
+      float: none !important; /* Double check for large screens */
+    } 
+  }
 
-  /* --- 2. MISSION STATEMENT (CENTERED) --- */
+  /* --- 2. MISSION STATEMENT (CENTERED TEXT) --- */
   .notice--info { 
     font-size: 1.15em; 
-    text-align: center !important; /* Center text inside the box */
-    margin: 40px auto 50px auto;   /* Center the box itself */
-    width: 100%; 
+    text-align: center !important; /* Center the text inside */
+    margin: 40px 0 50px 0;
+    width: 100%; /* Fill container */
     max-width: 100%; 
     box-sizing: border-box;
     border-left: 5px solid #007bff;
@@ -66,52 +78,55 @@ feature_row:
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
 
-  /* --- 3. FLEX CARD CONTAINER (CENTERED) --- */
+  /* --- 3. FEATURE GRID (3 BOXES, 1 ROW, CENTERED) --- */
   .feature__wrapper {
-    display: flex !important;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers cards in the row */
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Equal Columns */
+    gap: 30px;
     width: 100%;
-    margin-bottom: 0 !important;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
-  /* --- 4. CARD STYLING (CENTERED CONTENT) --- */
+  /* Stack on mobile */
+  @media (max-width: 768px) {
+    .feature__wrapper { grid-template-columns: 1fr; }
+  }
+
+  /* --- 4. CARD STYLING (Matches Themes.md) --- */
   .feature__item {
-    flex: 1 1 300px;
-    max-width: 350px;
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; 
-    padding: 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 0; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
     text-align: center; /* Center text inside cards */
     display: flex;
     flex-direction: column;
-    margin-bottom: 0 !important;
+    height: 100%;
   }
 
-  /* Hover Effect: Lift Up */
-  .feature__item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    border-color: #007bff;
-  }
-
-  /* Gradient Border Effect */
+  /* Gradient Border */
   .feature__item::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; height: 4px;
     background: linear-gradient(90deg, #007bff, #00d4ff);
     transform: scaleX(0);
-    transform-origin: center; /* Animate from center */
+    transform-origin: center;
     transition: transform 0.4s ease;
   }
   .feature__item:hover::before { transform: scaleX(1); }
+
+  .feature__item:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,123,255,0.15);
+    border-color: transparent;
+    z-index: 2;
+  }
 
   /* --- 5. ICON STYLING --- */
   .feature__item-teaser {
@@ -119,19 +134,17 @@ feature_row:
     padding: 30px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the Icon */
+    justify-content: center;
     border-bottom: 1px solid #f0f0f0;
-    height: 100px; 
   }
 
   .feature__item-teaser i {
     font-size: 3.5em; 
     color: #007bff;
     transition: transform 0.5s ease;
-    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
   }
 
-  /* Pulse Animation */
   @keyframes pulseIcon {
     0% { transform: scale(1); }
     50% { transform: scale(1.15); }
@@ -154,13 +167,13 @@ feature_row:
   .archive__item-title {
     font-size: 1.4em;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #2c3e50;
   }
   
   .archive__item-excerpt {
     font-size: 0.95em;
-    line-height: 1.6;
+    line-height: 1.7;
     color: #555;
     margin-bottom: 20px;
     flex-grow: 1;
@@ -170,50 +183,38 @@ feature_row:
   .read-more-arrow {
     margin-top: auto;
     font-weight: bold;
-    color: #007bff !important;
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: all 0.3s ease;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-block;
+    color: #007bff;
     text-decoration: none !important;
+    display: inline-block;
+    transition: transform 0.3s ease;
   }
 
   .feature__item:hover .read-more-arrow {
-    opacity: 1;
-    transform: translateX(0);
+    transform: scale(1.1);
+    color: #0056b3;
   }
-  
-  .read-more-arrow:hover { color: #0056b3 !important; }
 
-  /* --- 7. ANIMATIONS --- */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  .feature__item, .notice--info, h1, .page__content p { 
-    animation: fadeUp 0.8s ease-out forwards; 
-    opacity: 0; 
-  }
-  
-  h1 { animation-delay: 0s; }
-  .notice--info { animation-delay: 0.2s; }
-  .feature__item:nth-child(1) { animation-delay: 0.3s; }
-  .feature__item:nth-child(2) { animation-delay: 0.4s; }
-  .feature__item:nth-child(3) { animation-delay: 0.5s; }
-
-  /* Typography Polish (CENTERED) */
+  /* Typography Polish */
   h1 { 
     font-size: 2.2em !important; 
     border-bottom: 2px solid #eee; 
     padding-bottom: 10px; 
     margin-bottom: 30px; 
     width: 100%;
-    text-align: center; /* Centers "About the Lab" */
+    text-align: center; /* Center the Title */
   }
+  
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .feature__item, .notice--info, h1 { animation: fadeUp 0.8s ease-out forwards; opacity: 0; }
+  h1 { animation-delay: 0s; }
+  .notice--info { animation-delay: 0.2s; }
+  .feature__item:nth-child(1) { animation-delay: 0.3s; }
+  .feature__item:nth-child(2) { animation-delay: 0.4s; }
+  .feature__item:nth-child(3) { animation-delay: 0.5s; }
 </style>
 
 # About the Lab
