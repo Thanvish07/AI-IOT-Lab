@@ -27,17 +27,18 @@ feature_row:
 ---
 
 <style>
-  /* --- 1. LAYOUT: WIDER 1600px (Matches Themes.md) --- */
+  /* --- 1. LAYOUT: PERFECTLY CENTERED & BALANCED --- */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
   
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
 
   .page__inner-wrap {
     float: none !important;
-    margin: 0 auto !important;
-    width: 100% !important; 
-    max-width: 1600px !important; /* Extends layout to Left and Right */
-    padding: 0 5px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 90% !important; /* Uses 90% of screen for breathing room */
+    max-width: 1400px !important; /* Cap width to keep it readable */
+    padding: 0 !important;
     box-sizing: border-box;
   }
   
@@ -45,58 +46,56 @@ feature_row:
 
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* --- 2. MISSION STATEMENT --- */
+  /* --- 2. MISSION STATEMENT (Centered & Balanced) --- */
   .notice--info { 
     font-size: 1.15em; 
     text-align: left !important;
-    margin: 40px 0 50px 0;
+    margin: 40px auto 50px auto; /* Auto margins center the box itself */
     width: 100%; 
     max-width: 100%; 
     box-sizing: border-box;
-    border-left: 5px solid #007bff;
+    border-left: 6px solid #007bff;
     background: #f4f9ff;
-    padding: 25px;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     transition: transform 0.3s ease;
   }
 
   .notice--info:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   }
 
-  /* --- 3. FLEXBOX LAYOUT (Matches Themes.md Box Styles) --- */
+  /* --- 3. GRID LAYOUT (Symmetrical 3 Columns) --- */
   .feature__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Spreads cards evenly */
-    gap: 30px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 equal columns */
+    gap: 30px; 
     width: 100%;
-    margin-bottom: 0 !important;
+    margin: 0 auto; /* Centers the grid */
+    justify-content: center;
+  }
+
+  /* Stack on tablets/phones */
+  @media (max-width: 900px) {
+    .feature__wrapper { grid-template-columns: 1fr; max-width: 500px; }
   }
 
   /* --- 4. PREMIUM CARD STYLING --- */
   .feature__item {
-    flex: 1 1 350px; /* Exact size style from Themes.md */
-    max-width: 1000px; /* Allows them to fill the 1600px space */
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; 
     padding: 0; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
     text-align: left; 
     display: flex;
     flex-direction: column;
-    margin-bottom: 0 !important;
-  }
-
-  /* Mobile: Stack them */
-  @media (max-width: 1000px) {
-    .feature__item { max-width: 100%; flex-basis: 100%; }
+    height: 100%; /* Stretches cards to be equal height */
   }
 
   /* Gradient Border Effect */
@@ -112,9 +111,8 @@ feature_row:
 
   .feature__item:hover::before { transform: scaleX(1); }
 
-  /* Hover State */
   .feature__item:hover {
-    transform: translateY(-12px) scale(1.02);
+    transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,123,255,0.15);
     border-color: transparent;
     z-index: 2;
@@ -123,7 +121,7 @@ feature_row:
   /* --- 5. CONTENT STYLING --- */
   .feature__item-teaser {
     background: #f8faff; 
-    padding: 40px; /* Increased padding to match image box height */
+    padding: 40px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,12 +129,13 @@ feature_row:
   }
 
   .feature__item-teaser i {
-    font-size: 3.5em; /* Larger icons */
+    font-size: 3.5em; 
     color: #007bff;
     transition: transform 0.5s ease;
     filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
   }
 
+  /* Pulse Animation */
   @keyframes pulseIcon {
     0% { transform: scale(1); }
     50% { transform: scale(1.15); }
@@ -209,8 +208,14 @@ feature_row:
   .feature__item:nth-child(2) { animation-delay: 0.4s; }
   .feature__item:nth-child(3) { animation-delay: 0.5s; }
 
-  /* Typography */
-  h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px; width: 100%; }
+  /* Typography Polish */
+  h1 { 
+    font-size: 2.2em !important; 
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 15px; 
+    margin-bottom: 30px; 
+    width: 100%; 
+  }
 </style>
 
 # About the Lab
