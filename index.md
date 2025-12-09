@@ -38,7 +38,7 @@ feature_row:
     box-sizing: border-box;
   }
   
-  .page__content { width: 100% !important; max-width: 100% !important; }
+  .page__content { width: 75% !important; max-width: 100% !important; }
 
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
