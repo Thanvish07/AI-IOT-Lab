@@ -34,7 +34,7 @@ feature_row:
   .page__inner-wrap {
     float: none !important;
     margin: 0 auto !important;
-    width: 100% !important; 
+    width: 75% !important; 
     max-width: 1200px !important; /* Standardized width */
     padding: 0 20px;
     box-sizing: border-box;
@@ -49,7 +49,7 @@ feature_row:
     font-size: 1.15em; 
     text-align: left !important;
     margin: 40px 0 60px 0;
-    width: 100%; /* Fill the 1200px container */
+    width: 75%; /* Fill the 1200px container */
     max-width: 100%; 
     box-sizing: border-box;
     border-left: 5px solid #007bff;
