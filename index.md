@@ -27,7 +27,7 @@ feature_row:
 ---
 
 <style>
-  /* --- 1. LAYOUT: CENTERED 1200px --- */
+  /* --- 1. LAYOUT: WIDER (1600px) --- */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
   
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
@@ -35,8 +35,8 @@ feature_row:
   .page__inner-wrap {
     float: none !important;
     margin: 0 auto !important;
-    width: 100% !important; 
-    max-width: 1200px !important; 
+    width: 95% !important; 
+    max-width: 1600px !important; /* Increased width to use right-side space */
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -66,21 +66,19 @@ feature_row:
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
 
-  /* --- 3. GRID LAYOUT (FORCED 1 ROW) --- */
+  /* --- 3. GRID LAYOUT (ONE ROW) --- */
   .feature__wrapper {
-    display: grid; /* Use Grid instead of Flex */
-    grid-template-columns: repeat(3, 1fr); /* Forces exactly 3 equal columns */
-    gap: 30px; /* Space between cards */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Spreads them evenly */
+    gap: 30px;
     width: 100%;
-  }
-
-  /* Stack vertically ONLY on small mobile screens */
-  @media (max-width: 768px) {
-    .feature__wrapper { grid-template-columns: 1fr; }
   }
 
   /* --- 4. PREMIUM CARD STYLING --- */
   .feature__item {
+    flex: 1 1 300px; /* Allow them to grow */
+    max-width: 500px; /* Increased max-width so they fill the 1600px space without wrapping */
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; 
@@ -92,7 +90,12 @@ feature_row:
     text-align: left; 
     display: flex;
     flex-direction: column;
-    height: 100%; /* Ensures they stretch to equal height */
+    margin-bottom: 0 !important;
+  }
+
+  /* Mobile: Stack them */
+  @media (max-width: 1000px) {
+    .feature__item { max-width: 100%; flex-basis: 100%; }
   }
 
   /* Gradient Border Effect */
@@ -113,7 +116,7 @@ feature_row:
     transform: translateY(-12px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,123,255,0.15);
     border-color: transparent;
-    z-index: 2; /* Bring to front */
+    z-index: 2;
   }
 
   /* --- 5. CONTENT STYLING --- */
@@ -145,7 +148,7 @@ feature_row:
   }
 
   .feature__item-body {
-    padding: 25px;
+    padding: 30px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -154,15 +157,15 @@ feature_row:
   .archive__item-title {
     font-size: 1.4em;
     font-weight: 800;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     color: #2c3e50;
   }
   
   .archive__item-excerpt {
-    font-size: 0.95em;
+    font-size: 1em;
     line-height: 1.7;
     color: #555;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     flex-grow: 1;
   }
 
