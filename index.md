@@ -79,7 +79,7 @@ feature_row:
   /* --- 4. PREMIUM CARD STYLING --- */
   .feature__item {
     flex: 1 1 350px; /* Exact size style from Themes.md */
-    max-width: 500px; /* Allows them to fill the 1600px space */
+    max-width: 1000px; /* Allows them to fill the 1600px space */
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; 
