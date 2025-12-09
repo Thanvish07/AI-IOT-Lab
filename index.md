@@ -36,7 +36,7 @@ feature_row:
     float: none !important;
     margin: 0 auto !important; /* Centers the whole container */
     width: 100% !important; 
-    max-width: 1200px !important; 
+    max-width: 1200px !important; /* Matches Themes.md width */
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -48,7 +48,7 @@ feature_row:
   /* --- 2. MISSION STATEMENT (CENTERED) --- */
   .notice--info { 
     font-size: 1.15em; 
-    text-align: center !important; /* CHANGED TO CENTER */
+    text-align: center !important; /* Center text inside the box */
     margin: 40px auto 50px auto;   /* Center the box itself */
     width: 100%; 
     max-width: 100%; 
@@ -66,24 +66,24 @@ feature_row:
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
 
-  /* --- 3. FLEX CARD CONTAINER (Centered) --- */
+  /* --- 3. FLEX CARD CONTAINER (CENTERED) --- */
   .feature__wrapper {
     display: flex !important;
     flex-wrap: wrap;
-    justify-content: center; /* Ensures content sits in the middle */
+    justify-content: center; /* Centers cards in the row */
     gap: 25px;
     width: 100%;
     margin-bottom: 0 !important;
   }
 
-  /* --- 4. CARD STYLING --- */
+  /* --- 4. CARD STYLING (CENTERED CONTENT) --- */
   .feature__item {
     flex: 1 1 300px;
     max-width: 350px;
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; 
-    padding: 25px;
+    padding: 0;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     position: relative;
@@ -101,15 +101,26 @@ feature_row:
     border-color: #007bff;
   }
 
+  /* Gradient Border Effect */
+  .feature__item::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    transform: scaleX(0);
+    transform-origin: center; /* Animate from center */
+    transition: transform 0.4s ease;
+  }
+  .feature__item:hover::before { transform: scaleX(1); }
+
   /* --- 5. ICON STYLING --- */
   .feature__item-teaser {
     background: #f8faff; 
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Center the Icon */
+    border-bottom: 1px solid #f0f0f0;
     height: 100px; 
   }
 
@@ -134,16 +145,17 @@ feature_row:
 
   /* --- 6. CONTENT STYLING --- */
   .feature__item-body {
+    padding: 25px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
   }
 
   .archive__item-title {
-    font-size: 1.3em;
-    font-weight: 700;
+    font-size: 1.4em;
+    font-weight: 800;
     margin-bottom: 10px;
-    color: #333;
+    color: #2c3e50;
   }
   
   .archive__item-excerpt {
