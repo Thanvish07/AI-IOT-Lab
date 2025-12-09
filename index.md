@@ -35,7 +35,7 @@ feature_row:
     float: none !important;
     margin: 0 auto !important;
     width: 100% !important; 
-    max-width: 1200px !important;
+    max-width: 1600px !important;
     padding: 0 20px;
     box-sizing: border-box;
   }
