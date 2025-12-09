@@ -24,84 +24,121 @@ feature_row:
 ---
 
 <style>
-  /* 1. AGGRESSIVE LAYOUT RESET */
-  .sidebar, .page__sidebar, .sidebar__right { display: none !important; width: 0 !important; }
+  /* --- 1. LAYOUT: MATCHING JOINING-US.MD (1200px Center) --- */
+  .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
   
-  #main {
-    margin-left: 0 !important; margin-right: 0 !important;
-    padding-left: 0 !important; padding-right: 0 !important;
-    width: 100% !important; max-width: 100% !important;
-  }
+  #main { margin: 0 !important; padding: 0 !important; width: 100% !important; max-width: 100% !important; }
 
   .page__inner-wrap {
     float: none !important;
     margin: 0 auto !important;
-    width: 95% !important; 
-    max-width: 1600px !important;
-    padding: 0 20px !important;
-    box-sizing: border-box; /* Crucial for preventing overflow */
+    width: 100% !important; 
+    max-width: 1200px !important; /* Standardized width */
+    padding: 0 20px;
+    box-sizing: border-box;
   }
+  
+  .page__content { width: 100% !important; max-width: 100% !important; }
 
-  /* 2. MISSION STATEMENT FIX (Prevent Overflow) */
+  @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
+
+  /* --- 2. MISSION STATEMENT STYLING --- */
   .notice--info { 
     font-size: 1.15em; 
     text-align: left !important;
-    margin: 30px 0 50px 0;
-    width: 75%; /* Force it to fit container */
-    max-width: 100%; /* Ensure it never exceeds parent */
-    box-sizing: border-box; /* Includes padding in width calculation */
+    margin: 40px 0 60px 0;
+    width: 100%; /* Fill the 1200px container */
+    max-width: 100%; 
+    box-sizing: border-box;
     border-left: 5px solid #007bff;
     background: #f4f9ff;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
   }
 
-  /* 3. CARD CONTAINER FIX */
+  .notice--info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+
+  /* --- 3. FEATURE CARD STYLING (Icons) --- */
+  /* Force the default feature row to behave like our custom grids */
   .feature__wrapper {
     display: flex !important;
-    justify-content: space-between;
-    gap: 20px;
     flex-wrap: wrap;
-    width: 100%; /* Ensure wrapper fits container */
-    box-sizing: border-box;
+    justify-content: center;
+    gap: 30px;
   }
 
-  /* 4. INDIVIDUAL CARD FIX */
   .feature__item {
-    flex: 1;
-    min-width: 280px;
-    max-width: 32%;
+    flex: 1 1 300px;
+    max-width: 350px;
     background: #fff;
-    border-radius: 8px;
-    padding: 25px;
-    border: 1px solid #eee; 
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-sizing: border-box; /* Prevent padding form pushing width out */
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-align: center;
+    margin-bottom: 0 !important;
   }
 
+  /* Hover Effect: Lift Up */
   .feature__item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    border-color: #ddd;
-    z-index: 10;
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-color: #007bff;
   }
 
-  /* 5. ANIMATIONS */
+  /* Icon Animation */
+  .feature__item-teaser {
+    margin-bottom: 20px;
+    color: #007bff; /* Brand color for icons */
+  }
+  
+  .feature__item-teaser i {
+    transition: transform 0.4s ease;
+  }
+
+  .feature__item:hover .feature__item-teaser i {
+    transform: scale(1.2) rotate(5deg);
+  }
+
+  /* Text Styling */
+  .archive__item-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .archive__item-excerpt {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  /* --- 4. ANIMATIONS --- */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
   }
   
-  .feature__item, .notice--info, h1 { opacity: 0; }
-  h1 { animation: fadeUp 0.8s ease-out forwards; }
-  .notice--info { animation: fadeUp 0.8s ease-out 0.2s forwards; }
+  .feature__item, .notice--info, h1, .page__content p { 
+    animation: fadeUp 0.8s ease-out forwards; 
+    opacity: 0; 
+  }
   
-  .feature__wrapper .feature__item:nth-child(1) { animation: fadeUp 0.8s ease-out 0.4s forwards; }
-  .feature__wrapper .feature__item:nth-child(2) { animation: fadeUp 0.8s ease-out 0.5s forwards; }
-  .feature__wrapper .feature__item:nth-child(3) { animation: fadeUp 0.8s ease-out 0.6s forwards; }
+  /* Stagger delays */
+  h1 { animation-delay: 0s; }
+  .notice--info { animation-delay: 0.2s; }
+  .feature__item:nth-child(1) { animation-delay: 0.3s; }
+  .feature__item:nth-child(2) { animation-delay: 0.4s; }
+  .feature__item:nth-child(3) { animation-delay: 0.5s; }
 
+  /* Typography Polish */
+  h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px; }
 </style>
 
 # About the Lab
@@ -114,6 +151,8 @@ feature_row:
 </div>
 
 {% include feature_row %}
+
+<br>
 
 # <i class="fas fa-newspaper"></i> What's New
 ---
