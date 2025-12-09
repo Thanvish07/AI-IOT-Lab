@@ -27,16 +27,16 @@ feature_row:
 ---
 
 <style>
-  /* --- 1. LAYOUT: EXACT MATCH WITH THEMES.MD --- */
+  /* --- 1. LAYOUT: CENTERED 1200px --- */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
   
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
 
   .page__inner-wrap {
     float: none !important;
-    margin: 0 auto !important;
+    margin: 0 auto !important; /* Centers the whole container */
     width: 100% !important; 
-    max-width: 1200px !important; /* Strictly 1200px like Themes.md */
+    max-width: 1200px !important; 
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -45,17 +45,17 @@ feature_row:
 
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* --- 2. MISSION STATEMENT ALIGNMENT --- */
+  /* --- 2. MISSION STATEMENT (CENTERED) --- */
   .notice--info { 
     font-size: 1.15em; 
-    text-align: left !important;
-    margin: 40px 0 50px 0;
+    text-align: center !important; /* CHANGED TO CENTER */
+    margin: 40px auto 50px auto;   /* Center the box itself */
     width: 100%; 
     max-width: 100%; 
     box-sizing: border-box;
     border-left: 5px solid #007bff;
     background: #f4f9ff;
-    padding: 25px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
@@ -66,29 +66,29 @@ feature_row:
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
 
-  /* --- 3. FLEX CARD CONTAINER (Copied from Themes.md) --- */
+  /* --- 3. FLEX CARD CONTAINER (Centered) --- */
   .feature__wrapper {
     display: flex !important;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px; /* Matches Themes.md spacing */
+    justify-content: center; /* Ensures content sits in the middle */
+    gap: 25px;
     width: 100%;
     margin-bottom: 0 !important;
   }
 
-  /* --- 4. CARD STYLING (Copied from Themes.md) --- */
+  /* --- 4. CARD STYLING --- */
   .feature__item {
     flex: 1 1 300px;
-    max-width: 350px; /* Exact width from Themes.md */
+    max-width: 350px;
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; 
-    padding: 25px; /* Added padding back to match Themes.md style */
+    padding: 25px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     position: relative;
     overflow: hidden;
-    text-align: center; /* Center aligned text like Themes.md */
+    text-align: center; /* Center text inside cards */
     display: flex;
     flex-direction: column;
     margin-bottom: 0 !important;
@@ -101,16 +101,16 @@ feature_row:
     border-color: #007bff;
   }
 
-  /* --- 5. ICON STYLING (Adapted to match Image Box in Themes.md) --- */
+  /* --- 5. ICON STYLING --- */
   .feature__item-teaser {
-    background: #f8faff; /* Matches image background */
+    background: #f8faff; 
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px; /* Fixed height to mimic image area */
+    height: 100px; 
   }
 
   .feature__item-teaser i {
@@ -193,8 +193,15 @@ feature_row:
   .feature__item:nth-child(2) { animation-delay: 0.4s; }
   .feature__item:nth-child(3) { animation-delay: 0.5s; }
 
-  /* Typography Polish */
-  h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px; width: 100%; }
+  /* Typography Polish (CENTERED) */
+  h1 { 
+    font-size: 2.2em !important; 
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 10px; 
+    margin-bottom: 30px; 
+    width: 100%;
+    text-align: center; /* Centers "About the Lab" */
+  }
 </style>
 
 # About the Lab
