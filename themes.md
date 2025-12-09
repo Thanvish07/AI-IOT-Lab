@@ -9,7 +9,7 @@ toc_label: "Themes"
 ---
 
 <style>
-  /* --- 1. LAYOUT CONSISTENCY (1200px Max) --- */
+  /* --- 1. LAYOUT CONSISTENCY --- */
   .sidebar, .page__sidebar { display: none !important; }
   
   .page__inner-wrap { 
@@ -33,22 +33,22 @@ toc_label: "Themes"
   }
 
   .feature__item {
-    flex: 1 1 320px; /* Base width */
+    flex: 1 1 320px; 
     max-width: 360px;
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
-    border-radius: 16px; /* Softer curves */
-    padding: 0; /* Remove padding to let image sit flush */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.04); /* Deep, soft shadow */
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+    border-radius: 16px; 
+    padding: 0; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    text-align: left; /* Align text left for better readability */
+    text-align: left; 
   }
 
-  /* Gradient Border Effect on Hover */
+  /* Gradient Border Effect */
   .feature__item::before {
     content: "";
     position: absolute;
@@ -61,7 +61,6 @@ toc_label: "Themes"
 
   .feature__item:hover::before { transform: scaleX(1); }
 
-  /* Hover State: Lift & Glassmorphism */
   .feature__item:hover {
     transform: translateY(-12px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,123,255,0.15);
@@ -70,7 +69,7 @@ toc_label: "Themes"
 
   /* --- 3. IMAGE & ICON STYLING --- */
   .archive__item-teaser {
-    background: #f8faff; /* Very light blue tint */
+    background: #f8faff; 
     padding: 30px;
     display: flex;
     align-items: center;
@@ -87,7 +86,6 @@ toc_label: "Themes"
     filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
   }
 
-  /* Pulse Animation on Hover */
   @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -121,22 +119,29 @@ toc_label: "Themes"
     margin-bottom: 20px;
   }
 
-  /* Interactive Arrow Hint */
+  /* Interactive Arrow Link Styling */
   .read-more-arrow {
     margin-top: auto;
     font-weight: bold;
-    color: #007bff;
+    color: #007bff !important; /* Force color */
     opacity: 0;
     transform: translateX(-10px);
     transition: all 0.3s ease;
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-decoration: none !important; /* No underline */
+    cursor: pointer;
+    display: inline-block;
   }
 
   .feature__item:hover .read-more-arrow {
     opacity: 1;
     transform: translateX(0);
+  }
+
+  .read-more-arrow:hover {
+    color: #0056b3 !important;
   }
 
   /* --- 5. WATERFALL ENTRANCE --- */
@@ -163,8 +168,6 @@ Our research philosophy is grounded in the convergence of **Data Science** and *
 
 We primarily leverage **smart meter time series** and other opportunistic data sources to develop systems and techniques for the following key areas:
 
----
-
 <div class="feature__row">
 
   <div class="feature__item">
@@ -174,7 +177,8 @@ We primarily leverage **smart meter time series** and other opportunistic data s
     <div class="feature__item-content">
       <h3 class="feature__item-title">Energy Monitoring</h3>
       <p>We develop systems to collect and process high-frequency <strong>smart meter time-series data</strong>. By monitoring consumption patterns at granular levels, we enable real-time visibility into building performance.</p>
-      <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+      
+      <a href="#" class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -185,7 +189,8 @@ We primarily leverage **smart meter time series** and other opportunistic data s
     <div class="feature__item-content">
       <h3 class="feature__item-title">Energy Benchmarking</h3>
       <p>Comparing raw energy consumption is often unfair. We build <strong>data-driven benchmarking models</strong> that normalize for weather and occupancy, allowing for accurate peer-to-peer comparison.</p>
-      <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+      
+      <a href="#" class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -196,7 +201,8 @@ We primarily leverage **smart meter time series** and other opportunistic data s
     <div class="feature__item-content">
       <h3 class="feature__item-title">Energy Prediction</h3>
       <p>Forecasting future energy demand is critical. We apply statistical and machine learning techniques to <strong>predict load profiles</strong> based on historical smart meter data and weather forecasts.</p>
-      <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+      
+      <a href="#" class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -207,7 +213,8 @@ We primarily leverage **smart meter time series** and other opportunistic data s
     <div class="feature__item-content">
       <h3 class="feature__item-title">Anomaly Detection</h3>
       <p>We research unsupervised learning algorithms to automatically scan time-series data and <strong>detect point and contextual anomalies</strong>, flagging unusual consumption spikes.</p>
-      <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+      
+      <a href="#" class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 
@@ -218,7 +225,8 @@ We primarily leverage **smart meter time series** and other opportunistic data s
     <div class="feature__item-content">
       <h3 class="feature__item-title">Fault Detection (FDD)</h3>
       <p>Going beyond simple anomalies, we focus on specific failures. Our FDD research utilizes system-level data to <strong>diagnose root causes</strong> of inefficiencies in HVAC components.</p>
-      <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+      
+      <a href="#" class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 
