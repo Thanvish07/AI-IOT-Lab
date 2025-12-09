@@ -27,31 +27,30 @@ feature_row:
 ---
 
 <style>
-  /* --- 1. LAYOUT CONSISTENCY (1200px Center) --- */
+  /* --- 1. LAYOUT: EXACT MATCH WITH THEMES.MD --- */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
   
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
 
-  /* Master Container: Controls alignment for everything */
-  .page__inner-wrap { 
-    float: none !important; 
-    margin: 0 auto !important; 
+  .page__inner-wrap {
+    float: none !important;
+    margin: 0 auto !important;
     width: 100% !important; 
-    max-width: 1200px !important; /* Fixed width boundary */
+    max-width: 1200px !important; /* Strictly 1200px like Themes.md */
     padding: 0 20px;
     box-sizing: border-box;
   }
   
   .page__content { width: 100% !important; max-width: 100% !important; }
-  
+
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* --- 2. MISSION STATEMENT --- */
+  /* --- 2. MISSION STATEMENT ALIGNMENT --- */
   .notice--info { 
     font-size: 1.15em; 
     text-align: left !important;
     margin: 40px 0 50px 0;
-    width: 100%; /* Force full width of container */
+    width: 100%; 
     max-width: 100%; 
     box-sizing: border-box;
     border-left: 5px solid #007bff;
@@ -67,131 +66,114 @@ feature_row:
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
 
-  /* --- 3. GRID LAYOUT (The "One Row" Fix) --- */
+  /* --- 3. FLEX CARD CONTAINER (Copied from Themes.md) --- */
   .feature__wrapper {
-    display: flex;
-    display: grid; /* Strict Grid */
-    grid-template-columns: repeat(3, 1fr); /* 3 Equal Columns */
-    gap: 30px;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* Matches Themes.md spacing */
     width: 100%;
     margin-bottom: 0 !important;
   }
 
-  /* Stack vertically on mobile */
-  @media (max-width: 768px) {
-    .feature__wrapper { grid-template-columns: 1fr; }
-  }
-
-  /* --- 4. ADVANCED CARD STYLING (From your snippet) --- */
+  /* --- 4. CARD STYLING (Copied from Themes.md) --- */
   .feature__item {
+    flex: 1 1 300px;
+    max-width: 350px; /* Exact width from Themes.md */
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; 
-    padding: 0; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    padding: 25px; /* Added padding back to match Themes.md style */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     position: relative;
     overflow: hidden;
+    text-align: center; /* Center aligned text like Themes.md */
     display: flex;
     flex-direction: column;
-    text-align: left; 
-    height: 100%; /* Ensure equal height */
+    margin-bottom: 0 !important;
   }
 
-  /* Gradient Border Effect */
-  .feature__item::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; height: 4px;
-    background: linear-gradient(90deg, #007bff, #00d4ff);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
-  }
-
-  .feature__item:hover::before { transform: scaleX(1); }
-
+  /* Hover Effect: Lift Up */
   .feature__item:hover {
-    transform: translateY(-12px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0,123,255,0.15);
-    border-color: transparent;
-    z-index: 2;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: #007bff;
   }
 
-  /* --- 5. ICON STYLING (Adapted from Image Styling) --- */
+  /* --- 5. ICON STYLING (Adapted to match Image Box in Themes.md) --- */
   .feature__item-teaser {
-    background: #f8faff; 
-    padding: 30px;
+    background: #f8faff; /* Matches image background */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #f0f0f0;
+    height: 100px; /* Fixed height to mimic image area */
   }
 
   .feature__item-teaser i {
-    font-size: 3.5em; /* Large Icon Size */
+    font-size: 3.5em; 
     color: #007bff;
     transition: transform 0.5s ease;
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
   }
 
   /* Pulse Animation */
-  @keyframes pulse {
+  @keyframes pulseIcon {
     0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+    50% { transform: scale(1.15); }
     100% { transform: scale(1); }
   }
 
   .feature__item:hover .feature__item-teaser i {
-    animation: pulse 1.5s infinite;
-    color: #00d4ff;
+    animation: pulseIcon 1.5s infinite;
+    color: #00d4ff; 
   }
 
   /* --- 6. CONTENT STYLING --- */
   .feature__item-body {
-    padding: 25px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
   }
 
   .archive__item-title {
-    font-size: 1.4em;
-    font-weight: 800;
-    margin-bottom: 12px;
-    color: #2c3e50;
-    letter-spacing: -0.5px;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
   }
   
   .archive__item-excerpt {
-    color: #555;
     font-size: 0.95em;
-    line-height: 1.7;
+    line-height: 1.6;
+    color: #555;
     margin-bottom: 20px;
     flex-grow: 1;
   }
 
-  /* Interactive Arrow Link Styling */
+  /* Interactive Arrow */
   .read-more-arrow {
     margin-top: auto;
     font-weight: bold;
-    color: #007bff !important; 
+    color: #007bff !important;
     opacity: 0;
     transform: translateX(-10px);
     transition: all 0.3s ease;
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-decoration: none !important; 
-    cursor: pointer;
     display: inline-block;
+    text-decoration: none !important;
   }
 
   .feature__item:hover .read-more-arrow {
     opacity: 1;
     transform: translateX(0);
   }
-
+  
   .read-more-arrow:hover { color: #0056b3 !important; }
 
   /* --- 7. ANIMATIONS --- */
@@ -211,7 +193,7 @@ feature_row:
   .feature__item:nth-child(2) { animation-delay: 0.4s; }
   .feature__item:nth-child(3) { animation-delay: 0.5s; }
 
-  /* Typography */
+  /* Typography Polish */
   h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px; width: 100%; }
 </style>
 
