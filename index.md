@@ -47,7 +47,7 @@ feature_row:
     font-size: 1.15em; 
     text-align: left !important;
     margin: 40px 0 60px 0;
-    width: 100%; /* Fill the 1200px container */
+    width: 75%; /* Fill the 1200px container */
     max-width: 100%; 
     box-sizing: border-box;
     border-left: 5px solid #007bff;
