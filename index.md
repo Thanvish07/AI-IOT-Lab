@@ -2,6 +2,8 @@
 layout: home
 permalink: /
 classes: wide
+toc: true
+toc_sticky: true
 header:
   overlay_image: /assets/images/bg_2.png
   overlay_filter: "0.5"
