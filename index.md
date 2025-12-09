@@ -78,10 +78,10 @@ feature_row:
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
-    padding: 10px;
+    padding: 0px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    text-align: center;
+    text-align: justify;
     margin-bottom: 0 !important;
   }
 
