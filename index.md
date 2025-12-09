@@ -27,87 +27,46 @@ feature_row:
 ---
 
 <style>
-  /* --- 1. GLOBAL LAYOUT CONTROL --- */
-  .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
+  /* --- 1. LAYOUT CONSISTENCY --- */
+  .sidebar, .page__sidebar { display: none !important; }
   
-  #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
-
-  /* This is the MASTER container. Everything lives inside this 1200px box. */
-  .page__inner-wrap {
-    float: none !important;
-    margin: 0 auto !important; /* Center on screen */
+  .page__inner-wrap { 
+    float: none !important; 
+    margin: 0 auto !important; 
     width: 100% !important; 
-    max-width: 1200px !important; /* The fixed width for alignment */
-    padding: 0 20px; /* Safety padding for mobile screens */
+    max-width: 1200px !important; 
+    padding: 0 20px;
     box-sizing: border-box;
   }
-  
-  .page__content { width: 100% !important; max-width: 100% !important; }
-
+  .page__content { width: 100% !important; }
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* --- 2. MISSION STATEMENT (Top Block) --- */
-  .notice--info { 
-    font-size: 1.15em; 
-    text-align: left !important;
-    
-    /* ALIGNMENT CRITICALS */
+  /* --- 2. ADVANCED CARD STYLING --- */
+  .feature__row {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 0 !important;  /* Force start at left edge */
-    margin-right: 0 !important; /* Force end at right edge */
-    width: 100% !important;     /* Fill the 1200px container */
-    
-    box-sizing: border-box;
-    border-left: 5px solid #007bff;
-    background: #f4f9ff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   }
 
-  /* --- 3. FEATURE GRID (Bottom 3 Blocks) --- */
-  .feature__wrapper {
-    display: grid;
-    /* Create exactly 3 columns of equal width */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; /* The space between cards */
-    
-    /* ALIGNMENT CRITICALS */
-    width: 100% !important; /* Fill the 1200px container */
-    margin: 0 !important;   /* No extra margins pushing it out */
-    padding: 0 !important;
-    box-sizing: border-box;
-  }
-
-  /* Mobile: Switch to 1 column */
-  @media (max-width: 768px) {
-    .feature__wrapper { grid-template-columns: 1fr; }
-  }
-
-  /* --- 4. CARD STYLING (Themes Style) --- */
   .feature__item {
+    flex: 1 1 320px; 
+    max-width: 360px;
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; 
     padding: 0; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     position: relative;
     overflow: hidden;
-    text-align: left; 
     display: flex;
     flex-direction: column;
-    height: 100%; /* Makes all cards equal height */
+    text-align: left; 
   }
 
-  .feature__item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,123,255,0.15);
-    z-index: 2;
-  }
-
-  /* Gradient Top Border */
+  /* Gradient Border Effect */
   .feature__item::before {
     content: "";
     position: absolute;
@@ -117,35 +76,103 @@ feature_row:
     transform-origin: left;
     transition: transform 0.4s ease;
   }
+
   .feature__item:hover::before { transform: scaleX(1); }
 
-  /* Icon Area */
-  .feature__item-teaser {
+  .feature__item:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,123,255,0.15);
+    border-color: transparent;
+  }
+
+  /* --- 3. IMAGE & ICON STYLING --- */
+  .archive__item-teaser {
     background: #f8faff; 
     padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #f0f0f0;
+    position: relative;
   }
-  .feature__item-teaser i { font-size: 3em; color: #007bff; }
 
-  /* Text Area */
-  .feature__item-body { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
-  .archive__item-title { font-size: 1.4em; font-weight: 800; margin-bottom: 15px; color: #2c3e50; }
-  .archive__item-excerpt { font-size: 1em; line-height: 1.7; color: #555; margin-bottom: 20px; flex-grow: 1; }
+  .archive__item-teaser img {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+  }
 
-  /* Arrow Link */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  .feature__item:hover .archive__item-teaser img {
+    animation: pulse 1.5s infinite;
+  }
+
+  /* --- 4. CONTENT STYLING --- */
+  .feature__item-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature__item-title {
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #2c3e50;
+    letter-spacing: -0.5px;
+  }
+  
+  .feature__item-content p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  /* Interactive Arrow Link Styling */
   .read-more-arrow {
     margin-top: auto;
     font-weight: bold;
-    color: #007bff;
-    text-decoration: none !important;
+    color: #007bff !important; /* Force color */
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none !important; /* No underline */
+    cursor: pointer;
     display: inline-block;
   }
 
-  /* Header */
-  h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px; width: 100%; }
+  .feature__item:hover .read-more-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .read-more-arrow:hover {
+    color: #0056b3 !important;
+  }
+
+  /* --- 5. WATERFALL ENTRANCE --- */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .feature__item { opacity: 0; animation: fadeUp 0.8s ease-out forwards; }
+  .feature__item:nth-child(1) { animation-delay: 0.1s; }
+  .feature__item:nth-child(2) { animation-delay: 0.2s; }
+  .feature__item:nth-child(3) { animation-delay: 0.3s; }
+
 </style>
 
 # About the Lab
