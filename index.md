@@ -15,7 +15,7 @@ feature_row:
   - icon: "fas fa-chart-line"
     title: "Data Science"
     excerpt: "Developing advanced machine learning and deep learning models for time-series analysis, prediction, and anomaly detection."
-    url: "/themes.html" # Added link for the arrow
+    url: "/themes.html" 
   - icon: "fas fa-bolt"
     title: "Energy Sustainability"
     excerpt: "Focusing on smart building energy efficiency, benchmarking, and fault detection and diagnosis (FDD) for HVAC systems."
@@ -27,23 +27,25 @@ feature_row:
 ---
 
 <style>
-  /* 1. LAYOUT: CENTERED 1200px */
+  /* --- 1. LAYOUT: CENTERED 1200px (Strict Match) --- */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
+  
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
 
   .page__inner-wrap {
     float: none !important;
     margin: 0 auto !important;
     width: 100% !important; 
-    max-width: 1600px !important;
+    max-width: 1200px !important; /* Matches joining-us.md */
     padding: 0 20px;
     box-sizing: border-box;
   }
   
   .page__content { width: 100% !important; max-width: 100% !important; }
+
   @media (min-width: 64em) { .page { width: 100% !important; padding: 0 !important; } }
 
-  /* 2. MISSION STATEMENT STYLING */
+  /* --- 2. MISSION STATEMENT STYLING --- */
   .notice--info { 
     font-size: 1.15em; 
     text-align: left !important;
@@ -64,7 +66,7 @@ feature_row:
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
 
-  /* 3. PREMIUM CARD STYLING (MATCHING THEMES.MD) */
+  /* --- 3. PREMIUM CARD STYLING (The "Alive" Look) --- */
   .feature__wrapper {
     display: flex !important;
     flex-wrap: wrap;
@@ -77,12 +79,12 @@ feature_row:
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; /* Soft curves */
-    padding: 30px;
+    padding: 0; /* Let header touch edges */
     box-shadow: 0 10px 30px rgba(0,0,0,0.04);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
-    text-align: left; /* Align left for premium feel */
+    text-align: left; 
     display: flex;
     flex-direction: column;
     margin-bottom: 0 !important;
@@ -101,22 +103,31 @@ feature_row:
 
   .feature__item:hover::before { transform: scaleX(1); }
 
-  /* Hover State: Lift & Glassmorphism */
+  /* Hover State: Lift & Glow */
   .feature__item:hover {
     transform: translateY(-12px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,123,255,0.15);
     border-color: transparent;
   }
 
-  /* 4. ICON STYLING & ANIMATION */
+  /* --- 4. ICON STYLING & ANIMATION --- */
   .feature__item-teaser {
-    margin-bottom: 20px;
-    color: #007bff;
-    font-size: 2.5em; /* Make icons big and bold */
-    display: inline-block;
+    background: #f8faff; /* Light blue tint header */
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f0f0f0;
   }
 
-  /* Pulse Animation on Hover (Adapted for Icons) */
+  .feature__item-teaser i {
+    font-size: 3em; /* Big Icons */
+    color: #007bff;
+    transition: transform 0.5s ease, color 0.3s ease;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+  }
+
+  /* Pulse Animation on Hover */
   @keyframes pulseIcon {
     0% { transform: scale(1); }
     50% { transform: scale(1.15); }
@@ -128,7 +139,14 @@ feature_row:
     color: #00d4ff; /* Lighter blue on hover */
   }
 
-  /* 5. TEXT STYLING */
+  /* --- 5. CONTENT STYLING --- */
+  .feature__item-body {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
   .archive__item-title {
     font-size: 1.4em;
     font-weight: 800;
@@ -156,14 +174,17 @@ feature_row:
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
+    text-decoration: none !important;
   }
 
   .feature__item:hover .read-more-arrow {
     opacity: 1;
     transform: translateX(0);
   }
+  
+  .read-more-arrow:hover { color: #0056b3; }
 
-  /* 6. ANIMATIONS (Entrance) */
+  /* --- 6. ANIMATIONS (Entrance) --- */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
@@ -181,7 +202,13 @@ feature_row:
   .feature__item:nth-child(3) { animation-delay: 0.5s; }
 
   /* Typography Polish */
-  h1 { font-size: 2.2em !important; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px; width: 100%; }
+  h1 { 
+    font-size: 2.2em !important; 
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 10px; 
+    margin-bottom: 30px; 
+    width: 100%; 
+  }
 </style>
 
 # About the Lab
@@ -199,12 +226,12 @@ feature_row:
       <div class="feature__item-teaser">
         <i class="{{ feature.icon }}"></i>
       </div>
-      <div class="archive__item-body">
+      <div class="feature__item-body">
         <h2 class="archive__item-title">{{ feature.title }}</h2>
         <div class="archive__item-excerpt">
           <p>{{ feature.excerpt }}</p>
         </div>
-        <span class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+        <a href="{{ feature.url }}" class="read-more-arrow">Explore <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   {% endfor %}
