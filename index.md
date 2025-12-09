@@ -35,7 +35,7 @@ feature_row:
   .page__inner-wrap {
     float: none !important;
     margin: 0 auto !important;
-    width: 95% !important; /* Uses 95% of screen width (Fixes "too much space on right") */
+    width: 100% !important; /* Uses 95% of screen width (Fixes "too much space on right") */
     max-width: 100% !important; /* Removes the 1200px limit */
     padding: 0 20px;
     box-sizing: border-box;
