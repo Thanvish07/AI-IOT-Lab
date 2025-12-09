@@ -27,7 +27,7 @@ feature_row:
 ---
 
 <style>
-  /* --- 1. LAYOUT: WIDESPREAD (95% Width) --- */
+  /* --- 1. LAYOUT: WIDER 1600px (Matches Themes.md) --- */
   .sidebar, .page__sidebar, .sidebar__right { display: none !important; }
   
   #main { margin: 0 !important; padding: 0 !important; width: 100% !important; }
@@ -35,8 +35,8 @@ feature_row:
   .page__inner-wrap {
     float: none !important;
     margin: 0 auto !important;
-    width: 100% !important; /* Uses 95% of screen width (Fixes "too much space on right") */
-    max-width: 100% !important; /* Removes the 1200px limit */
+    width: 95% !important; 
+    max-width: 1600px !important; /* Extends layout to Left and Right */
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -66,22 +66,20 @@ feature_row:
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
 
-  /* --- 3. GRID LAYOUT (FORCED 1 ROW) --- */
+  /* --- 3. FLEXBOX LAYOUT (Matches Themes.md Box Styles) --- */
   .feature__wrapper {
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); /* STRICTLY 3 EQUAL COLUMNS */
-    gap: 30px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Spreads cards evenly */
+    gap: 30px;
     width: 100%;
     margin-bottom: 0 !important;
   }
 
-  /* Only stack on very small mobile screens */
-  @media (max-width: 768px) {
-    .feature__wrapper { grid-template-columns: 1fr; }
-  }
-
   /* --- 4. PREMIUM CARD STYLING --- */
   .feature__item {
+    flex: 1 1 350px; /* Exact size style from Themes.md */
+    max-width: 500px; /* Allows them to fill the 1600px space */
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px; 
@@ -93,7 +91,12 @@ feature_row:
     text-align: left; 
     display: flex;
     flex-direction: column;
-    height: 100%; /* Ensures all cards match height */
+    margin-bottom: 0 !important;
+  }
+
+  /* Mobile: Stack them */
+  @media (max-width: 1000px) {
+    .feature__item { max-width: 100%; flex-basis: 100%; }
   }
 
   /* Gradient Border Effect */
@@ -120,7 +123,7 @@ feature_row:
   /* --- 5. CONTENT STYLING --- */
   .feature__item-teaser {
     background: #f8faff; 
-    padding: 30px;
+    padding: 40px; /* Increased padding to match image box height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +131,7 @@ feature_row:
   }
 
   .feature__item-teaser i {
-    font-size: 3em; 
+    font-size: 3.5em; /* Larger icons */
     color: #007bff;
     transition: transform 0.5s ease;
     filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
@@ -146,7 +149,7 @@ feature_row:
   }
 
   .feature__item-body {
-    padding: 30px; /* Increased padding for wide layout */
+    padding: 30px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -155,7 +158,7 @@ feature_row:
   .archive__item-title {
     font-size: 1.4em;
     font-weight: 800;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     color: #2c3e50;
   }
   
@@ -163,7 +166,7 @@ feature_row:
     font-size: 1em;
     line-height: 1.7;
     color: #555;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     flex-grow: 1;
   }
 
