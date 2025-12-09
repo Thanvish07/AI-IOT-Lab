@@ -50,7 +50,7 @@ feature_row:
     font-size: 1.15em; 
     text-align: left !important;
     margin: 40px 0 40px 0; /* Top/Bottom margins only */
-    width: 75%; /* FORCE FULL WIDTH of container */
+    width: 100%; /* FORCE FULL WIDTH of container */
     max-width: 100%; 
     box-sizing: border-box;
     border-left: 5px solid #007bff;
